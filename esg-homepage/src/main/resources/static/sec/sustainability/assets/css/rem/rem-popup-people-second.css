@@ -1,0 +1,570 @@
+@charset 'utf-8';
+.popup-area .title {display: block; margin-bottom: 1.143rem; font-weight:bold;}
+.popup-area .table-area .title {margin-bottom:0; display: table-cell;}
+.popup-area .popup-image {margin-top: 1.143rem;}
+.popup-area .popup-image2 {display: flex;}
+.popup-area .popup-image2 img:nth-child(2) {margin-left: 1.143rem}
+.popup-area .sharing-list {margin-top: 1.143rem}
+.popup-area .sharing-list li{position: relative; padding-left: 1.786rem;}
+.popup-area .sharing-list li::after{position: absolute; width: 0.429rem; height: 0.429rem; top: 0.571rem; left: 0.643rem; background-color: #555555; content: ''; border-radius: 50%;}
+.popup-area .sharing-list li strong{color: #555; line-height: 1.714rem;}
+@media screen and ( max-width: 535px ) {
+  .popup-area .title {display: block; margin-bottom: 1.143rem; font-size: 1.125rem; line-height: 1.5rem;}
+  .popup-area .sharing-list li::after{position: absolute; width: 0.35rem; height: 0.35rem; top: 0.571rem; left: 0.843rem;}
+  .popup-area .popup-image2 {flex-direction: column;}
+  .popup-area .popup-image2 img:nth-child(2) {margin-left: 0; margin-top: 1rem;}
+}
+
+.people-second button { margin: 0; padding: 0; }
+.people-second .mobile { display: none; }
+.people-second .popup-big-inner { width: 58.857143rem; max-width: 100%; margin-right: auto; margin-left: auto; }
+.people-second .popup-inner { width: 50.285714rem; max-width: 100%; margin-right: auto; margin-left: auto; }
+.people-second .popup-small-inner { width: 38.857143rem; max-width: 100%; margin-right: auto; margin-left: auto; }
+.people-second .popup-wrap + .popup-content { padding-top: 4.571429rem; }
+.people-second .popup-wrap + .popup-content.bg-gray { margin-top: 4.571429rem; }
+.people-second .popup-content.bg-gray { padding: 4.571429rem 3.428571rem; }
+.people-second .popup-content.bg-gray .list-box-layout { margin-bottom: 0 !important; }
+
+/* blueElephant 작업*/
+.people-second .popup-content.elephant-area { position: relative; padding: 8.571429rem 0 0; }
+.people-second .popup-content.elephant-area + .popup-wrap .popup-content { padding-top: 0; margin-top: -3.928571rem; }
+.people-second .popup-content.elephant-area > .popup-title { padding: 0 3.428571rem; }
+.people-second .popup-content.elephant-area .elephant-area-bg { position: relative; width: 65.714286rem; height: calc(60.857143rem + 13.571429rem); background: url("/sec/sustainability/assets/img/pc/people/pop/elephant_blue_bg.png") no-repeat center / 128% 114%; margin-top: -9.285714rem; }
+.people-second .popup-content.elephant-area > ul > li { width: 12.857143rem; height: 12.857143rem; ; text-align: center; border-radius: 50%; padding-top: 7.714286rem; position: absolute; font-size: 1.285714rem; font-weight: 700; }
+.people-second .popup-content.elephant-area > ul > li:first-child { background: url("/sec/sustainability/assets/img/common/people/pop/elephant_samsung_logo.png") no-repeat 1.428571rem 3.714286rem / 10.142857rem 3.285714rem #fff; top: 12.142857rem; left: calc(50% - 6.428571rem); }
+.people-second .popup-content.elephant-area > ul > li:nth-child(2) { background: url("/sec/sustainability/assets/img/common/people/pop/elephant_love_logo.png") no-repeat 4.071429rem 2.357143rem / 4.714286rem 4.642857rem #fff; top: calc(50% - 6.428571rem); right: 7.142857rem; }
+.people-second .popup-content.elephant-area > ul > li:nth-child(3) { width: 10.214286rem; height: 9.357143rem; border-radius: 0%; padding-top: 7.214286rem; background: url("/sec/sustainability/assets/img/common/people/pop/blue_elephant_logo.png") no-repeat top center / 9.357143rem 6rem; top: 50%; left: 50%; transform: translate(-50%, -50%); font-size: 1.571429rem; }
+.people-second .popup-content.elephant-area > ul > li:nth-child(4) { background: url("/sec/sustainability/assets/img/common/people/pop/elephant_edu_logo.png") no-repeat 4.414286rem 2.571429rem / 4.428571rem 4.428571rem #fff; bottom: 12.142857rem; left:  calc(50% - 6.428571rem); }
+.people-second .popup-content.elephant-area > ul > li:last-child { background: url("/sec/sustainability/assets/img/common/people/pop/elephant_tree_logo.png") no-repeat 3.928571rem 2.714286rem / 5rem 4.285714rem #fff; top: calc(50% - 6.428571rem); left: 7.142857rem; }
+/* // blueElephant 작업 */
+
+.people-second .popup-title { font-size: 2.285714rem; line-height: 1.4; font-weight: 700; margin-bottom: 2.285714rem; color: #000; }
+.people-second .popup-sub-title { font-size: 1.571429rem; line-height: 1.4; font-weight: 700; margin-bottom: 2.285714rem; color: #000; }
+.people-second .popup-sub-gray-title { font-size: 1.571429rem; line-height: 1.4; font-weight: 700; margin-bottom: 1.142857rem; color: #555; }
+.people-second .popup-content-title { font-size: 1.285714rem; line-height: 1.4; font-weight: 700; margin: 0 0 1.142857rem; color: #000; }
+.people-second strong { color: #222; font-weight: 700; }
+.people-second .unit { font-size: 1rem; line-height: 1.4; color: #555555; }
+
+.people-second .popup-wrap p,
+.people-second .popup-content p { font-size: 1.285714rem; line-height: 1.4; font-weight: 400; color:#555555; }
+.people-second .popup-wrap p + .popup-img-area,
+.people-second .popup-content p + .popup-img-area { margin-top: 2.285714rem; }
+.people-second .popup-content.bg-gray .list-box-layout  + .popup-img-area { margin-top: 2.285714rem; }
+
+.people-second .popup-img-area img { display: block; max-width: 100%; margin: 0 auto; }
+.people-second .popup-img-area { overflow: hidden; }
+.people-second .popup-img-area:after { content: ""; display: block; clear: both; }
+
+.people-second .scroll-control { padding-bottom: 2.285714rem; }
+
+.people-second button,
+.people-second .btn-alink { display: inline-block; border: none; vertical-align: middle; text-align: center; font-size: 1rem; font-weight: 700; width: auto; }
+.people-second .btn-black { background-color: #000; color: #fff; padding: 0 1.714286rem; height: 2.857143rem; line-height: 2.857143rem; vertical-align: middle; text-align: center; border-radius: 2.857143rem; margin-top: 2.285714rem; font-size: 1rem; font-weight: 700; width: auto; }
+.people-second .btn-arrow-direction { width: 3.428571rem; height: 3.428571rem; display: inline-block; }
+.people-second .btn-arrow-direction + .btn-arrow-direction { margin-left: 1.714286rem; }
+.people-second .btn-arrow-direction.prev { background: url("/sec/sustainability/assets/img/common/people/pop/btn_arrow_direction_able.png") no-repeat center / contain; transform: rotate(-180deg); }
+.people-second .btn-arrow-direction.next { background: url("/sec/sustainability/assets/img/common/people/pop/btn_arrow_direction_able.png") no-repeat center / contain; }
+.people-second .btn-arrow-direction.prev:disabled { background: url("/sec/sustainability/assets/img/common/people/pop/btn_arrow_direction_disable.png") no-repeat center / contain; transform: rotate(-180deg); }
+.people-second .btn-arrow-direction.next:disabled { background: url("/sec/sustainability/assets/img/common/people/pop/btn_arrow_direction_disable.png") no-repeat center / contain; }
+
+.people-second .text-center { text-align: center; }
+.people-second .text-right { text-align: right; }
+.people-second .ta-cl-change { text-align: center; }
+.people-second .mt-zero { margin-top: 0 !important; }
+.people-second .mb-zero { margin-bottom: 0 !important; }
+.people-second .ml-zero { margin-left: 0 !important; }
+
+.people-second .bg-gray { background-color: #F7F7F7; }
+.people-second .bg-blue { background-color: #F5F7FE; }
+.people-second .bg-white { background-color: #FFF; }
+.people-second .blue-text { color: #006BEA; }
+.people-second .blue-text.big { font-size: 3.428571rem; line-height: 1.208333; font-weight: 700; color: #006BEA; }
+.people-second .popup-gray-box { padding: 2.285714rem; background-color: #F7F7F7; color: #555; }
+.people-second .popup-gray-box .list-box-layout { margin: 2.285714rem 0 0 0;}
+.people-second .popup-gray-box .title{color:#000}
+.people-second p.popup-gray-box { color: #555 !important; }
+.people-second .popup-white-box { padding: 2.285714rem; background-color: #FFF; color: #757575; }
+.people-second .additional-info { margin-top: 2.285714rem; font-size: 1rem; line-height: 1.4; color:#555555; }
+.people-second .additional-info > p { font-size: 1rem; line-height: 1.4; color:#757575; }
+.people-second .inner-additional-info { margin-top: 0.571429rem; font-size: 1rem; line-height: 1.4; color:#555; font-weight: 400; letter-spacing: -1px; }
+.people-second .blue-subject { margin-bottom: 1.142857rem; text-align: center; color:#006BEA; font-weight: 700; font-size: 1.571429rem; line-height: 1.4; }
+.people-second .blue-subject + .popup-title{text-align: center}
+
+.people-second p + .popup-gray-box,
+.people-second .popup-gray-box + p { margin-top: 2.285714rem; }
+.people-second .popup-gray-box + .popup-gray-box,
+.people-second .popup-gray-box + p.popup-gray-box { margin-top: 2.285714rem; }
+.people-second p + .additional-info,
+.people-second img + .additional-info { margin-top: 1.142857rem; }
+
+/* [24.06.03][IYR] 6월업데이트 지역사화 > 스타트업 지원, 공급망 > 책임광물 관리 현황 */
+.popup-area .people-second .btn-area{margin-top:2.28571rem;}
+.popup-area .people-second .btn-area .btn-ellipse {display: inline-block;border: 1px solid #000;border-radius: 35.71428rem;padding: 0 1.71428rem;font-size:1rem}
+.popup-area .people-second .btn-area a.btn-ellipse:focus {outline: auto;}
+.popup-area .people-second .btn-area .btn-ellipse > span {font-size: 1rem;font-weight: 700;line-height: 2.8571rem;}
+.popup-area .people-second .btn-area .btn-ellipse.black {background: #000;color: #fff;}
+.popup-area .people-second .btn-area .btn-ellipse.black.arrow-diagonal {display: inline-block;background: #000;color: #fff;position: relative;padding: 0 3.14285rem 0 1.71428rem;line-height: 2.8571rem;height: 2.8571rem;}
+.popup-area .people-second .btn-area .btn-ellipse.black.arrow-diagonal:after {content: '';display: inline-block;width: 1.14285rem;height: 1.14285rem;background: url('/sec/sustainability/assets/img/pc/people/pop/people-first/arrow_diagonal.png') no-repeat center/contain;position: absolute;top: 50%;right: 1.71428rem;transform: translateY(-50%);}
+.popup-area .people-second .btn-area .btn-ellipse.black.download{display: inline-block;background: #000;color: #fff;position: relative;padding: 0 3.14285rem 0 1.71428rem;line-height: 2.8571rem;height: 2.8571rem;}
+.popup-area .people-second .btn-area .btn-ellipse.black.download:after {content: '';display: inline-block;width: 1.14285rem;height: 1.14285rem;background: url('/sec/sustainability/assets/img/pc/common/mdi/icon_download_white.png') no-repeat center/contain;position: absolute;top: 50%;right: 1.71428rem;transform: translateY(-50%);}
+/* //[24.06.03][IYR] 6월업데이트 지역사화 > 스타트업 지원, 공급망 > 책임광물 관리 현황 */
+
+.people-second table { width: 100%; table-layout: fixed; border-collapse: collapse; border-spacing: 0; }
+.people-second table caption { position: absolute; overflow: hidden; width: 1px; height: 1px; padding: 0; border: 0; margin: -1px; clip: rect(0, 0, 0, 0); }
+.people-second table tr + tr { border-top: 1px solid #DDD; }
+.people-second table tr:last-child { border-bottom: 1px solid #DDD; }
+
+/* EnvironmentalSafetyHealthImprovement.html 및 people-second 표 전체 */
+/* S : 추가 */
+.people-second table tr th,
+.people-second table tr td { padding: 1rem 0.857143rem; font-size: 1.285714rem; line-height: 1.4; }
+.people-second table tr th:first-child,
+.people-second table tr td:first-child { padding-left: 0.857143rem; }
+.people-second table tr th:last-child,
+.people-second table tr td:last-child { padding-right: 0.857143rem; }
+/* E : 추가 */
+
+.people-second table thead th { background-color: #555; color: #FFF; text-align: left; }
+.people-second table tbody th { font-weight: 700; color: #555; text-align: left; }
+.people-second table tbody td { color: #555; text-align: left }
+/* [24.06.03][IYR] 6월업데이트 지역사회 > 삼성 희망디딤돌 */
+.people-second table.ta-center thead th,
+.people-second table.ta-center tbody td{text-align:center}
+.people-second table.ta-center thead th.align-left{text-align: left}
+/* //[24.06.03][IYR] 6월업데이트 지역사회 > 삼성 희망디딤돌 */
+
+.people-second .three-col-table thead th:last-child{ width: 66%; }
+
+.people-second .sub-title-img-area { padding: 2.857143rem 2.285714rem; margin: 2.285714rem 0; }
+
+.people-second .list-box-layout { margin: 2.285714rem 0; }
+.people-second .popup-title + .list-box-layout { margin: 0 0 2.285714rem 0; }
+.people-second .list-box-layout > ul { width: 100%; margin-right: auto; margin-left: auto; }
+.people-second .list-box-layout > ul > li { position: relative; }
+.people-second .list-box-layout > ul > li > strong { font-size: 1.285714rem; line-height: 1.4; }
+
+.people-second .list-box-layout.tab-menu { width: 100%; height: 5.714286rem; line-height: 5.714286rem; position: relative; text-align: center; margin: 0; }
+.people-second .list-box-layout.tab-menu:after { content: ""; display:block; width: 100%; height: 2px; background-color: #DDD; position: absolute; bottom: 0; left: 0; right: 0; }
+.people-second .list-box-layout.tab-menu > ul.float { width: 26.285714rem; text-align: center; }
+.people-second .list-box-layout.tab-menu > ul.float > li { position: relative; }
+.people-second .list-box-layout.tab-menu > ul.float > li + li { margin-left: 3.428571rem !important; float: right !important; }
+.people-second .list-box-layout.tab-menu > ul.float > li > button { margin: 0; padding: 1.785714rem 0; color: #757575; }
+.people-second .list-box-layout.tab-menu > ul.float > li.active button { color: #000; }
+.people-second .list-box-layout.tab-menu > ul.float > li.active:after { content: ""; display: block; width: 100%; height: 2px; background-color: #000; position: absolute; bottom: 0; left: 0; right: 0; z-index: 1; }
+
+/* float 공통 글래스 */
+.people-second .list-box-layout .float { overflow: hidden; }
+.people-second .list-box-layout .float:after { content: ""; display: block; clear: both; }
+.people-second .list-box-layout .float > * { float: left; }
+.people-second .list-box-layout .float > * + * { margin-left: 1.142857rem; }
+
+.people-second .list-box-layout .flex {display: flex}
+.people-second .list-box-layout .flex.justify-center {justify-content: center;}
+
+.people-second .title-unit { position: relative; }
+.people-second .title-unit > .unit { position: absolute; bottom: 0; right: 0; }
+
+.people-second .list-box-layout > .gray-list1 > li { display: table; padding: 2.285714rem 1.714286rem; width: 18.857143rem; height: 9.714286rem; text-align: center; }
+.people-second .list-box-layout > .gray-list1 > li strong { display: table-cell; vertical-align: middle; letter-spacing: -0.8px; word-spacing: -0.8px; }
+.people-second .list-box-layout > .gray-list2 > li { height: 11.285714rem; width: 18.857143rem; padding: 2.285714rem 1.714286rem; text-align: center; }
+.people-second .list-box-layout > .gray-list2 > li > strong { font-size: 2rem; line-height: 1.4; }
+.people-second .list-box-layout > .gray-list2 > li > div { margin-top: 0.571429rem; line-height: 1.4; }
+.people-second .list-box-layout .gray-list1 > li,
+.people-second .list-box-layout .gray-list2 > li { background-color: #F7F7F7; color: #555; }
+.people-second .list-box-layout .sm-txt {display: block; color: #555555; font-size: 1rem; line-height: 1.357rem; margin-top: 0.5rem; }
+.people-second .list-box-layout > .gray-list2.ht > li {height: 12.857rem;}
+
+
+
+.people-second .list-box-layout .blue-box-first-list.two  { width: 38.857143rem; margin-right: auto; margin-left: auto; }
+.people-second .list-box-layout .blue-box-first-list.two.all-white-bg  { width: 100%; margin-right: auto; margin-left: auto; }
+.people-second .list-box-layout .blue-box-first-list > li { width: 18.857143rem; height: 12.571429rem; background-color: #FFF; text-align: left; padding: 4.714286rem 1.714286rem 1.714286rem 1.714286rem;}
+.people-second .list-box-layout .blue-box-first-list > li:first-child { color: #FFF; background-color: #006BEA; }
+.people-second .list-box-layout .blue-box-first-list.all-white-bg > li:first-child { color: #000; background-color: #FFF; }
+.people-second .list-box-layout .blue-box-first-list.all-white-bg.two > li { width: 28.857143rem; height: 11rem; padding: 2.285714rem 1.714286rem; text-align: center; }
+.people-second .list-box-layout .blue-box-first-list .white {margin-left: 1.143rem;}
+.people-second .list-box-layout .blue-box-first-list > li.long-list-subject-box { padding: 3rem 1.714286rem 1.714286rem 1.714286rem; }
+.people-second .list-box-layout .blue-box-first-list > li.country { background: url("/sec/sustainability/assets/img/pc/people/pop/country.png") no-repeat center / contain; }
+.people-second .list-box-layout .blue-box-first-list > li.country.no-bg {padding: 0; background-image: none; background-color: #006BEA;}
+.people-second .list-box-layout .blue-box-first-list > li.flex-center {display: flex; justify-content: center; align-items: center; text-align: center; padding: 0;}
+.people-second .list-box-layout .blue-box-first-list > li.participant-student {margin-left: 1.143rem;}
+.people-second .list-box-layout .blue-box-first-list > li .list-subject { font-size: 1.285714rem; line-height: 1.4; }
+.people-second .list-box-layout .blue-box-first-list > li .number-unit > span { font-size: 3.428571rem; font-weight: 700; line-height: 1.208333; }
+.people-second .list-box-layout .blue-box-first-list > li .number-unit > span.long-num { font-size: 3.142857rem; }
+.people-second .list-box-layout .blue-box-first-list > li .number-unit {display: flex; align-items: center; font-size: 2rem; font-weight: 700; line-height: 1.4; margin-top: 0.571429rem; }
+.people-second .list-box-layout .blue-box-first-list > li .number-unit.justify-center{justify-content: center;}
+.people-second .list-box-layout li .number-unit > span { font-size: 3.428571rem; font-weight: 700; line-height: 1.208333; }
+.people-second .list-box-layout li .number-unit { font-size: 2rem; font-weight: 700; line-height: 1.4; }
+
+.people-second .list-box-layout .blue-box-first-list.five > li {display: flex; align-items: center; justify-content: center; padding: 2.286rem 1.714rem; text-align: center;}
+.people-second .list-box-layout .blue-box-first-list.five > li .number-unit {justify-content: center;}
+
+/* [24.06.03][IYR] 6월업데이트 지역사회 > 푸른코끼리 */
+.people-second .list-box-layout .blue-box-first-list.brick{display: grid;gap: 2.28571rem 1.14285rem;grid-template-columns: 18.85714rem 18.85714rem;justify-items: center;justify-content: center;}
+.people-second .list-box-layout .blue-box-first-list.brick .white{margin-left:0}
+/* //[24.06.03][IYR] 6월업데이트 지역사회 > 푸른코끼리 */
+
+.people-second .middot-list { margin-top: 1.142857rem; }
+.people-second .middot-list > li { padding-left: 2.142857rem; position: relative; }
+.people-second .middot-list > li:before { display: inline-block; content: ""; width: 0.428571rem; height: 0.428571rem; border-radius: 3.571429rem; background-color: #555; position: absolute; left:  0.857143rem; top: 0.571429rem; }
+.people-second .middot-list div,
+.people-second .middot-list li { font-size: 1.285714rem; line-height: 1.4; }
+.people-second .middot-list.center-middot { margin-bottom: 2.285714rem; }
+.people-second .middot-list.center-middot li { padding-left: 0.428571rem; display: inline-block; color: #555; }
+.people-second .middot-list.center-middot li:before { left: -0.714286rem;}
+.people-second .middot-list.center-middot.flex {display: flex; flex-direction: column;}
+.people-second .middot-list.center-middot.flex li:nth-child(1):before { left: 9.785714rem;}
+.people-second .middot-list.center-middot.flex li:nth-child(2):before { left: 14.985714rem;}
+
+.people-second .number-unit-list > li { padding: 1.142857rem 0; line-height: 1.4 !important; letter-spacing: -0.65px; word-spacing: -0.8px; }
+.people-second .number-unit-list > li:first-child { padding-top: 0; }
+.people-second .number-unit-list > li:last-child { padding-bottom: 0; }
+.people-second .number-unit-list > li + li { border-top: 1px solid #DDD; padding: 1.142857rem 0; }
+.people-second .number-unit-list > li > span { font-size: 2rem; line-height: 1.4 !important; font-weight: 700; color: #006BEA; }
+
+.people-second .list-box-layout .icon-list { margin-bottom: 0; }
+.people-second .list-box-layout .icon-list li { width: 16rem; height: 14.857143rem; background-color: #F7F7F7; margin-bottom: 1.714286rem; padding: 2.857143rem 1.142857rem; }
+.people-second .list-box-layout .icon-list li:nth-child(3n+1) { margin-left: 0; }
+.people-second .list-box-layout .icon-list li .icon-box { width: 5.714286rem; height: 5.714286rem; margin: 0 auto; }
+.people-second .list-box-layout .icon-list li .icon-box + .text-box { margin-top: 1.714286rem !important; color: #000; font-size: 1.285714rem; line-height: 1.4; font-weight: 700; text-align: center; }
+.people-second .list-box-layout .icon-list + .additional-info { margin-top: 0 !important; }
+.people-second .popup-big-inner .list-box-layout .icon-list li { width: 18.857143rem; height: 20.071429rem; padding: 2.285714rem 1.142857rem; background-color: white; }
+.people-second .popup-big-inner .list-box-layout .icon-list li .number-unit { margin-top: 0.285714rem; line-height: 1.2; }
+
+.people-second .list-box-layout .blue-circle-number-list { counter-reset: list-number; }
+.people-second .list-box-layout .blue-circle-number-list > li { position: relative; counter-increment: list-number;  padding-left: calc(2.285714rem + 1.142857rem); margin-bottom: 1.714286rem; }
+.people-second .list-box-layout .blue-circle-number-list > li:before { content: counter(list-number); display: block; width: 2.285714rem; height: 2.285714rem; line-height: 2.285714rem; text-align: center; font-size: 1.285714rem; font-weight: 700; background-color: #006BEA; color: #FFF;  position: absolute; top: 0; left: 0; border-radius: 3.571429rem; z-index: 1; }
+.people-second .list-box-layout .blue-circle-number-list > li:not(:last-child):after { content: ""; display: block; position: absolute; top: 0; left: 1.142857rem; width: 1px; height: 120%; background-color: #006BEA; } /* height 단위값 수정 필요 */
+.people-second .list-box-layout .blue-circle-number-list .popup-sub-title { margin-bottom: 1.714286rem !important; }
+
+.people-second .mo-scroll-area .list-box-layout { margin: 0; }
+.people-second .list-box-layout .icon-list.step-list { padding-top: 1.142857rem; overflow: hidden; }
+.people-second .list-box-layout .icon-list.step-list:after { content: ""; display: block; clear: both; }
+.people-second .list-box-layout .icon-list.step-list > li { position: relative; width: 16rem; height: 18.571429rem; margin-bottom: 0; float: left; padding: 3.428571rem 1.142857rem 2.285714rem; } /* [24.06.23][HJR] 지역사회 - 나눔 키오스크 수정 */
+.people-second .list-box-layout .icon-list.step-list > li + li { margin-left: 1.142857rem; }
+.people-second .list-box-layout .icon-list.step-list > li .step-box { width: 6.857143rem; height: 2.285714rem; line-height: 2.285714rem; padding: 0 1.428571rem; border-radius: 3.571429rem; font-weight: 700; font-size: 1.285714rem; background-color: #555; color:white; position: absolute; top: -1.142857rem; left: 50%; transform: translateX(-50%); }
+.people-second .list-box-layout .icon-list.step-list > li:not(:last-child):after { content:"다음"; font-size: 0; display: block; width: 1.714286rem; height: 1.714286rem; position: absolute; top: 50%; right: -1.357143rem; transform: translateY(-50%); background: url("/sec/sustainability/assets/img/common/people/pop/btn_next_arrow_black.png") no-repeat center / contain; z-index: 1; }
+.people-second .list-box-layout .icon-list.step-list li .icon-box { margin: 0 auto; }
+.people-second .list-box-layout .icon-list.step-list.four > li {width: 11.714rem;}
+
+.people-second .list-box-layout .row-icon-list > li { margin-bottom: 1.714286rem; }
+.people-second .list-box-layout .row-icon-list > li:last-child { margin-bottom: 0; }
+.people-second .list-box-layout .row-icon-list > li > div.float .icon-box { width: 4.571429rem; height: 4.571429rem; margin-top: 0 !important;}
+.people-second .list-box-layout .row-icon-list > li > div.float .text-box { width: 80%; max-width: 50.285714rem; margin-left: 1.714286rem; }/* 글자 수 고려하여 최대크기 잡음 */
+.people-second .list-box-layout .row-icon-list.long-icon-list > li > div.float .icon-box { width: 11.214286rem; height: 2.714286rem; margin-top: 0.571429rem !important;}
+.people-second .list-box-layout .row-icon-list.long-icon-list > li > div.float .text-box { width: 75%; max-width: 36.785714rem; margin-left: 1.714286rem; }
+.people-second .list-box-layout .row-icon-list > li > div.float .text-box > strong + .text-box-detail { margin-top: 1.142857rem; line-height: 1.4; }
+.people-second .list-box-layout .row-icon-list > li > div.float .text-box > .text-box-detail { margin-top: 0.571429rem; line-height: 1.4; }
+
+.people-second .icon-text-list > li { display: table; width: 100%; padding: 2.285714rem; background-color: #F7F7F7; margin-bottom: 1.714286rem; color: #555; }
+.people-second .icon-text-list > li.popup-white-box { padding: 2.285714rem; background-color: #FFF; color:#757575; }
+.people-second .icon-text-list > li:last-child { margin-bottom: 0;}
+.people-second .icon-text-list > li .icon-box { width: 4.571429rem; display: table-cell; vertical-align: top; }
+.people-second .icon-text-list > li .text-box { padding-left: 1.714286rem; display: table-cell; vertical-align: middle; }
+.people-second .icon-text-list > li .text-box > strong + .text-box-detail { margin-top: 1.142857rem; line-height: 1.4; }
+.people-second .icon-text-list > li .text-box > .text-box-detail { line-height: 1.4; }
+.people-second .icon-text-list > li .text-box .middot-list { color: #555; }
+.people-second .icon-text-list > li .text-box .middot-list > li:before { background-color: #555; }
+
+.people-second .icon-box.ai { background: url("/sec/sustainability/assets/img/common/people/pop/icon_ai.png") no-repeat center / contain; }
+.people-second .icon-box.iot { background: url("/sec/sustainability/assets/img/common/people/pop/icon_iot2.png") no-repeat center / contain; }
+.people-second .icon-box.big-data { background: url("/sec/sustainability/assets/img/common/people/pop/icon_big_data.png") no-repeat center / contain; }
+.people-second .icon-box.coding { background: url("/sec/sustainability/assets/img/common/people/pop/icon_coding.png") no-repeat center / contain; }
+.people-second .icon-box.soft-skill { background: url("/sec/sustainability/assets/img/common/people/pop/icon_soft-skill.png") no-repeat center / contain; }
+.people-second .icon-box.workplace-capabilities { background: url("/sec/sustainability/assets/img/common/people/pop/icon_workplace-capabilities.png") no-repeat center / contain; }
+.people-second .icon-box.factory { background: url("/sec/sustainability/assets/img/common/people/pop/icon_factory.png") no-repeat center / contain; }
+.people-second .icon-box.process { background: url("/sec/sustainability/assets/img/common/people/pop/icon_process.png") no-repeat center / contain; }
+.people-second .icon-box.monitering { background: url("/sec/sustainability/assets/img/common/people/pop/icon_monitoring.png") no-repeat center / contain; }
+.people-second .icon-box.round-process { background: url("/sec/sustainability/assets/img/common/people/pop/icon_round_processing.png") no-repeat center / contain; }
+.people-second .icon-box.card { background: url("/sec/sustainability/assets/img/common/people/pop/icon_card.png") no-repeat center / contain; }
+.people-second .icon-box.child { background: url("/sec/sustainability/assets/img/common/people/pop/icon_child.png") no-repeat center / contain; }
+.people-second .icon-box.baby-give { background: url("/sec/sustainability/assets/img/common/people/pop/icon_baby-give.png") no-repeat center / contain; }
+.people-second .icon-box.manufacturing { background: url("/sec/sustainability/assets/img/common/people/pop/icon_manufacturing.png") no-repeat center / contain; }
+.people-second .icon-box.finance { background: url("/sec/sustainability/assets/img/common/people/pop/icon_finance.png") no-repeat center / contain; }
+.people-second .icon-box.deal { background: url("/sec/sustainability/assets/img/common/people/pop/icon_deal.png") no-repeat center / contain; }
+.people-second .icon-box.helpful { background: url("/sec/sustainability/assets/img/common/people/pop/icon_helpful.png") no-repeat center / contain; }
+.people-second .icon-box.flag { background: url("/sec/sustainability/assets/img/common/people/pop/icon_flag.png") no-repeat center / contain; }
+.people-second .icon-box.round-processing { background: url("/sec/sustainability/assets/img/common/people/pop/icon_round_processing.png") no-repeat center / contain; }
+.people-second .icon-box.re-enter { background: url("/sec/sustainability/assets/img/common/people/pop/icon_re_enter.png") no-repeat center / contain; }
+.people-second .icon-box.stabilization { background: url("/sec/sustainability/assets/img/common/people/pop/icon_stabilization.png") no-repeat center / contain; }
+.people-second .icon-box.vision { background: url("/sec/sustainability/assets/img/common/people/pop/icon_vision.png") no-repeat center / contain; }
+.people-second .icon-box.kiosk { background: url("/sec/sustainability/assets/img/common/people/pop/icon_kiosk.png") no-repeat center / contain; }
+.people-second .icon-box.meeting { background: url("/sec/sustainability/assets/img/common/people/pop/icon_meeting.png") no-repeat center / contain; }
+.people-second .icon-box.baby { background: url("/sec/sustainability/assets/img/common/people/pop/icon_baby.png") no-repeat center / contain; }
+.people-second .icon-box.group { background: url("/sec/sustainability/assets/img/common/people/pop/icon_group.png") no-repeat center / contain; }
+.people-second .icon-box.love-hand { background: url("/sec/sustainability/assets/img/common/people/pop/icon_love_hand.png") no-repeat center / contain; }
+.people-second .icon-box.infra { background: url("/sec/sustainability/assets/img/common/people/pop/icon_infra.png") no-repeat center / contain; }
+.people-second .icon-box.c-lab-cosoms-effect { background: url("/sec/sustainability/assets/img/common/people/pop/c_lab_cosmos_effect.png") no-repeat center / contain; }
+.people-second .icon-box.c-lab-do_brain { background: url("/sec/sustainability/assets/img/common/people/pop/c_lab_do_brain.png") no-repeat center / contain; }
+.people-second .icon-box.c-lab-dot { background: url("/sec/sustainability/assets/img/common/people/pop/c_lab_dot.png") no-repeat center / contain; }
+.people-second .icon-box.c-lab-pet-now { background: url("/sec/sustainability/assets/img/common/people/pop/c_lab_pet_now.png") no-repeat center / contain; }
+.people-second .icon-box.c-lab-pixel-display { background: url("/sec/sustainability/assets/img/common/people/pop/c_lab_pixel_display.png") no-repeat center / contain; }
+.people-second .icon-box.c-lab-silvia { background: url("/sec/sustainability/assets/img/common/people/pop/c_lab_silvia.png") no-repeat center / contain; }
+.people-second .icon-box.c-lab-waddle { background: url("/sec/sustainability/assets/img/common/people/pop/c_lab_waddle.png") no-repeat center / contain; }
+.people-second .icon-box.c-lab-marine { background: url("/sec/sustainability/assets/img/common/people/pop/c_lab_marine.png") no-repeat center / contain; }/* [24.06.03][IYR] 6월업데이트 지역사회 > 스타트업 지원 */
+.people-second .icon-box.c-lab-cellico { background: url("/sec/sustainability/assets/img/common/people/pop/c_lab_cellico.png") no-repeat center / contain; }/* [24.06.03][IYR] 6월업데이트 지역사회 > 스타트업 지원 */
+.people-second .icon-box.c-lab-reharvest { background: url("/sec/sustainability/assets/img/common/people/pop/c_lab_reharvest.png") no-repeat center / contain; }/* [24.06.03][IYR] 6월업데이트 지역사회 > 스타트업 지원 */
+
+.activity-list-wrap+.activity-list-wrap{margin-top:1.1428rem}
+.activity-list-wrap{border-bottom:1px solid #ddd}
+.activity-list-wrap .activity-list-title{display: block;height:3.071rem;line-height:3.071rem;padding:0 1.714rem;font-size:1.28571rem;font-weight:bold;background:#555;color:#fff;border-bottom:1px solid #000}
+.activity-list-wrap .activity-list-cont{overflow: hidden;padding:0.428rem 0;}
+.activity-list-wrap .activity-list-cont+.activity-list-cont{border-top:1px solid #ddd}
+.activity-list-wrap .activity-list-cont li{float:left;border-right:1px solid #ddd}
+.activity-list-wrap .activity-list-cont li:last-child{border:none}
+.activity-list-wrap .activity-list-cont.two li{width:50%}
+.activity-list-wrap .activity-list-cont.three li:nth-child(1){width:30%}
+.activity-list-wrap .activity-list-cont.three li:nth-child(2){width:30%}
+.activity-list-wrap .activity-list-cont.three li:nth-child(3){width:40%}
+.activity-list-wrap .activity-list-cont dl{padding:2.285rem;}
+.activity-list-wrap .activity-list-cont dl dt{display:block;text-align:left;font-size:1.28571rem;font-weight:bold;color:#555;vertical-align: middle}
+.activity-list-wrap .activity-list-cont dl dd{display:block;margin-top:1.6428rem;margin-left:0;text-align:right;font-size:1.28571rem;color:#555;vertical-align: middle}
+.activity-list-wrap .activity-list-cont dl dd .number{margin:0 0.285rem 0 0.571rem;font-weight:bold;font-size:2rem;color:#006BEA;vertical-align: middle}
+
+@media screen and ( max-width: 775px ) {
+  .people-second .list-box-layout > .gray-list1 > li { height: 13.314286rem; }
+  .people-second .list-box-layout > .gray-list2 > li { height: 16.914286rem; }
+  .people-second .popup-big-inner .list-box-layout .icon-list li { height: 24.125rem; padding: 4.057143rem 1.142857rem 5.657143rem 1.142857rem; }
+  .people-second .list-box-layout .icon-list.step-list > li .step-box { width: 8.75rem; height: 2.5rem; line-height: 2.5rem; }
+
+  .people-second .list-box-layout.tab-menu > ul.float > li + li { margin-left: 2.528571rem !important; }
+}
+
+@media screen and ( max-width: 650px ) {
+  .people-second .list-box-layout > .gray-list1 > li { height: 18.814286rem; }
+  .people-second .list-box-layout > .gray-list2 > li { height: 18.314286rem; }
+  .people-second .list-box-layout .icon-list li { padding: 2.857143rem 0.442857rem; }
+  .people-second .list-box-layout .icon-list li .icon-box + .text-box { letter-spacing: -0.51px; }
+  .people-second .popup-big-inner .list-box-layout .icon-list li { height: 26.125rem; }
+
+  .people-second .list-box-layout.tab-menu > ul.float { width: 31.885714rem; }
+  .people-second .list-box-layout.tab-menu > ul.float > li > button { padding: 1.56231rem 0; }
+}
+
+@media screen and ( max-width: 535px ) {
+  .people-second .pc { display: none !important; }
+  .people-second .mobile { display: inline-block !important; }
+  .people-second .popup-wrap + .popup-content { padding-top: 3rem; }
+  .people-second .popup-wrap + .popup-content.bg-gray { margin-top: 3rem; }
+  .people-second .popup-content.bg-gray { padding: 3rem 1.25rem; }
+  .people-second .popup-content .hope-center-map { content: url("/sec/sustainability/assets/img/mo/people/pop/map.png"); }
+  .people-second .popup-wrap p + .popup-img-area, .people-second .popup-content p + .popup-img-area{margin-top:0}
+  .people-second .popup-img-area {padding: 1.5rem 0 0}
+  .people-second .popup-content.bg-gray .list-box-layout + .popup-img-area{margin-top:1.5rem;padding:0}
+
+  .people-second .list-box-layout .sm-txt {font-size: 0.875rem; line-height: 1.188rem; margin-top: 0.5rem; }
+  .people-second .list-box-layout .gray-list2.flex-center > li {display: flex; flex-direction: column; justify-content: center; align-items: center;}
+  .people-second .list-box-layout > .gray-list2.ht > li {height: 11.285rem}
+
+  /* blueElephant 작업 */
+  .people-second .popup-content.elephant-area { position: relative; padding: 5rem 0 0; }
+  .people-second .popup-content.elephant-area .elephant-area-bg { position: relative; width: auto; min-height: 91.25rem/* calc(1188px + 30px) */; background: url("/sec/sustainability/assets/img/mo/people/pop/elephant_blue_bg.png") no-repeat center / cover; margin-top: -9.375rem; }
+  .people-second .popup-content.elephant-area + .popup-wrap .popup-content { padding-top: 0; margin-top: -6.875rem; }
+  .people-second .popup-content.elephant-area > .popup-title { padding: 0 1.25rem; }
+  .people-second .popup-content.elephant-area > ul > li { width: 13rem; height: 13rem; padding-top: 8.5rem; position: absolute; font-size: 1.125rem; }
+  .people-second .popup-content.elephant-area > ul > li:first-child { background: url("/sec/sustainability/assets/img/mo/people/pop/elephant_samsung_logo.png") no-repeat 1.5rem 4.5625rem/ 10rem 1.9375rem #fff; top: 11.875rem; left: calc(50% - 6.5rem); }
+  .people-second .popup-content.elephant-area > ul > li:nth-child(2) { background: url("/sec/sustainability/assets/img/mo/people/pop/elephant_love_logo.png") no-repeat 4.25rem 2.0625rem / 4.5625rem 5.4375rem #fff; top: calc(11.875rem + 13rem + 2rem); right: 0%; left: calc(50% - 6.5rem); }
+  .people-second .popup-content.elephant-area > ul > li:nth-child(3) { width: 8.1875rem; height: 7.75rem; top: calc(50.5%); font-size: 1.125rem; padding-top: 6.25rem; background-size: 8.1875rem 5.25rem; }
+  .people-second .popup-content.elephant-area > ul > li:nth-child(4) { background: url("/sec/sustainability/assets/img/common/people/pop/elephant_edu_logo.png") no-repeat 4rem 2.5rem / 5rem 5rem #fff; top: calc(26.875rem + 13rem + 2rem + 7.75rem + 2rem); left: calc(50% - 6.5rem); }
+  .people-second .popup-content.elephant-area > ul > li:last-child { background: url("/sec/sustainability/assets/img/common/people/pop/elephant_tree_logo.png") no-repeat 3.875rem 2.5rem / 5.3125rem 5rem #fff; top: calc(51.625rem + 13rem + 2rem); left: calc(50% - 6.5rem); }
+  /* // blueElephant 작업 */
+
+  .people-second .popup-title { font-size: 1.375rem; line-height: 1.875rem; margin-bottom: 1.5rem; }
+  .people-second .popup-sub-title { font-size: 1.125rem; line-height: 1.4; margin-bottom: 1.5rem; }
+  .people-second .popup-sub-gray-title { font-size: 1.125rem; line-height: 1.4; margin-bottom: 0.5rem; }
+  .people-second .popup-content-title { font-size: 1rem; line-height: 1.4; margin: 0 0 1rem; }
+  .people-second .popup-content p { font-size: 1rem; line-height: 1.4; }
+  .people-second .popup-content p + popup-img-area { margin-top: 1.5rem; }
+  .people-second .unit { font-size: 0.875rem; }
+
+  .people-second .popup-gray-box { padding: 2rem 1.5rem; }
+  .people-second .popup-white-box { padding: 2rem 1.5rem; }
+  .people-second .inner-additional-info { margin-top: 0.25rem; font-size: 0.875rem; }
+  .people-second .additional-info { margin-top: 1rem; font-size: 0.875rem !important; }
+  .people-second .additional-info > p { font-size: 0.875rem !important; }
+
+  .people-second .blue-subject { margin-bottom: 0.5rem; font-size: 1rem; line-height: 1.375; }
+  .people-second .mo-scroll-table + .additional-info { margin-top: 1.5rem; }
+
+  .people-second .scroll-control { padding-bottom: 1.5rem; }
+  .people-second .btn-black { padding: 0 1.5rem; height: 2.5rem; line-height: 2.5rem; margin-top: 1.5rem; font-size: 0.875rem; }
+  .people-second .btn-arrow-direction { width: 1.5rem; height: 1.5rem; }
+  .people-second .ta-cl-change { text-align: left; }
+
+  .people-second p + .popup-gray-box,
+  .people-second .popup-gray-box + p,
+  .people-second .popup-gray-box + p.popup-gray-box { margin-top: 1.5rem; }
+  .people-second .popup-gray-box + .popup-gray-box { margin-top: 1rem; }
+  .people-second p + .additional-info,
+  .people-second img + .additional-info { margin-top: 1rem; }
+
+  /* EnvironmentalSafetyHealthImprovement.html 및 people-second 표 전체 */
+  /* S : 추가 */
+  .people-second table tr th,
+  .people-second table tr td { padding: 0.75rem 0.75rem; font-size: 0.875rem; line-height: 1.4; }
+  .people-second table tr th:first-child,
+  .people-second table tr td:first-child { padding-left: 0.75rem; }
+  .people-second table tr th:last-child,
+  .people-second table tr td:last-child { padding-right: 0.75rem; }
+  /* E : 추가 */
+
+  .people-second .mo-scroll-table { overflow-x: scroll; }
+  .people-second .three-col-table thead th:first-child{ width: 28%; }
+  .people-second .three-col-table thead th:last-child{ width: 47%; }
+  .people-second .mo-scroll-table > table { width: 30.25rem; min-width: 28.25rem; margin-top: 0; }
+  .people-second .mo-scroll-area { overflow-x: scroll; }
+  .people-second .mo-scroll-area::-webkit-scrollbar { display: none; }
+  .popup-second .mo-scroll-area.no-scroll { overflow: hidden; }
+
+  /*.people-second .minerals-management-system { content: url("/sec/sustainability/assets/img/mo/people/pop/minerals_management_system.png"); width: 100%; }*/
+  .people-second .on-site-graph { content: url("/sec/sustainability/assets/img/mo/people/pop/on_site_graph.png"); width: 100%; }
+  .people-second .sub-title-img-area { padding: 1.5rem; margin: 1.5rem 0; }
+
+  .people-second .list-box-layout > .gray-list1 > li { padding: 2rem 1.5rem;  height: 8.125rem; }
+
+  .people-second .list-box-layout { margin: 1.5rem 0; }
+  .people-second .popup-gray-box .list-box-layout { margin: 1.5rem 0 0 0;}
+  .people-second .list-box-layout > ul > li > strong {  font-size: 1rem; line-height: 1.4; }
+  .people-second .list-box-layout > ul.gray-list1 > li strong { font-size: 1rem; line-height: 1.4; }
+
+  /* float 공통 클래스 */
+  .people-second .list-box-layout .float > * { width: 100% !important; margin-bottom: 1rem; }
+  .people-second .list-box-layout .float > * + * { margin-left: 0; }
+  .people-second .list-box-layout .float > li:last-child { margin-bottom: 0; }
+
+  .people-second .title-unit { margin-bottom: 1rem; }
+  .people-second .title-unit + .mo-scroll-table { padding-top: 1rem; }
+  .people-second .title-unit > .popup-title { margin-bottom: 0.5rem; }
+  .people-second .title-unit > .popup-sub-title { margin-bottom: 0.5rem; }
+  .people-second .title-unit > .unit.mo-down { position: static; }
+
+  .people-second .list-box-layout > .gray-list2 > li { height: 8.75rem; padding: 2rem 1.5rem; }
+  .people-second .list-box-layout > .gray-list2 > li:last-child { padding: 2.5rem 1.5rem; }
+  .people-second .list-box-layout > .gray-list2 > li > strong { font-size: 1.375rem; line-height: 1.4; }
+  .people-second .list-box-layout > .gray-list2 > li > div { font-size: 1rem; margin-top: 0.5rem; }
+
+  .people-second .list-box-layout .blue-box-first-list.two { width: 100%; max-width: 100%; margin: 0 auto !important; }
+  .people-second .list-box-layout .blue-box-first-list.three { width: 100%; max-width: 100%; margin: 0 auto !important; }
+  /*  .people-second .list-box-layout .blue-box-first-list > li { width: 100%; height: 150px; padding: 66px 24px 18px 24px;}*/
+
+  .people-second .list-box-layout .blue-box-first-list.mo-column {flex-direction: column}
+  .people-second .list-box-layout .blue-box-first-list > li { width: 100%; height: 8rem; padding: 2.5rem 1.5rem 1.5rem 1.5rem; }
+  .people-second .list-box-layout .blue-box-first-list > li > div.long-list-subject-box { padding: 3.375rem 1.5rem 1.9375rem 1.5rem; }
+  .people-second .list-box-layout .blue-box-first-list > li.participant-student {margin-left: 0; margin-top: 1rem;}
+  .people-second .list-box-layout .blue-box-first-list > li.country { width: 100%; height: 11rem; padding: 5.0625rem 1.5rem 1.9375rem 1.5rem;  background: url("/sec/sustainability/assets/img/mo/people/pop/country.png") no-repeat center / cover; }
+  .people-second .list-box-layout .blue-box-first-list > li.country.no-bg {height: 8.25rem;}
+  .people-second .list-box-layout .blue-box-first-list > li .number-unit > span,
+  .people-second .list-box-layout .blue-box-first-list > li .number-unit > span.long-num { font-size: 1.875rem; line-height: 1.2; letter-spacing: 0; }
+  .people-second .list-box-layout .blue-box-first-list > li .number-unit { font-size: 1.375rem; line-height: 1.363636; margin-top: 0.5rem; }
+  .people-second .list-box-layout .blue-box-first-list > li .list-subject { font-size: 1.125rem; line-height: 1.33333; }
+  .people-second .list-box-layout .blue-box-first-list.all-white-bg.two > li { height: 8.25rem; padding: 2rem 1.5rem; }
+  .people-second .list-box-layout .blue-box-first-list .blue,
+  .people-second .list-box-layout .blue-box-first-list .white { display: flex; align-items: center; justify-content: center; padding: 0; text-align: center;}
+  .people-second .list-box-layout .blue-box-first-list .white { margin-left: 0; margin-top: 1rem;}
+  .people-second .list-box-layout .blue-box-first-list.five > li {justify-content: flex-start; text-align: left; align-items: flex-end; padding: 0 0 1.714rem 1.714rem;}
+  .people-second .list-box-layout .blue-box-first-list.five > li .number-unit {margin-top: 0;}
+  .people-second .list-box-layout .blue-box-first-list.brick{display:block}/* [24.06.03][IYR] 6월업데이트 지역사회 > 푸른코끼리 */
+  .people-second .list-box-layout .blue-box-first-list.brick .flex-center {justify-content:left;padding:0 1.25rem;} /* [24.06.23][HJR] 지역사회 > 푸른코끼리 수정 */
+  .people-second .list-box-layout .blue-box-first-list.brick .flex-center .list-subject,
+  .people-second .list-box-layout .blue-box-first-list.brick .flex-center .number-unit {text-align:left;} /* [24.06.23][HJR] 지역사회 > 푸른코끼리 수정 */
+
+  .people-second .list-box-layout li .number-unit > span { font-size: 1.875rem; line-height: 1.2; }
+  .people-second .list-box-layout li .number-unit { font-size: 1.375rem; line-height: 1.4; }
+
+  .people-second .middot-list > li { padding-left: 1.5rem; position: relative; }
+  .people-second .middot-list > li:before { left: 0.5625rem; top: 0.5rem; width: 0.375rem; height: 0.375rem; }
+  .people-second .middot-list div,
+  .people-second .middot-list li { font-size: 1rem; line-height: 1.4; }
+  .people-second .middot-list.center-middot { margin-bottom: 1.5rem; }
+  .people-second .middot-list.center-middot li { padding-left: 0.75rem; }
+  .people-second .middot-list.center-middot li:nth-child(1):before { left: 2rem; }
+  .people-second .middot-list.center-middot li:nth-child(2):before { left: 1.125rem; }
+  .people-second .middot-list.center-middot.flex {display: block;}
+  .people-second .middot-list.center-middot.flex li:nth-child(1):before { left: 0.2rem;}
+  .people-second .middot-list.center-middot.flex li:nth-child(2):before { left: -0.2rem;}
+
+  .people-second .popup-gray-box.number-unit-box { padding: 1.5rem; }
+  .people-second .number-unit-list > li { padding: 1rem 0; }
+  .people-second .number-unit-list > li + li { padding: 1rem 0; }
+  .people-second .number-unit-list > li > span { font-size: 1.375rem; line-height: 1.875rem !important; }
+
+  .people-second .mo-scroll-area.step > div { margin-top: 0; }
+  .people-second .mo-scroll-area.step .list-box-layout .icon-list { width: 100%; /*min-width: 615px;*/ }
+  .people-second .list-box-layout .icon-list.step-list { padding-top: 1rem; overflow: visible; }
+  .people-second .list-box-layout .icon-list.step-list > li { position: relative; width: 12.125rem; height: auto; margin-bottom: 0; margin-left: 1rem; padding: 2.5rem 1rem 2rem; }
+  .people-second .list-box-layout .icon-list.step-list > li:first-child { margin-left: 0 !important;}
+  .people-second .list-box-layout .icon-list.step-list > li:last-child:after {display: none;}
+  .people-second .list-box-layout .icon-list.step-list li:nth-child(2n + 1) { margin-left: 1rem; }
+  .people-second .list-box-layout .icon-list.step-list > li .step-box { width: 5.25rem; height: 2rem; line-height: 2rem; padding: 0 0.9375rem; font-size: 1rem; top: -1rem; }
+
+  .people-second .popup-big-inner .list-box-layout .icon-list { width: 100%; }
+  .people-second .popup-big-inner .list-box-layout .icon-list li { width: 100%; height: 15.125rem; padding: 2rem 1.5rem; }
+  .people-second .popup-big-inner .list-box-layout .icon-list li + li { margin-left: 0; }
+  .people-second .popup-big-inner .list-box-layout .icon-list li:last-child { margin-bottom: 24px; }
+  .people-second .popup-big-inner .list-box-layout .icon-list li .number-unit { margin-top: 0.25rem; }
+
+  .people-second .list-box-layout .icon-list li { width: 9.5rem; height: 10.875rem; padding: 2rem 1rem; margin-bottom: 1rem; }
+  .people-second .list-box-layout .icon-list li .icon-box { width: 4.5rem; height: 4.5rem; margin: 0 auto; }
+  .people-second .list-box-layout .icon-list li .icon-box + .text-box { margin-top: 1rem !important; font-size: 1rem; line-height: 1.4; letter-spacing: -0.8px; word-spacing: -0.8px; }
+  .people-second .list-box-layout .icon-list.two { display: flex; flex-wrap: wrap; }
+  .people-second .list-box-layout .icon-list.two li { width: calc((100% - 1rem) / 2) !important;  margin-left: 0; }
+  .people-second .list-box-layout .icon-list.two li:nth-child(2n) { margin-left: 1rem !important; }
+  .people-second .list-box-layout .icon-list.two + .additional-info.text-right { letter-spacing: -0.8px; word-spacing: -0.8px; }
+  .people-second .pt-0 {padding-top: 0;}
+  .people-second .list-box-layout .icon-list li:nth-child(3n+1) { margin-left: 1rem; }
+  .people-second .list-box-layout .icon-list li:nth-child(2n + 1) { margin-left: 0; }
+  .people-second .list-box-layout .icon-list { width: 20rem; }
+  .people-second .list-box-layout .icon-list li:nth-child(3n+1) { margin-left: 1rem; }
+  .people-second .list-box-layout .icon-list li:nth-child(2n + 1) { margin-left: 0; }
+
+  .people-second .list-box-layout .blue-circle-number-list > li { padding-left: calc(1.5rem + 0.5rem); margin-bottom: 1.5rem; }
+  .people-second .list-box-layout .blue-circle-number-list > li:before { width: 1.5rem; height: 1.5rem; line-height: 1.5rem; font-size: 1rem; }
+  .people-second .list-box-layout .blue-circle-number-list > li:not(:last-child):after { left: 0.75rem; }
+  .people-second .list-box-layout .blue-circle-number-list .popup-sub-title { margin-bottom: 1rem !important; }
+
+  .people-second .list-box-layout .row-icon-list > li { margin-bottom: 1rem; }
+  .people-second .list-box-layout .row-icon-list > li > div.float .icon-box { width: 3rem; height: 3rem; }
+  .people-second .list-box-layout .row-icon-list > li > div.float .text-box { width: 75%; min-width: 12.5rem; max-width: 42rem; margin-left: 1rem; }
+  .people-second .list-box-layout .row-icon-list.long-icon-list > li > div.float > * { width: 100%; }
+  .people-second .list-box-layout .row-icon-list.long-icon-list > li > div.float .icon-box { width: 100%; height: 3.375rem; margin-top: 0 !important; margin-bottom: 0 !important;  }
+  .people-second .list-box-layout .row-icon-list.long-icon-list > li > div.float .text-box { width: 100%; margin-left: 0 !important; margin-top: 1.625rem !important; margin-bottom: 0; }
+  .people-second .list-box-layout .row-icon-list > li > div.float .text-box > strong + .text-box-detail { margin-top: 1rem; line-height: 1.4; }
+  .people-second .list-box-layout .row-icon-list > li > div.float .text-box > .text-box-detail { margin-top: 0.1875rem; line-height: 1.4; }
+  .people-second .list-box-layout .row-icon-list.long-icon-list > li > div.float .text-box > strong + .text-box-detail { margin-top: 0.5rem; line-height: 1.4; }
+
+  .people-second .icon-text-list > li { padding: 2rem 1.5rem; margin-bottom: 1rem; }
+  .people-second .icon-text-list > li .icon-box { vertical-align: top; width: 3rem; }
+  .people-second .icon-text-list > li .text-box { padding-left: 1rem; }
+  .people-second .icon-text-list > li .text-box > strong + .text-box-detail { margin-top: 1rem; line-height: 1.4; }
+  .people-second .icon-text-list > li.popup-white-box { padding: 2rem 1.5rem; }
+
+  .people-second .list-box-layout.tab-menu { width: 100%; height: 3.75rem; line-height: 3.75rem; }
+  .people-second .list-box-layout.tab-menu > ul.float { width: 100%; height: 100%; padding: 0 1.25rem; }
+  .people-second .list-box-layout.tab-menu > ul.float > li { width: auto !important; display: inline-block;}
+  .people-second .list-box-layout.tab-menu > ul.float > li + li { margin-left: 2rem !important; float: left !important; }
+  .people-second .list-box-layout.tab-menu > ul.float > li > button { padding: 1.25rem 0; }
+  .people-second .list-box-layout.tab-menu > ul.float > li > button.popup-sub-gray-title { font-size: 0.875rem; line-height: 1.4;}
+
+  .people-second .mo-scroll-table .overflow150{width:150%}/* [24.06.03][IYR] 6월업데이트 지역사회 > 삼성 희망디딤돌 */
+
+  .activity-list-wrap+.activity-list-wrap{margin-top:1.5rem}
+  .activity-list-wrap{border-bottom:none}
+  .activity-list-wrap .activity-list-title{height:2.6875rem;line-height:2.6875rem;padding:0 1.5rem;font-size:1.125rem;}
+  .activity-list-wrap .activity-list-inner{padding:1.5rem;background-color: #F7F7F7}
+  .activity-list-wrap .activity-list-cont{padding:0;}
+  .activity-list-wrap .activity-list-cont+.activity-list-cont{padding-top:1rem}
+  .activity-list-wrap .activity-list-cont li{float:none;border-right:none;border-bottom:1px solid #ddd}
+  .activity-list-wrap .activity-list-cont li:last-child{border:none}
+  .activity-list-wrap .activity-list-cont.two li{width:100%}
+  .activity-list-wrap .activity-list-cont.three li:nth-child(1),
+  .activity-list-wrap .activity-list-cont.three li:nth-child(2),
+  .activity-list-wrap .activity-list-cont.three li:nth-child(3){width:100%}
+  .activity-list-wrap .activity-list-cont dl{padding:1rem 0;}
+  .activity-list-wrap .activity-list-cont dl dt{font-size:1rem;line-height: 1.375rem}
+  .activity-list-wrap .activity-list-cont dl dd{margin-top:0.25rem;text-align:left;font-size:1rem;line-height: 1.375rem}
+  .activity-list-wrap .activity-list-cont dl dd .number{margin:0 0.25rem 0 0;font-size:1.375rem;}
+  .activity-list-wrap .activity-list-cont dl dd .txt{margin-right:0.25rem;}
+  .activity-list-wrap .activity-list-cont li:first-child dl{padding-top:0}
+  .activity-list-wrap .activity-list-cont li:last-child dl{padding-bottom:0}
+  .activity-list-wrap .activity-list-cont.two:first-child li:last-child{padding-bottom:1rem}
+}

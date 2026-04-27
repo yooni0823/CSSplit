@@ -1,0 +1,317 @@
+@charset "utf-8";
+
+/* 주석 : [작업일][작업자] 작업내용 */
+/* [24.05][OSK] 고도화 - 디자인 버튼 가이드 추가 */
+
+/* reset */
+body { min-width: 320px; }
+body * { font-family: 'SamsungOne', 'Nanum Gothic', '맑은 고딕', 'Apple SD Sandol Gothic Neo', AppleGothic, sans-serif; box-sizing: border-box; line-height: 1; word-wrap: break-word; word-break: keep-all; }
+body, div, p, h1, h2, h3, h4, dl { margin: 0; padding: 0; }
+ul, ol, li { margin: 0; padding: 0; list-style-type: none; }
+button, img { border: 0; }
+button { cursor: pointer; background-color: transparent; padding: 0; }
+img { max-width: 100%; object-fit: cover; }
+a { text-decoration: none; color: #000; }
+body.stop { width: 100%; height: 100vh; overflow: hidden; }
+em { font-style: normal; }
+.mt-64 { margin-top: 4.571rem !important; }
+.blind { position: absolute; overflow: hidden; width: 1px; height: 1px; padding: 0; border: 0; margin: -1px; clip: rect(0, 0, 0, 0);clip-path: inset(50%);text-transform: none; white-space: nowrap; } /* [24.07.19][HJR] IOS 보완 */
+.pc-only.inb {display: inline-block !important;}
+
+.uwy .uai{display: none !important}
+
+/* common */
+.mo-block { display: inline-block; line-height: inherit; font-family: inherit; margin-left: 1.42857rem; }
+.mo-only { display: none !important; line-height: inherit; font-family: inherit; }
+.pc-block { display: block; margin-left: 0; line-height: inherit; font-family: inherit; }
+.pc-only { display: block !important; line-height: inherit; font-family: inherit; }
+.pc-only.off { display: none !important; }
+
+.ta-left { text-align: left !important;}
+.ta-center { text-align: center !important;}
+.ta-right { text-align: right !important;}
+
+.va-top {vertical-align: top !important;}
+.va-middle {vertical-align: middle !important;}
+.va-bottom {vertical-align: bottom !important;}
+
+.fc-white { color: #fff !important;}
+.fc-primary.dark { color: #006bea !important;}
+.fc-primary { color: #2189FF !important;}
+.fc-primary.light { color: #68aeff !important;}
+.fc-black { color: #fff !important;}
+.fc-75 {color: #555 !important;}
+.fc-55 {color: #555 !important;}
+
+.ls-0 {letter-spacing: 0;}
+.ls-05 {letter-spacing: -0.05em;}
+
+h2 {font-size: 4.28571rem; line-height: 5.14285rem; font-weight: 700;}
+h3 {font-size: 3.42857rem; line-height: 4.14285rem; font-weight: 700;}
+h4 {font-size: 2.71428rem; line-height: 3.28571rem; font-weight: 700;}
+.tit-group.tit-group-type02 .group-tit{line-height:5.143rem;margin-bottom:0}
+.tit-group.tit-group-type02 .group-tit + .group-txt-big{margin-top:2.286rem;}
+
+lottie-player {
+  --lottie-player-seeker-track-color: #e48509;
+  --lottie-player-seeker-thumb-color: #ffcc00;
+}
+
+
+/* btn style */
+/* [24.05][OSK] 고도화 - 버튼 hover, disabled 스타일 추가 */
+/* btn - basic */
+.btn-area { position: relative; text-align: center;}
+/* button {line-height: 0 !important; } */
+.btn { display: inline-block; position: relative; height: 2.85714rem; font-size: 1rem; color: #000; font-weight: 700; line-height: 2.85714rem; box-sizing: border-box; text-align: center; cursor: pointer; pointer-events: auto;}
+.btn.white { color: #fff; }
+.btn:hover,
+.btn:focus{ color: #555;}
+.btn.disabled { color: #ddd;}
+.btn.white:hover,
+.btn.white:focus{ color: #ddd;}
+.btn.white.disabled { color: #555;}
+.btn.disabled, button.disabled, button[disabled] { cursor: default;}
+.btn .pc-only{font-weight:normal}
+
+/* btn - text */
+.btn-text::after { display: block; content: ''; position: absolute; top: 2.28571rem; left: 0; width: 100%; height: 2px; background: #000;/* line-height: 19rem; border-bottom: 2rem solid #000; */ }
+.btn-text:hover::after,
+.btn-text:focus::after{background-color: #555;}
+.btn-text.disabled::after {background-color: #ddd;}
+
+.btn-text.white::after { background: #fff; }
+.btn-text.white:hover::after,
+.btn-text.white:focus::after{background-color: #ddd;}
+.btn-text.white.disabled::after {background-color: #555;}
+
+/* btn - round */
+.btn-round { background: #fff; color: #000; line-height: normal; padding: 0.71428rem 1.71428rem 0.78571rem; border-radius: 1.42857rem; }
+.btn-round:hover,
+.btn-round:focus{ background-color: #ddd;color: #313131;}
+.btn-round.disabled { background-color: #555;color: #8F8F8F;}
+
+.btn-round.black { background: #000; color: #fff; }
+.btn-round.black:hover,
+.btn-round.black:focus{ background: #555; color: #eee; }
+.btn-round.black.disabled {background-color: #ddd; color: #aaa;}
+
+/* btn - round + border */
+.btn-round.line {border:1px solid #000;background-color: transparent;}
+.btn-round.line:hover,
+.btn-round.line:focus{border-color: #555;background-color: rgba(0,0,0,.05);color: #555;}
+.btn-round.line.disabled {border-color: #ddd;background-color: transparent;color: #ddd;}
+
+.btn-round.line.white {border:1px solid #fff;}
+.btn-round.line.white:hover,
+.btn-round.line.white:focus{border-color: #ddd;background-color: rgba(255,255,255,.15);color: #ddd;}
+.btn-round.line.white.disabled {border-color: #555;background-color: transparent;color: #555;}
+
+/* btn - round + play */
+.btn-round.play { line-height: 1.5rem; }
+.btn-round.play::after { display: inline-block; content: ''; width: 1.07142rem; height: 1.07142rem; background: url('/sec/sustainability/assets/img/pc/common/mdi/icon_play.png') no-repeat center center/contain; margin-left: 0.28571rem; vertical-align: -0.14285rem;}
+.btn-round.play.line {padding-top: 0.6428em;}
+.btn-round.play:hover::after,
+.btn-round.play:focus::after{opacity: .67;}
+.btn-round.play.line.white::after {background-image: url('/sec/sustainability/assets/img/pc/common/mdi/icon_play_white.png');}
+.btn-round.play.disabled::after {background-image: url('/sec/sustainability/assets/img/pc/common/mdi/icon_play_white.png');opacity: .2;}
+
+/* btn - round + more */
+.btn-round.more {border: 1px solid #000;}
+.btn-round.more::after { display: inline-block; content: ''; width: 1rem; height: 0.57142rem; background: url('/sec/sustainability/assets/img/pc/common/mdi/arrow_open.png') no-repeat center center/contain; margin-left: 0.28571rem; vertical-align: 0;}
+.btn-round.more:hover::after,
+.btn-round.more:focus::after{opacity: .67;}
+.btn-round.more.disabled::after {opacity: .15;}
+.btn-round.more.white::after {background-image: url('/sec/sustainability/assets/img/pc/common/mdi/arrow_open_white.png');}
+
+/* btn - icon + anchor, download, shortcuts */
+.btn-icon { text-align: left; padding-left:0; }
+.btn-icon::after { display: inline-block; content: ''; margin-left: 0.42857rem; }
+.btn-icon.anchor::after {}
+.btn-icon.download::after { width: 1.07142rem; height: 1.07142rem; background: url('/sec/sustainability/assets/img/pc/common/mdi/icon_download.png') no-repeat center center/contain; margin-left: 0.28571rem; vertical-align: -0.21428rem; }
+.btn-icon.download.white::after { background-image: url('/sec/sustainability/assets/img/pc/common/mdi/icon_download_white.png'); }
+.btn-icon.download.big::after {width: 2.85714rem;height: 2.85714rem;background-size: auto 2.64285rem;} /* [24.05][OSK] big size 추가 */
+.btn-icon.shortcuts::after {width: 1.14285rem; height: 1.14285rem; background: url('/sec/sustainability/assets/img/pc/common/mdi/icon_shortcuts.png') no-repeat center center/contain; background-size:0.85714rem 0.85714rem; margin-left: 0.28571rem; vertical-align: -0.21428rem; }
+.btn-icon.shortcuts.white::after {background-image: url('/sec/sustainability/assets/img/pc/common/mdi/icon_shortcuts_white.png');}
+.btn-download {}
+
+.btn-icon.btn-round { padding-left:1.71428rem; text-align: center; }
+
+/* btn - basic + more */
+.btn-more {}
+.btn-more::after { display: inline-block; content: ''; width: 0.57142rem; height: 0.85714rem; background: url('/sec/sustainability/assets/img/pc/common/mdi/arrow_right.png') no-repeat center center/contain; margin-left: 0.28571rem; vertical-align: 0; }
+.btn-more.big::after {width:2.85714rem; height: 2.85714rem; background-size: 1.42857rem 2.14285rem;} /* [24.05][HJR] 고도화 - 더보기 버튼 사이즈 추가 */
+.btn-more:hover::after {opacity: .67;}
+.btn-more.white::after {background-image: url('/sec/sustainability/assets/img/pc/common/mdi/arrow_right_white.png');} /* [24.05][OSK] 고도화 - 흰색 추가 */
+
+/* btn - 아래로 이동 */
+.btn-go {font-size: 1rem;font-weight:700;}
+.btn-go:after {content: '';display: inline-block;margin-left: 0.28571rem;width: 0.85714rem;height: 1.14285rem;background: url('/sec/sustainability/assets/img/pc/common/mdi/arrow-bottom.png') no-repeat 50% / contain;vertical-align: -0.21428rem;}
+.btn-go:hover,
+.btn-go:focus{opacity: .67;}
+
+/* btn - etc */
+.btn-back {width: 2.85714rem; height: 2.85714rem; background: url('/sec/sustainability/assets/img/pc/common/mdi/icon_back.png') no-repeat center center/contain; background-size: 2.64285rem 2.14285rem;}
+.btn-plus::after {display: block; content: ''; width: 3.42857rem; height: 3.42857rem; background: url('/sec/sustainability/assets/img/pc/common/mdi/icon_plus.png') no-repeat center center/contain; margin: 0 auto;}
+.btn-plus:hover::after,
+.btn-plus:focus::after{opacity: .67;} /* [24.05][OSK] hover 스타일 추가 */
+.btn-filter {font-size: 1.57142rem; line-height: 2.14285rem; font-weight: 700; letter-spacing: 0;}
+.btn-filter::before { display: inline-block; content: ''; width: 1.71428rem; height: 1.71428rem; background: url('/sec/sustainability/assets/img/pc/common/mdi/icon_filter.png') no-repeat center center/contain; background-size: 1.57142rem; margin-right: 0.64285rem; vertical-align: -0.28571rem; }
+.btn-facebook { width: 1.71428rem; height: 1.71428rem; background: url('/sec/sustainability/assets/img/pc/common/mdi/icon_facebook.png') no-repeat 0 0/contain; }
+.btn-insta { width: 1.71428rem; height: 1.71428rem; background: url('/sec/sustainability/assets/img/pc/common/mdi/icon_insta.png') no-repeat 0 0/contain; }
+.btn-twitter { width: 1.71428rem; height: 1.71428rem; background: url('/sec/sustainability/assets/img/pc/common/mdi/icon_twitter.png') no-repeat 0 0/contain;}
+.btn-url { width: 1.71428rem; height: 1.71428rem; background: url('/sec/sustainability/assets/img/pc/common/mdi/icon_link.png') no-repeat 0 0/contain;}
+
+/* tag */
+.tag { display: inline-block; padding: 0.57142rem 1.14285rem; font-size: 0.85714rem; line-height: 1.14285rem; background: rgba(255, 255, 255, 0.3); border: 1px solid rgba(0, 0, 0, 0.15); border-radius: 2.14285rem; margin: 0 0.57142rem 1.14285rem 0; }
+
+.ratio-image  { position: relative; }
+.ratio-image::before { display: block; content: ''; }
+.ratio-image > * { display: block; position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: fill; }
+.r-1x1::before {padding-top:100%}
+.r-3x2::before {padding-top:calc(2 / 3 * 100%);}
+.r-4x3::before {padding-top:calc(3 / 4 * 100%);}
+.r-16x9::before {padding-top:calc(9 / 16 * 100%);}
+.r-21x9::before {padding-top:calc(9 / 21 * 100%);}
+
+.bg-area { display: inline-block; position: relative; width: 100%; font-size: 0; }
+.bg-area img { width: 100%; }
+.bg-area .bg-main { position: relative; opacity: 1; visibility: visible; }
+.bg-preview, .bg-main { display: inline-block; position: absolute; top: 0; left: 0; visibility: hidden; width: 100%; height: auto; }
+
+/* table */
+.tbl {width: 100%; table-layout: fixed; border-spacing:0; border-collapse:collapse;}
+.tbl caption { position: absolute; overflow: hidden; width: 1px; height: 1px; padding: 0; border: 0; margin:-1px; white-space: nowrap; clip: rect(0, 0, 0, 0); }
+.tbl thead th {background: #555; padding: 1rem 0; text-align: center; color: #fff; font-size: 1.28571rem; line-height: 1.71428rem; vertical-align: middle;}
+.tbl tbody tr {border-bottom: 1px solid #ddd;}
+.tbl tbody th {text-align: center; padding: 1.71428rem 0; color: #555; font-weight: 700; font-size: 1.28571rem; line-height: 1.71428rem; vertical-align: middle;}
+.tbl tbody th.va-top {vertical-align: top;}
+.tbl tbody td { text-align: center; padding: 1.71428rem 0; color: #757575; font-size: 1.28571rem; line-height: 1.71428rem; vertical-align: middle;}
+.tbl.left {}
+.tbl.left thead th {text-align: left; padding-left: 2.28571rem;}
+.tbl.left tbody th {text-align: left; padding-left: 2.28571rem; vertical-align: top;}
+.tbl.left tbody td {text-align: left; padding-left: 0.85714rem;}
+.tbl.left th.ta-center, .tbl.left td.ta-center {padding-left: 0;}
+/* [24.05][OSK] 고도화 - 컬러 타입 추가 */
+.tbl.tbl-dark thead th {background-color:#313131; color:#fff;}
+.tbl.tbl-light thead th {background-color:#757575; color:#fff;}
+
+/* paging */
+.paging { text-align: center; margin-top: 8.57142rem;}
+.paging button { display: inline-block; background: url('/sec/sustainability/assets/img/pc/common/mdi/arrow_left_paging.png') no-repeat center center/contain; width: 0.85714rem; height: 1.28571rem; vertical-align: middle;}
+.paging button.btn-paging-next {background-image: url('/sec/sustainability/assets/img/pc/common/mdi/arrow_right_paging.png');}
+.paging button:hover {opacity: .67;} /* [24.05][OSK] hover 스타일 추가 */
+.paging .page-number { display: inline-block; font-size: 1.28571rem; font-weight: 700; line-height: 1.71428rem; margin: 0 2.78571rem; vertical-align: middle;}
+.paging .page-number span { display: inline-block; width: 2.85714rem; text-align: center;}
+
+.text-center {text-align: center;}
+
+.news-section {padding: 14.28571rem 0;background: #F7F7F7; overflow: hidden;}
+.news-section .group-tit.eng {margin-bottom: 4.2rem;}
+.swiper-news {font-size: 0;  margin: 0 auto; width: 99.4286rem; overflow: visible !important;}
+.swiper-news .swiper-slide {display: inline-block; margin-right: 1.7143rem; width: 32rem; background: #fff;}
+.swiper-news .swiper-slide:last-child { margin-right: 0; }
+.swiper-news .image-area {width: 32rem; height: 24rem; overflow: hidden;}
+.swiper-news .image-area img {width: 100%; height: 100%; object-fit: cover;}
+.swiper-news .text-area {padding: 2.8571rem 2.2857rem 3.4286rem; overflow:hidden;}
+.swiper-news .text-area a {display: block;}
+.swiper-news .date {display: block;font-size: 1rem;color: #757575;line-height: 1.3571rem;}
+.swiper-news .tit {display: block;margin-top: 1.1429rem;font-size: 1.5714rem;line-height: 2.1429rem;height: 4.2857rem; overflow: hidden;text-overflow: ellipsis;display: -webkit-box;-webkit-line-clamp: 2;-webkit-box-orient: vertical;}
+.swiper.swiper-news .news-navigation .btn-news-prev,
+.swiper.swiper-news .news-navigation .btn-news-next {display: block;width: 2.85714rem;height: 2.85714rem; background: url(/sec/sustainability/assets/img/pc/common/mdi/arrow_round_left.png) no-repeat 0 0/contain; content: "";position: absolute;top: 50%;z-index: 1;}
+.swiper.swiper-news .news-navigation .btn-news-prev {left: 0; top: 16rem; }
+.swiper.swiper-news .news-navigation .btn-news-next {right: 0; top: 16rem; background-image: url(/sec/sustainability/assets/img/pc/common/mdi/arrow_round_right.png);}
+.swiper.swiper-news .news-navigation .btn-news-prev:hover { background: url(/sec/sustainability/assets/img/pc/common/mdi/arrow_round_left_hover.png) no-repeat 0 0/contain; }
+.swiper.swiper-news .news-navigation .btn-news-next:hover { background: url(/sec/sustainability/assets/img/pc/common/mdi/arrow_round_right_hover.png) no-repeat 0 0/contain; }
+.swiper.swiper-news .news-navigation .btn-news-prev:disabled,
+.swiper.swiper-news .news-navigation .btn-news-prev:disabled:hover { background: url(/sec/sustainability/assets/img/pc/common/mdi/arrow_round_left_disabled.png) no-repeat 0 0/contain; }
+.swiper.swiper-news .news-navigation .btn-news-next:disabled,
+.swiper.swiper-news .news-navigation .btn-news-next:disabled:hover{ background: url(/sec/sustainability/assets/img/pc/common/mdi/arrow_round_right_disabled.png) no-repeat 0 0/contain; }
+.swiper-news .indicator {margin-top: 6.28571rem;position: static;text-align: center;}
+
+@media screen and (max-width: 1392px) {
+  .prd-list.swiper-wrapper{ max-width: 99.42857rem;}
+  .people-conts01 .pp-cont01 .prd-cont .prd-list.swiper-wrapper > li:first-child {  margin-left: 0; }
+}
+
+@media screen and ( max-width: 535px ) {
+  /* 접근성 수정 1차 - ios a태그 포커스 수정 */
+  .blind.wd-ht-auto { width: auto; height: auto; }
+  .blind.ft-1 { font-size: 1px; }
+  .blind.download,
+  .blind.more { width: 1.5rem; height: 1.5rem; }
+  .blind.plus { width: 2rem; height: 2rem; }
+  /* // 접근성 수정 1차 - ios a태그 포커스 수정 */
+
+  .mo-block { display: block; margin-left: 0;}
+  .mo-only { display: block !important; }
+  .mo-only.off { display: none !important; }
+  .pc-block { display: inline; margin-left: 0.25rem;}
+  .pc-only { display: none !important; }
+  .pc-only.inb {display: none !important;} /* 23.08.01 #0259 iTEXT 관련 내용 숨김 */
+
+  /* btn */
+  h2 {}
+  h3 {font-size: 1.875rem; line-height: 2.25rem;}
+  h4 {font-size: 1.375rem; line-height: 1.875rem;}
+  .tit-group.tit-group-type02 .group-tit{line-height:2.571rem}
+  .tit-group.tit-group-type02 .group-tit + .group-txt-big{font-size:1.25rem;margin-top:1.875rem}
+
+  .btn {font-size: 0.875rem; line-height: 1.1875rem; height: auto;}
+  .btn-text {font-size: 0.875rem; line-height: 1.1875rem; pointer-events: auto;}
+  .btn-text::after {top: 1.25rem;}
+  .btn-back {width: 2rem; height: 2rem; background-size: 1.8128rem 1.5rem;}
+  .btn-round {height: 2.5rem; padding: 0.625rem 1.5rem;}
+  .btn-round.play {padding-top:.5625rem;padding-bottom:.5625rem;} /* [24.05][OSK] 고도화 - play icon 버튼 간격 보완 */
+  .btn-more::after {width: 0.75rem; height: 1.125rem;}
+  .btn-more.big::after {width: 0.75rem; height: 1.125rem; background-size: 0.75rem 1.125rem;} /* [24.05][HJR] 고도화 - 더보기 버튼 사이즈 추가 */
+  /* 접근성 수정 1차 - ios a태그 포커스 수정 */
+  .btn-plus {display: inline-block; width: 1.5rem; height: 1.5rem;}
+  /* // 접근성 수정 1차 - ios a태그 포커스 수정 */
+  .btn-plus {display: inline-block; width: 1.5rem; height: 1.5rem;}
+  .btn-plus::after {display: inline-block; width: 1.5rem; height: 1.5rem;}
+  .btn-filter { font-size: 1rem; line-height: 1.375rem;}
+  .btn-icon.download {height: auto;}
+  .btn-icon.download.big::after { display: block; width: 1.25rem;height: 1.25rem; margin: 0; background-size: auto 100%;} /* [24.05][OSK] 고도화 - big size 추가 */
+
+  /* tag */
+  .tag { font-size: 0.625rem; line-height: 0.875rem;}
+
+  /* table */
+  .tbl thead th {padding: 0.75rem 0; font-size: 0.875rem; line-height: 1.1875rem;}
+  .tbl tbody th {padding: 1rem 0; font-size: 0.875rem; line-height: 1.1875rem;}
+  .tbl tbody td { padding: 1rem 0; font-size: 0.875rem; line-height: 1.1875rem;}
+
+  /* paging */
+  .paging { margin-top: 4.5rem;}
+  .paging button {width: 1.5rem; height: 1.5rem; background-size: 0.75rem 1.125rem; }
+  .paging .page-number { font-size: 1rem; line-height: 1.375rem; margin: 0 1.5rem;}
+  .paging .page-number span {}
+
+  .mt-64 { margin-top: 3rem !important; }
+  .word-break {word-break: break-all !important;}
+
+  /* swiper-news */
+  .news-section {margin-top:8.75rem;padding: 7.5rem 0;}
+  .news-section .ta-center {padding: 0 1.25rem;}
+  .news-section  .group-tit.eng {margin-bottom: 2.5rem;}
+  .swiper.swiper-news {width: 20rem; overflow: visible;}
+  .swiper-news .swiper-slide {width: 17.5rem;}
+  .swiper-news .swiper-slide .text-area {padding: 1.25rem 1.25rem 1.875rem 1.25rem;background: #fff}
+  .swiper-news .image-area {width: 100%; height: 13.125rem;}
+  .swiper-news .tit {margin-top:0.5rem; font-size: 1.125rem;line-height: 1.5rem;height: 3rem;}
+  .swiper-news .date {font-size: 0.875rem; line-height: 1.188rem;}
+  .swiper-news .indicator {margin-top: 2.875rem;}
+  .swiper.swiper-news .news-navigation {display:flex; justify-content: center; width:100%; margin-top: 3rem;}
+  .swiper.swiper-news .news-navigation .btn-news-prev,
+  .swiper.swiper-news .news-navigation .btn-news-next {position:relative;display: block;width:5rem; height:1.5rem;right: initial; left: initial; top: initial; bottom: 0rem; transform:initial;}
+  .swiper.swiper-news .news-navigation .btn-news-prev { background:url(/sec/sustainability/assets/img/pc/common/mdi/arrow_prev.png) no-repeat 0 0/contain; margin-right:0.75rem;}
+  .swiper.swiper-news .news-navigation .btn-news-prev:after {content:''; display:block; position:absolute; right:-0.75rem;  width:2px; height:0.875rem; background:#000; top:50%; transform: translateY(-50%);}
+  .swiper.swiper-news .news-navigation .btn-news-prev:disabled,
+  .swiper.swiper-news .news-navigation .btn-news-prev:disabled:hover,
+  .swiper.swiper-news .news-navigation .btn-news-prev:hover {background:url(/sec/sustainability/assets/img/pc/common/mdi/arrow_prev.png) no-repeat 0 0/contain;}
+  .swiper.swiper-news .news-navigation .btn-news-next { background:url(/sec/sustainability/assets/img/pc/common/mdi/arrow_next.png) no-repeat 0 0/contain; margin-left:0.75rem;}
+  .swiper.swiper-news .news-navigation .btn-news-next:disabled,
+  .swiper.swiper-news .news-navigation .btn-news-next:disabled:hover,
+  .swiper.swiper-news .news-navigation .btn-news-next:hover {background:url(/sec/sustainability/assets/img/pc/common/mdi/arrow_next.png) no-repeat 0 0/contain }
+}

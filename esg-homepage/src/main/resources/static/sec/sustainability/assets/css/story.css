@@ -1,0 +1,604 @@
+.focus .story-content {position: relative;}
+.focus .story-content .list-area {padding-top: 160px; padding-bottom: 226px; letter-spacing: -0.05em;}
+.focus .story-content .list-area ul {max-width: 1156px; margin: 0 auto;}
+.focus .story-content .list-area ul::after {display: block; content: ''; clear: both;}
+.focus .story-content .list-area li {float: left; width: calc((100% - 46px) / 3); margin-bottom: 70px;}
+.focus .story-content .list-area li:nth-child(3n+1) {margin-left: 0;}
+.focus .story-content .list-area li .image-area {width: 100%; aspect-ratio: 370/370;}
+.focus .story-content .list-area li .text-area { margin-top: 24px;}
+.focus .story-content .list-area li .text-area .title {display: block; height: 60px; margin-top: 16px; font-size: 22px; line-height: 30px; font-weight: 700;}
+.focus .story-content .list-area li + li {margin-left: 23px;}
+
+.focus .story-content .btn-area.scroll {position: absolute; bottom: 40px; left: 50%; transform: translate(-50%, 0);}
+.focus .story-content .btn-area.scroll > .text {display: block; font-size: 14px; line-height: 19px; font-weight: 700; padding-bottom: 2px; border-bottom: 2px solid #fff; margin-bottom: 16px; color: #fff; margin-top: 0;}
+.focus .story-content .btn-area.scroll.gray > .text { color: #757575; border-color: #757575;}
+.focus .story-content .btn-scroll::before {display: block; content: ''; width: 40px; height: 40px; background: url('/sec/sustainability/assets/img/pc/common/mdi/icon_scroll.png') no-repeat center center/contain; margin: 0 auto;}
+.focus .story-content .gray .btn-scroll::before {background-image: url('/sec/sustainability/assets/img/pc/common/mdi/icon_scroll_gray.png')}
+.focus .story-content .story-detail {}
+.focus .story-content .story-detail > div {position: relative; width: 100%; height: 1000px; /* aspect-ratio: 1920/1000;  */letter-spacing: -0.05em;}
+.focus .story-content .story-detail > div .text-area { position: absolute; top: 50%; left: 50%; transform: translate(-50%,-50%); width: 1204px; color: #fff;  text-align: center;}
+.focus .story-content .story-detail > div:last-of-type .text-area {transform: translate(-50%, calc(-50%));}
+.focus .story-content .story-detail > div .text-area span {display: block; width: 100%; text-align: center; }
+.focus .story-content .story-detail > div .sup {font-size: 22px; line-height: 30px; font-weight: 700; letter-spacing: 0;}
+.focus .story-content .story-detail > div .sup + .title {margin-top: 24px;}
+.focus .story-content .story-detail > div .title {font-size: 48px; line-height: 58px; font-weight: 700;}
+.focus .story-content .story-detail > div .text {font-size: 18px; line-height: 30px; margin-top: 48px;}
+.focus .story-content .story-detail > div.sd-cut1 .title {font-size: 60px; line-height: 72px;}
+.focus .story-content .story-detail > div.sd-cut1 .text {font-size: 18px; line-height: 24px; margin-top: 48px;}
+
+.focus .story-content [class *= "sd-cut"]{height: 100vh !important;overflow: hidden;position: relative}
+
+.focus .story-content .ifts > div .text-area  {transform: translate(-50%, calc(-50% - 40px));}
+.focus .story-content .ifts .sd-cut1 { background: url('/sec/sustainability/assets/img/pc/focus/mdi/img_ifts01.png') no-repeat center center/cover;}
+.focus .story-content .ifts .sd-cut1 .text {font-weight: 700;}
+.focus .story-content .ifts .sd-cut2 {height: auto; background: url('/sec/sustainability/assets/img/pc/focus/mdi/img_ifts02.png') no-repeat center center/cover;}
+.focus .story-content .ifts .sd-cut3 { background: url('/sec/sustainability/assets/img/pc/focus/mdi/img_ifts02.png') no-repeat center center/cover;}
+.focus .story-content .ifts .sd-cut3 .text-area {transform: translate(-50%, calc(-50% - 33px));}
+.focus .story-content .ifts .sd-cut3 .title {letter-spacing: -0.05em;}
+.focus .story-content .ifts .sd-cut3 .sub-text {font-size: 14px; line-height: 19px; margin-top: 16px; }
+.focus .story-content .ifts .sd-cut4 {background: #fff;}
+.focus .story-content .ifts .sd-cut4 .circle-icon {position: relative;  width: 120px; height: 120px; margin: 0 auto 64px;}
+.focus .story-content .ifts .sd-cut4 .circle-icon i {display: block; position: absolute; top: 0; left: 0;  width: 100%; height: 100%; border-radius: 50%; overflow: hidden;}
+.focus .story-content .ifts .sd-cut4 .circle-icon i::before {display: block; content: ''; position: absolute; width: 100%; height: 100%; background: url('/sec/sustainability/assets/img/pc/focus/mdi/icon_story01.png') no-repeat center center/contain; z-index: 2;}
+.focus .story-content .ifts .sd-cut4 .circle-icon i.ci2::before {background: url('/sec/sustainability/assets/img/pc/focus/mdi/icon_story02.png') no-repeat center center/contain; z-index: 1}
+.focus .story-content .ifts .sd-cut4 .circle-icon i.ci3::before {background: url('/sec/sustainability/assets/img/pc/focus/mdi/img_ifts03.png') no-repeat center center/cover; z-index: 1}
+.focus .story-content .ifts .sd-cut4 .sup {color: #2189ff;}
+.focus .story-content .ifts .sd-cut4 .title {position: relative; color: #757575; text-align: center;}
+.focus .story-content .ifts .sd-cut4 .title .mask {display: inline-block; width: auto; color: #000;}
+.focus .story-content .ifts .sd-cut4 .text {font-size: 18px; line-height: 24px; margin-top: 48px; }
+.focus .story-content .ifts .sd-cut4 .sub-text {font-size: 14px; line-height: 19px; margin-top: 16px; }
+.focus .story-content .ifts .sd-cut5 { background: url('/sec/sustainability/assets/img/pc/focus/mdi/img_ifts03.png') no-repeat center center/cover;}
+.focus .story-content .ifts .sd-cut5 .text-area::before {display: block; content: ''; width: 160px; height: 160px; background: url('/sec/sustainability/assets/img/pc/focus/mdi/icon_story03.png') no-repeat center center/contain; margin: 0 auto 24px;}
+.focus .story-content .ifts .sd-cut5 .title {font-size: 48px; line-height: 58px;}
+.focus .story-content .ifts .sd-cut5 .text {font-size: 18px; line-height: 24px; font-weight: 400; margin-top: 40px;}
+.focus .story-content .ifts .sd-cut5 .sub-text  {margin-top: 40px; font-size: 18px; line-height: 24px; font-weight: 700;}
+.focus .story-content .ifts .sd-cut6 {aspect-ratio: 1920/1000; height: 100%;}
+.focus .story-content .ifts .sd-cut7 {position: relative;}
+.focus .story-content .ifts .sd-cut7 .row2 {position: absolute; top: 0; left: 0; width: 100%; height: 100%; }
+.focus .story-content .ifts .sd-cut7 .row2::after {display: block; content: '';  width: 100%; height: 1000px; background: url('/sec/sustainability/assets/img/pc/focus/mdi/img_ifts04_1.png') no-repeat center center/cover;}
+.focus .story-content .ifts .sd-cut7 .row2.case2::after {background-image: url('/sec/sustainability/assets/img/pc/focus/mdi/img_ifts04_2.png');}
+.focus .story-content .ifts .sd-cut7 .row2.case2 {display:none;}
+/* .focus .story-content .ifts .sd-cut7 .row2.case2::after {background: url('/sec/sustainability/assets/img/pc/focus/mdi/img_ifts04_2.png') no-repeat center center/contain;} */
+.focus .story-content .ifts .sd-cut7 .row2.case2 i {display: block; position: absolute; bottom: 248px; left: 50%; transform: translate(-50%, 0); width: 1199px; height: 91px;}
+.focus .story-content .ifts .sd-cut7 .row2.case2 i.g1 {background: url('/sec/sustainability/assets/img/pc/focus/mdi/img_ifts04_2_1.png') no-repeat center center/contain; z-index: 2;}
+.focus .story-content .ifts .sd-cut7 .row2.case2 i.g2 { bottom: 184px; width: 1202px; height: 215px; background: url('/sec/sustainability/assets/img/pc/focus/mdi/img_ifts04_2_2.png') no-repeat center center/contain; opacity:0;}
+/* .focus .story-content .ifts .sd-cut7 .row2 .image-area {width: 100%; aspect-ratio: 1920/584;} */
+.focus .story-content .ifts .sd-cut7 .row2 .text-area {position: relative; top: 0; left: 0; transform: translate(0, 0); width: 100%; aspect-ratio: 1920/416; color: #000; background: #fff;}
+.focus .story-content .ifts .sd-cut7 .row2 .text-area::after {display: block; content: ''; clear: both;}
+.focus .story-content .ifts .sd-cut7 .row2 .text-area > div {width: 1204px; margin: 0 auto; aspect-ratio: 1204/416;}
+.focus .story-content .ifts .sd-cut7 .row2 .text-area .title {float: left; width: 496px; text-align: left; box-sizing: border-box; font-size: 48px; line-height: 58px; margin-top: 120px; letter-spacing: -0.05em;}
+.focus .story-content .ifts .sd-cut7 .row2 .text-area .text {float: right; width: 590px; text-align: left; font-size: 22px; line-height: 30px; margin-top: 120px;}
+.focus .story-content .ifts .sd-cut7 .row2 .text-area .text span {text-align: left; margin-top: 16px; color: #757575; font-size: 14px; line-height: 19px;}
+.focus .story-content .ifts .sd-cut8 { background: url('/sec/sustainability/assets/img/pc/focus/mdi/img_ifts05.png') no-repeat center center/cover;}
+.focus .story-content .ifts .sd-cut8 .text-area::before {display: block; content: ''; width: 190px; height: 190px; background: url('/sec/sustainability/assets/img/pc/focus/mdi/icon_story04.png') no-repeat center center/contain; margin: 0 auto 65px;}
+.focus .story-content .ifts .sd-cut8 .text-area .text {font-size: 22px; line-height: 30px; margin-top: 32px; font-weight: 700;}
+.focus .story-content .ifts .sd-cut9 { background: url('/sec/sustainability/assets/img/pc/focus/mdi/img_ifts06.png') no-repeat center center/cover;}
+
+.focus .story-content .scrc > div {height: 1080px;}
+.focus .story-content .scrc .sd-cut1 {background: url('/sec/sustainability/assets/img/pc/focus/mdi/img_scrc01.png') no-repeat center center/cover;}
+.focus .story-content .scrc .sd-cut1 .dim{position: absolute;top:0;width: 100%;height: 100%;background: rgba(0,0,0,.5);}
+.focus .story-content .scrc .sd-cut1 .cut1 .text-area{display: block}
+.focus .story-content .scrc .sd-cut1 .cut1 .title span {line-height: inherit; font-size: inherit;}
+.focus .story-content .scrc .sd-cut1 .cut2 .sup {font-size: 22px; line-height: 30px;}
+.focus .story-content .scrc .sd-cut1 .cut2 .title {font-size: 48px; line-height: 58px; margin-top: 40px;}
+.focus .story-content .scrc .sd-cut1 .cut2 .title span {line-height: inherit; font-size: inherit;}
+.focus .story-content .scrc .sd-cut1 .cut3 {background: url('/sec/sustainability/assets/img/pc/focus/mdi/img_scrc02_1.png') no-repeat center center/cover;}
+.focus .story-content .scrc .sd-cut1 .cut3 .text {font-size: 22px; line-height: 30px;}
+.focus .story-content .scrc .sd-cut1 .cut3 .text:nth-child(2) {font-weight: 700; margin-top: 24px;}
+.focus .story-content .scrc .sd-cut1 .cut3 .btn {margin-top: 60px;font-size: 18px}
+
+
+.focus .story-content .scrc .sd-cut3 {aspect-ratio: 1920/1080; height: 100%;}
+.focus .story-content .scrc .sd-cut4 {aspect-ratio: 1920/1080; height: 100%;}
+.focus .story-content .scrc .sd-cut5 {background: url('/sec/sustainability/assets/img/pc/focus/mdi/img_scrc03.png') no-repeat center center/cover; aspect-ratio: auto;}
+.focus .story-content .scrc .sd-cut5 .title {margin-top: 0;font-size: 32px; line-height: 42px;}
+.focus .story-content .scrc .sd-cut5 .image-area { margin: 180px auto 0; text-align: center; width: 468px; height: 176px;}
+.focus .story-content .scrc .sd-cut5 .text {margin-top:157px; font-size: 22px; line-height: 30px;}
+.focus .story-content .scrc .sd-cut5 .text + .text {margin-top:24px;}
+.focus .story-content .scrc .sd-cut6 {}
+
+.focus .story-content .scrc .sd-cut6 > div::before {display: block; content: ''; width: 100%; height: 100%; background: url('/sec/sustainability/assets/img/pc/focus/mdi/img_scrc_graphic.png') no-repeat center center/cover; opacity: 0;}
+.focus .story-content .scrc .sd-cut6 .graphic {position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); width: 492px; height: 485px;}
+.focus .story-content .scrc .sd-cut6 .graphic i {display: block; position: absolute; top:50%; left: 50%; transform: translate(-50%, -50%); }
+.focus .story-content .scrc .sd-cut6 .graphic .remote {width: 492px; height: 485px; background: url('/sec/sustainability/assets/img/pc/focus/mdi/img_scrc_graphic01.png') no-repeat center center/contain;}
+.focus .story-content .scrc .sd-cut6 .graphic .remote.r2 {background: url('/sec/sustainability/assets/img/pc/focus/mdi/img_scrc_graphic02.png') no-repeat center center/contain; opacity: 0;}
+.focus .story-content .scrc .sd-cut6 .graphic .remote.r3 {background: url('/sec/sustainability/assets/img/pc/focus/mdi/img_scrc_graphic03.png') no-repeat center center/contain; opacity: 0;}
+.focus .story-content .scrc .sd-cut6 .graphic .icon {top: 130px; left: 99px; width:311px; height: 121px; background: url('/sec/sustainability/assets/img/pc/focus/mdi/img_scrc_graphic_icon1.png') no-repeat center center/contain; opacity:0;}
+.focus .story-content .scrc .sd-cut6 .graphic .icon.i2 {top: 130px; left: 111px; background: url('/sec/sustainability/assets/img/pc/focus/mdi/img_scrc_graphic_icon1.png') no-repeat center center/contain; opacity: 0;}
+.focus .story-content .scrc .sd-cut6 .graphic .circle1 { width: 466px; height: 56px; background: url('/sec/sustainability/assets/img/pc/focus/mdi/img_scrc_graphic_circle1.png') no-repeat center center/contain;}
+.focus .story-content .scrc .sd-cut6 .graphic .circle2 { width: 590px; height: 72px; background: url('/sec/sustainability/assets/img/pc/focus/mdi/img_scrc_graphic_circle2.png') no-repeat center center/contain;}
+.focus .story-content .scrc .sd-cut6 .graphic .shadow {top: auto; bottom:-157px; transform: translate(-50%, 0); width: 824px; height: 71px; background: url('/sec/sustainability/assets/img/pc/focus/mdi/img_scrc_graphic_shadow.png') no-repeat center center/contain;}
+.focus .story-content .scrc .sd-cut6 .text-area {position: absolute; top: auto; bottom: 127px; left: 50%; transform: translate(-50%, 0); width: 1204px; height: 30px; color: #000; font-size: 22px; line-height: 30px; margin-top: 0; }
+.focus .story-content .scrc .sd-cut6 .text-area .text {position: absolute; top: 0; left: 0; color: #000; font-size: 22px; line-height: 30px; margin-top: 0;  font-weight: 700;}
+.focus .story-content .scrc .sd-cut6 .text-area .text:nth-child(2) {opacity: 0;}
+.focus .story-content .scrc .sd-cut6 .text-area .text:nth-child(3) {color: #fff; text-shadow: 0px 0px 20px rgba(0, 0, 0, 0.7); opacity: 0;}
+.focus .story-content .scrc .sd-cut7 .col2 {position: absolute; background: #2189ff; width: 100%;height: 100%; display:none;}
+.focus .story-content .scrc .sd-cut7 .col2::before {display: block; content: ''; position: absolute; top: 0; left: 0; width: 50%; height: 100%; background: url('/sec/sustainability/assets/img/pc/focus/mdi/img_scrc04_1.png') no-repeat center;background-size: cover;transition: .3s ease}
+.focus .story-content .scrc .sd-cut7 .col2.cut2::before {background: url('/sec/sustainability/assets/img/pc/focus/mdi/img_scrc04_2.png') no-repeat center;background-size: cover}
+.focus .story-content .scrc .sd-cut7 .col2.cut3::before {background: url('/sec/sustainability/assets/img/pc/focus/mdi/img_scrc04_3.png') no-repeat center;background-size: cover}
+.focus .story-content .scrc .sd-cut7 .col2::after {display: block; content: ''; clear: both;}
+.focus .story-content .scrc .sd-cut7 .col2 .box {position: relative; float: right; width: 50%; max-width: 959px; height: 100%; }
+.focus .story-content .scrc .sd-cut7 .col2 .box .text-area {width: 100%;height: 400px; max-width: 506px; }
+.focus .story-content .scrc .sd-cut7 .col2 .box .text-area > span {position: absolute; top: 0; left: 0; width: auto; font-size: 22px; line-height: 30px; font-weight: 700; letter-spacing: 0;}
+.focus .story-content .scrc .sd-cut7 .col2 .box .title {font-size: 32px; line-height: 42px; text-align: left; margin-top: 100px;}
+.focus .story-content .scrc .sd-cut7 .col2 .box .btn-list li { display: block;}
+.focus .story-content .scrc .sd-cut7 .col2 .box .btn-list li .btn-num {position: absolute; top: 0; left: 81px; width:32px; height: 32px; border-radius: 50%; font-size: 22px; line-height: 30px; color: #006bea; background: rgba(255, 255, 255, 0.2);}
+.focus .story-content .scrc .sd-cut7 .col2 .box .btn-list li:nth-child(2) .btn-num {left: 122px;}
+.focus .story-content .scrc .sd-cut7 .col2 .box .btn-list li:nth-child(3) .btn-num {left: 163px;}
+.focus .story-content .scrc .sd-cut7 .col2 .box .btn-list li .btn-num.on {background: #fff; color: #006bea; opacity: 1; font-weight: 700;}
+.focus .story-content .scrc .sd-cut7 .col2 .box .btn-list li .text {text-align: left; font-size: 18px; line-height: 24px; margin-top: 32px;}
+.focus .story-content .scrc .sd-cut8 {background: #006a73;}
+.focus .story-content .scrc .sd-cut8 > div {position: relative; width: 1374px; height: 100%; margin: 0 auto;}
+.focus .story-content .scrc .sd-cut8 > div::after {display: block; content: ''; position: absolute; top: 50%; right:0; transform: translate(0, -50%); background:url('/sec/sustainability/assets/img/pc/focus/mdi/img_scrc05.png') no-repeat center center/contain; width: 395px; height: 460px;}
+.focus .story-content .scrc .sd-cut8 .text-area { width: 684px; left: 0; transform: translate(0, -50%);}
+.focus .story-content .scrc .sd-cut8 .text-area .title {font-size: 32px; line-height: 42px;}
+.focus .story-content .scrc .sd-cut8 .text-area .text {font-size: 18px; line-height: 24px;}
+.focus .story-content .scrc .sd-cut8 .text-area .text:nth-child(3) {font-weight: 700;}
+.focus .story-content .scrc .sd-cut8 .text-area .btn-area {margin-top: 40px; text-align: left;}
+.focus .story-content .scrc .sd-cut8 .text-area span { text-align: left;}
+.focus .story-content .scrc .sd-cut9 {background: url('/sec/sustainability/assets/img/pc/focus/mdi/img_scrc06.png') no-repeat center center/cover;}
+.focus .story-content .scrc .sd-cut9 .text-area .title {font-size: 48px; line-height: 58px;}
+.focus .story-content .scrc .sd-cut9 .text-area .btn-area {margin-top: 60px;}
+
+.pop-movie .video-wrap{/* background:#000; */}
+.pop-movie .screen{position: relative;}
+.pop-movie .screen .video{vertical-align: top;background: #000;}
+.pop-movie .title{background:#000;color: #fff;padding: 40px;box-sizing: border-box;}
+.pop-movie .title strong{display: block;font-size:22px}
+.pop-movie .title .date{display:block;font-size:14px;color:#aaa;font-style:normal;margin-top:14px}
+.pop-movie .cont{position: relative;width: 1156px}
+.pop-movie .close{position:absolute;right: -50px;top:0;display: inline-block;background: url(/sec/sustainability/assets/img/common/layer-close-white.png) no-repeat;width: 40px;height: 40px;text-indent: -10000px;border: 0;cursor: pointer;}
+.pop-movie{display: none}
+/*html.pop-movie-open{overflow: hidden}*/
+html.pop-movie-open .pop-movie{display: flex;justify-content: center;align-items: center;height:100%}
+
+.focus .story-content .patagonia .sd-cut1 {background: url('/sec/sustainability/assets/img/pc/focus/mdi/img_patagonia01.png') no-repeat center center/cover;}
+.focus .story-content .patagonia .sd-cut1 .title {margin-top: 0;}
+.focus .story-content .patagonia .sd-cut2 {background: url('/sec/sustainability/assets/img/pc/focus/mdi/img_patagonia02.png') no-repeat center center/cover;}
+.focus .story-content .patagonia .sd-cut2 .title {margin-top: 0;}
+.focus .story-content .patagonia .sd-cut2 .text {margin-top: 0; font-size: 22px; line-height: 30px;}
+.focus .story-content .patagonia .sd-cut2 .text + .text {margin-top: 32px;}
+.focus .story-content .patagonia .sd-cut2 .cut2 {display: none;}
+
+.focus .story-content .patagonia .sd-cut3 .cont-box {width: 1392px; padding: 181px 0 153px;margin: 0 auto}
+.focus .story-content .patagonia .sd-cut3 .cont-box::after {display: block; content: ''; clear: both;}
+.focus .story-content .patagonia .sd-cut3 .cont-box .left {float: left; width: 50%;}
+.focus .story-content .patagonia .sd-cut3 .cont-box .left .title {font-size: 48px; line-height: 58px; margin-top: 0;}
+.focus .story-content .patagonia .sd-cut3 .cont-box .right {float: right; width: 50%;}
+.focus .story-content .patagonia .sd-cut3 .cont-box .right .text {margin-top: 0;}
+.focus .story-content .patagonia .sd-cut3 .cont-box .right .text + .text {margin-top: 16px}
+.focus .story-content .patagonia .sd-cut4 {background: #006a73; width: 100%; overflow: hidden;}
+.focus .story-content .patagonia .sd-cut4 > .pc-only {width: 400%;}
+.focus .story-content .patagonia .sd-cut4 > .pc-only > div {float: left; width: 25%;height: 100vh; position: relative;}
+.focus .story-content .patagonia .sd-cut4 > .pc-only:after {display: block; content: ''; height: 0; clear: both;}
+.focus .story-content .patagonia .sd-cut4 .text-area {}
+/* .focus .story-content .patagonia .sd-cut4 .col2 {width: 100%; aspect-ratio: 1920/1080; position: relative;} */
+.focus .story-content .patagonia .sd-cut4 .col2::before {display: block; content: ''; position: absolute; top: 0; left: 0; width: 50%; height: 100%; background: url('/sec/sustainability/assets/img/pc/focus/mdi/img_patagonia03_1.png') no-repeat center;background-size: cover;transition: .5s ease}
+.focus .story-content .patagonia .sd-cut4 .col2.cut2::before {background: url('/sec/sustainability/assets/img/pc/focus/mdi/img_patagonia03_2.png') no-repeat center;background-size: cover}
+.focus .story-content .patagonia .sd-cut4 .col2.cut3::before {background: url('/sec/sustainability/assets/img/pc/focus/mdi/img_patagonia03_3.png') no-repeat center;background-size: cover}
+.focus .story-content .patagonia .sd-cut4 .col2.cut4::before {background: url('/sec/sustainability/assets/img/pc/focus/mdi/img_patagonia03_4.png') no-repeat center;background-size: cover}
+.focus .story-content .patagonia .sd-cut4 .col2::after {display: block; content: ''; clear: both;}
+.focus .story-content .patagonia .sd-cut4 .col2 .box {position: relative; float: right; width: 50%; max-width: 959px; height: 100%; }
+.focus .story-content .patagonia .sd-cut4 .col2 .box .text-area {width: 100%; height: 400px;max-width: 506px; }
+.focus .story-content .patagonia .sd-cut4 .col2 .box .title {font-size: 32px; line-height: 42px; text-align: left;}
+.focus .story-content .patagonia .sd-cut4 .col2 .box .btn-list {position:relative; margin-top: 70px;padding-top: 40px}
+.focus .story-content .patagonia .sd-cut4 .col2 .box .btn-list li { display: block;}
+.focus .story-content .patagonia .sd-cut4 .col2 .box .btn-list li .btn-num {position: absolute; top: 0; left: 0; width:32px; height: 32px; border-radius: 50%; font-size: 22px; line-height: 30px; color: #fff; opacity: 0.2; background: #000;}
+.focus .story-content .patagonia .sd-cut4 .col2 .box .btn-list li:nth-child(2) .btn-num {left: 42px;}
+.focus .story-content .patagonia .sd-cut4 .col2 .box .btn-list li:nth-child(3) .btn-num {left: 84px;}
+.focus .story-content .patagonia .sd-cut4 .col2 .box .btn-list li:nth-child(4) .btn-num {left: 126px;}
+.focus .story-content .patagonia .sd-cut4 .col2 .box .btn-list li .btn-num.on {background: #fff; color: #006a73; opacity: 1;}
+.focus .story-content .patagonia .sd-cut4 .col2 .box .btn-list li .btn-num + .text {width: 566px; text-align: left; font-size: 18px; line-height: 24px; margin-top: 33px;}
+.focus .story-content .patagonia .sd-cut5 {background: url('/sec/sustainability/assets/img/pc/focus/mdi/img_patagonia04.png') no-repeat center center/cover;}
+.focus .story-content .patagonia .sd-cut5 .title {font-size: 48px; line-height: 58px; text-align: center; margin-top: 0;}
+.focus .story-content .patagonia .sd-cut5 .text {font-size: 22px; line-height: 30px; margin-top: 60px;}
+.focus .story-content .patagonia .sd-cut5 .text + .text {font-weight: 700; margin-top: 24px;}
+.focus .story-content .patagonia .sd-cut6 {}
+.focus .story-content .patagonia .sd-cut6 .cutGroup {display: flex;width: 200vw;}
+.focus .story-content .patagonia .sd-cut6 .cutGroup .cut1 {width: 100vw;height: 100vh}
+.focus .story-content .patagonia .sd-cut6 .cutGroup .cut2 {width: 100vw;height: 100vh}
+.focus .story-content .patagonia .sd-cut6 > div {height: 100%;}
+.focus .story-content .patagonia .sd-cut6 .text-area > span {text-align: left;}
+.focus .story-content .patagonia .sd-cut6 .title {font-size: 32px; line-height: 42px;}
+.focus .story-content .patagonia .sd-cut6 .text + .text {margin-top: 30px;}
+.focus .story-content .patagonia .sd-cut6 .text:nth-of-type(3) {font-weight: 700;}
+.focus .story-content .patagonia .sd-cut6 > div .text-area .text {font-size: 18px; line-height: 24px;}
+.focus .story-content .patagonia .sd-cut6 > div .text-area .sm-text {margin-top: 30px; font-size: 14px; line-height: 19px; color: #f7f7f7;}
+.focus .story-content .patagonia .sd-cut6 .cut1 {width: 100%; height: 100%; background: url('/sec/sustainability/assets/img/pc/focus/mdi/img_patagonia05_1.png') no-repeat center center/cover;}
+.focus .story-content .patagonia .sd-cut6 .cut1 > div {position: relative; width: 1051px; height: 100%; margin: 0 auto; aspect-ratio: 1051/624;}
+.focus .story-content .patagonia .sd-cut6 .cut1 .image-area {position: absolute; width: 50%; top: 50%; right: 0; transform: translate(0, calc(-50% + 45px)); text-align: right; filter: drop-shadow(50px 40px 30px rgba(0, 0, 0, 0.2));}
+.focus .story-content .patagonia .sd-cut6 .cut1 .text-area { width: 448px; left: 0; transform: translate(0, -50%)}
+.focus .story-content .patagonia .sd-cut6 .cut2 {width: 100%; height: 100%; background: url('/sec/sustainability/assets/img/pc/focus/mdi/img_patagonia05_2.png') no-repeat center center/cover;}
+.focus .story-content .patagonia .sd-cut6 .cut2 > div {position: relative; width: 1020px; height: 100%; margin: 0 auto; aspect-ratio: 1020/486;}
+.focus .story-content .patagonia .sd-cut6 .cut2 .image-area {position: absolute; width: 50%; top: 50%; left: 0; transform: translate(0, calc(-50% - 95px));}
+.focus .story-content .patagonia .sd-cut6 .cut2 .text-area { width: 472px; right: 0; transform: translate(0, -50%)}
+.focus .story-content .patagonia .sd-cut6 .cut2 .text:nth-of-type(2) {margin-top: 32px;}
+.focus .story-content .patagonia .sd-cut6 .cut2 .text:nth-of-type(3) {margin-top: 24px;}
+.focus .story-content .patagonia .sd-cut7 {}
+.focus .story-content .patagonia .sd-cut7 > div {position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); width: 1140px; margin: 0 auto; aspect-ratio: 1140/690;}
+.focus .story-content .patagonia .sd-cut7 .text-area {left:auto; right: 0; transform: translate(0, -50%); color: #000; width: 480px; }
+.focus .story-content .patagonia .sd-cut7 .text-area .text {font-size: 48px; line-height: 58px; text-align: left; font-weight: 700;}
+.focus .story-content .patagonia .sd-cut8 {aspect-ratio: 1920/1080;}
+.focus .story-content .patagonia .sd-cut9 {aspect-ratio: 1920/1080;}
+
+.focus .story-content .collabo {}
+.focus .story-content .collabo > div {height: 1080px;}
+.focus .story-content .collabo > div .top-text {margin-top: 150px; text-align: center;}
+.focus .story-content .collabo > div .top-text span {display: block; text-align: center;}
+.focus .story-content .collabo > div .top-text .sup + .title {margin-top: 30px;}
+.focus .story-content .collabo > div .top-text .title + .text {margin-top: 20px; font-size: 18px; line-height: 24px; font-weight: 700;}
+.focus .story-content .collabo .sd-cut1 {background: url('/sec/sustainability/assets/img/pc/focus/mdi/img_collabo01.png') no-repeat center center/cover;}
+.focus .story-content .collabo .sd-cut2 {background: url('/sec/sustainability/assets/img/pc/focus/mdi/img_collabo02.png') no-repeat center center/cover;}
+.focus .story-content .collabo .sd-cut3 {background: url('/sec/sustainability/assets/img/pc/focus/mdi/img_collabo03.png') no-repeat center center/cover;}
+.focus .story-content .collabo .sd-cut3 .top-text {color: #fff;}
+.focus .story-content .collabo .sd-cut4 {background: url('/sec/sustainability/assets/img/pc/focus/mdi/img_collabo04.png') no-repeat center center/cover;}
+.focus .story-content .collabo .sd-cut5 {height: auto;}
+.focus .story-content .collabo .sd-cut5 > div {position: relative; width: 100%; height: 100%;}
+.focus .story-content .collabo .sd-cut5 > div::after {display: block; content: ''; position: absolute; top: 0; right: 0; width: 50%; height: 100%; background: url('/sec/sustainability/assets/img/pc/focus/mdi/img_collabo05.png') no-repeat left top;}
+.focus .story-content .collabo .sd-cut5 > div .box {position: relative; width: 50%; max-width: 960px; height: 100%;}
+.focus .story-content .collabo .sd-cut5 > div .text-area {width: 477px; color: #000; text-align: left;}
+.focus .story-content .collabo .sd-cut5 > div .text-area .title {letter-spacing: -0.05em;}
+.focus .story-content .collabo .sd-cut5 > div .text-area .text {font-size: 18px; line-height: 24px;}
+.focus .story-content .collabo .sd-cut5 > div .text-area .sm-text {margin-top: 38px; font-size: 14px; line-height: 19px; color: #8f8f8f; letter-spacing: -0.07em;}
+.focus .story-content .collabo .sd-cut6 {background: url('/sec/sustainability/assets/img/pc/focus/mdi/img_collabo06.png') no-repeat center center/cover;}
+.focus .story-content .collabo .sd-cut6 p {text-align: center;}
+.focus .story-content .collabo .sd-cut6 .text {margin-top: 30px;}
+/*.focus .story-content .collabo .sd-cut7 {height: auto; aspect-ratio: 1920/1080;}*/
+.focus .story-content .collabo .sd-cut7 .col2 {position: relative; width: 100%; height: 100%;z-index: 1}
+.focus .story-content .collabo .sd-cut7 .col2 > div {position: absolute; width: 100%; height: 100%; display: none; /*aspect-ratio: 1920/1080;*/}
+.focus .story-content .collabo .sd-cut7 .col2 > div::before {display: block; content: ''; position: absolute; top: 0; right: 0; width: 50%; height: 100%; background-repeat:no-repeat; background-position: 0 0; background-size: cover;}
+.focus .story-content .collabo .sd-cut7 .col2 .cut1::before {background-image: url('/sec/sustainability/assets/img/pc/focus/mdi/img_collabo07_1.png');}
+.focus .story-content .collabo .sd-cut7 .col2 .cut2::before {background-image: url('/sec/sustainability/assets/img/pc/focus/mdi/img_collabo07_2.png');}
+.focus .story-content .collabo .sd-cut7 .col2 .cut3::before {background-image: url('/sec/sustainability/assets/img/pc/focus/mdi/img_collabo07_3.png');}
+.focus .story-content .collabo .sd-cut7 .col2 .cut4::before {background-image: url('/sec/sustainability/assets/img/pc/focus/mdi/img_collabo07_4.png');}
+.focus .story-content .collabo .sd-cut7 .col2 .cut5::before {background-image: url('/sec/sustainability/assets/img/pc/focus/mdi/img_collabo07_5.png');}
+.focus .story-content .collabo .sd-cut7 .col2 .cut6::before {background-image: url('/sec/sustainability/assets/img/pc/focus/mdi/img_collabo07_6.png');}
+.focus .story-content .collabo .sd-cut7 .col2 .box {position: relative; width: 50%; max-width: 960px; height: 100%; background: #fff;}
+.focus .story-content .collabo .sd-cut7 .col2 .box .text-area {width: 565px; color: #000; text-align: left;}
+.focus .story-content .collabo .sd-cut7 .col2 .box .text-area .sup {text-align: left;}
+.focus .story-content .collabo .sd-cut7 .col2 .box .text-area .title {letter-spacing: -0.07em; margin-top: 32px;}
+.focus .story-content .collabo .sd-cut7 .col2 .box .text-area .title + .text {margin-top: 50px;}
+.focus .story-content .collabo .sd-cut7 .col2 .box .text-area .text {font-size: 18px; line-height: 24px; letter-spacing: -0.03em;}
+.focus .story-content .collabo .sd-cut7 .col2 .box .text-area .say {margin-top: 16px; font-size: 14px; line-height: 19px;}
+.focus .story-content .collabo .sd-cut7 .col2 .box .text-area .say::before {display: inline-block; content: ''; width: 28px; height: 28px; background: url('/sec/sustainability/assets/img/pc/focus/mdi/img_profile01.png') no-repeat center center/contain; margin-right: 10px; vertical-align: -8px;}
+.focus .story-content .collabo .sd-cut7 .col2 .box .text-area .say.s2::before {background-image: url('/sec/sustainability/assets/img/pc/focus/mdi/img_profile02.png');}
+.focus .story-content .collabo .sd-cut7 .col2 .box .text-area .say.s3::before {background-image: url('/sec/sustainability/assets/img/pc/focus/mdi/img_profile03.png');}
+.focus .story-content .collabo .sd-cut7 .col2 .box .text-area .say.s4::before {width: 52px; background-image: url('/sec/sustainability/assets/img/pc/focus/mdi/img_profile04.png');}
+.focus .story-content .collabo .sd-cut7 .col2 .box .text-area .say + .text {margin-top: 34px;}
+.focus .story-content .collabo .sd-cut7 .indicator-area {position: absolute; bottom: 82px; left: 0; width: 50%; height: 8px; }
+.focus .story-content .collabo .sd-cut7 .indicator {position: absolute; bottom: 0; left: 50%; transform: translate(-50%, 0); width: 565px; height: 8px; text-align: left; z-index: 2; line-height: 0;}
+.focus .story-content .collabo .sd-cut7 .indicator a, .indicator span {display: inline-block; width: 8px; height: 8px; border-radius: 50%; background: #757575; transition: .3s ease}
+.focus .story-content .collabo .sd-cut7 .indicator a.active, .indicator span.swiper-pagination-bullet-active {animation-fill-mode: none !important;transform: scale(1.2); background: #000; opacity: 1; }
+.focus .story-content .collabo .sd-cut7 .indicator a + a, .indicator span + span {margin-left: 8px;}
+.focus .story-content .collabo .sd-cut8 {background: url('/sec/sustainability/assets/img/pc/focus/mdi/img_collabo08.png') no-repeat center center/cover;}
+.focus .story-content .collabo .sd-cut8 .text-area{transform: translate(-50%,-50%)}
+.focus .story-content .collabo .sd-cut8 .sup {font-size: 22px; line-height: 30px; color: #000;}
+.focus .story-content .collabo .sd-cut8 .title {color: #000;}
+.focus .story-content .collabo .sd-cut8 .text {font-size: 18px; line-height: 24px; color: #000;}
+.focus .story-content .collabo .sd-cut8 .list {width: 496px; margin: 66px auto 0;}
+.focus .story-content .collabo .sd-cut8 .list li {font-size: 18px; line-height: 24px; color: #fff; border-bottom: 1px solid #6acaec; padding: 15px 0; font-weight: 700; letter-spacing: 0;}
+.focus .story-content .collabo .sd-cut8 .list li::after {display: block; content: ''; clear: both;}
+.focus .story-content .collabo .sd-cut8 .list li span {float: left; width: 118px; text-align: left;}
+.focus .story-content .collabo .sd-cut8 .list li p {float: left; width: calc(100% - 118px);  text-align: left; font-size: 18px; line-height: 24px;}
+.focus .story-content .collabo .sd-cut9 {background: url('/sec/sustainability/assets/img/pc/focus/mdi/img_collabo09.png') no-repeat center bottom/cover;}
+.focus .story-content .collabo .sd-cut9 > div {width: 1273px; margin: 0 auto; padding-top: 260px; }
+.focus .story-content .collabo .sd-cut9 > div::after {display: block; content: ''; clear: both;}
+.focus .story-content .collabo .sd-cut9 > div .title {float: left; width: 566px; letter-spacing: -0.07em;}
+.focus .story-content .collabo .sd-cut9 > div .text {float: right; width: 565px; font-size: 18px; line-height: 24px; letter-spacing: -0.05em; margin-top: 0;}
+
+/* 모션처리 */
+
+.focus .story-content .scrc .sd-cut1 .dim{animation: scrc-dim-change 3s ease 5s both}
+.focus .story-content .scrc .sd-cut1 .cut1 .text-area{animation: fadeOut 1.5s ease 4s both}
+.focus .story-content .scrc .sd-cut1 .cut2 .text-area > *{animation: slideUpFadeOut 6s ease 6s both}
+.focus .story-content .scrc .sd-cut1 .cut3 .text-area > *{animation: slideUp 2s ease 12s both}
+
+.focus .story-content .collabo .sd-cut9 > div .title{opacity: 0}
+.focus .story-content .collabo .sd-cut9 > div .text{opacity: 0}
+.focus .story-content .collabo .sd-cut9.pageActive > div .title{animation: 1.5s slideUp .2s both}
+.focus .story-content .collabo .sd-cut9.pageActive > div .text{animation: 1.5s slideUp .4s both}
+
+.focus .story-content .patagonia .sd-cut6.pageActive .cutGroup{animation: slideLeft 4s ease 4s both}
+
+.text-area:not(.not-scroll-reveal-ani) > *{opacity: 0}
+.scroll-reveal-active.text-area:not(.not-scroll-reveal-ani) > *:nth-child(1){animation: 1.5s slideUp .2s both}
+.scroll-reveal-active.text-area:not(.not-scroll-reveal-ani) > *:nth-child(2){animation: 1.5s slideUp .4s both}
+.scroll-reveal-active.text-area:not(.not-scroll-reveal-ani) > *:nth-child(3){animation: 1.5s slideUp .6s both}
+.scroll-reveal-active.text-area:not(.not-scroll-reveal-ani) > *:nth-child(4){animation: 1.5s slideUp .8s both}
+.scroll-reveal-active.text-area:not(.not-scroll-reveal-ani) > *:nth-child(5){animation: 1.5s slideUp 1s both}
+.scroll-reveal-active.text-area:not(.not-scroll-reveal-ani) > *:nth-child(6){animation: 1.5s slideUp 1.2s both}
+.scroll-reveal-active.text-area:not(.not-scroll-reveal-ani) > *:nth-child(7){animation: 1.5s slideUp 1.4s both}
+.scroll-reveal-active.text-area:not(.not-scroll-reveal-ani) > *:nth-child(8){animation: 1.5s slideUp 1.6s both}
+.scroll-reveal-active.text-area:not(.not-scroll-reveal-ani) > *:nth-child(9){animation: 1.5s slideUp 1.8s both}
+
+.top-text:not(.not-scroll-reveal-ani) > *{opacity: 0}
+.scroll-reveal-active.top-text:not(.not-scroll-reveal-ani) > *:nth-child(1){animation: 1.5s slideUp .2s both}
+.scroll-reveal-active.top-text:not(.not-scroll-reveal-ani) > *:nth-child(2){animation: 1.5s slideUp .4s both}
+.scroll-reveal-active.top-text:not(.not-scroll-reveal-ani) > *:nth-child(3){animation: 1.5s slideUp .6s both}
+.scroll-reveal-active.top-text:not(.not-scroll-reveal-ani) > *:nth-child(4){animation: 1.5s slideUp .8s both}
+.scroll-reveal-active.top-text:not(.not-scroll-reveal-ani) > *:nth-child(5){animation: 1.5s slideUp 1s both}
+
+
+.cut-container > *.active{animation: gallery-circle-expend 2s ease both}
+
+
+@keyframes slideUp {
+    0%{transform: translateY(4rem);opacity: 0}
+    100%{transform: translateY(0);opacity: 1}
+}
+@keyframes slideUpFadeOut {
+    0%{transform: translateY(4rem);opacity: 0}
+    30%{transform: translateY(0);opacity: 1}
+    80%{opacity: 1}
+    100%{opacity: 0}
+}
+
+@keyframes slideLeft {
+    0%{transform: translateX(0)}
+    100%{transform: translateX(-100vw)}
+}
+
+@keyframes gallery-circle-expend{
+    0%{clip-path: circle(0 at center calc(50% - 20vw));}
+    20%{clip-path: circle(11.11111vw at center calc(50% - 30vw));}
+    100%{clip-path: circle(100% at center);animation-timing-function: ease-in-out;}
+}
+
+@keyframes scrc-dim-change {
+    100%{background: rgba(0,107,234,.9)}
+}
+
+@keyframes fadeOut {
+    100%{opacity: 0}
+}
+
+
+@media screen and ( max-width: 720px ) {
+    .focus .story-content {}
+    .focus .story-content .list-area {padding-top: 80px; padding-bottom: 226px;}
+    .focus .story-content .list-area ul {max-width: none; padding: 0 20px;}
+    .focus .story-content .list-area li {float: none; width: 100%; margin-bottom: 0;}
+    .focus .story-content .list-area li .image-area {aspect-ratio: 320/320;}
+    .focus .story-content .list-area li .text-area { margin-top: 16px;}
+    .focus .story-content .list-area li .text-area .title {height: auto; margin-top: 8px; font-size: 18px; line-height: 24px;}
+    .focus .story-content .list-area li + li {margin-left: 0; margin-top: 48px;}
+
+    .focus .story-content .btn-area.scroll {display: none;}
+    .focus .story-content .story-detail {}
+    .focus .story-content .story-detail > div {height: 100vh; aspect-ratio: 360/740;}
+    .focus .story-content .story-detail .lottie-area {height: 100vh; width: 100%}
+    .focus .story-content .story-detail > div .text-area {transform: translate(-50%, -50%); width: 100%; padding: 0 20px; box-sizing: border-box; color: #fff; }
+    .focus .story-content .story-detail > div .sup {font-size: 16px; line-height: 22px; }
+    .focus .story-content .story-detail > div .sup + .title {margin-top: 24px;}
+    .focus .story-content .story-detail > div .title { font-size: 36px; line-height: 44px;}
+    .focus .story-content .story-detail > div .text {font-size: 16px; line-height: 22px; margin-top: 70px;}
+    .focus .story-content .story-detail > div.sd-cut1 .title {font-size: 36px; line-height: 44px;}
+    .focus .story-content .ifts .sd-cut1 { background: url('/sec/sustainability/assets/img/mo/focus/mdi/img_ifts01.png') no-repeat center center/cover;}
+    .focus .story-content .ifts .sd-cut2 {background: url('/sec/sustainability/assets/img/mo/focus/mdi/img_ifts02.png') no-repeat center center/cover;}
+    /* .focus .story-content .ifts .sd-cut3 { background: url('/sec/sustainability/assets/img/mo/focus/mdi/img_ifts02.png') no-repeat center center/cover;} */
+    .focus .story-content .ifts .sd-cut3 .sub-text {font-size: 14px; line-height: 19px; margin-top: 16px; }
+    .focus .story-content .ifts .sd-cut4 {background: #fff;}
+    .focus .story-content .ifts .sd-cut4 .circle-icon {position: relative;  width: 120px; height: 120px; margin: 0 auto 64px;}
+    .focus .story-content .ifts .sd-cut4 .circle-icon i {display: block; position: absolute; top: 0; left: 0;  width: 100%; height: 100%; border-radius: 50%; overflow: hidden;}
+    .focus .story-content .ifts .sd-cut4 .circle-icon i::before {display: block; content: ''; position: absolute; width: 100%; height: 100%; background: url('/sec/sustainability/assets/img/pc/focus/mdi/icon_story01.png') no-repeat center center/contain; z-index: 2;}
+    .focus .story-content .ifts .sd-cut4 .circle-icon i.ci2::before {background: url('/sec/sustainability/assets/img/pc/focus/mdi/icon_story02.png') no-repeat center center/contain; z-index: 1}
+    .focus .story-content .ifts .sd-cut4 .circle-icon i.ci3::before {background: url('/sec/sustainability/assets/img/mo/focus/mdi/img_ifts03.png') no-repeat center center/cover; z-index: 1}
+    .focus .story-content .ifts .sd-cut4 .sup {color: #2189ff;}
+    .focus .story-content .ifts .sd-cut4 .title {position: relative; color: #757575; text-align: center;}
+    .focus .story-content .ifts .sd-cut4 .title .mask {display: inline-block; width: auto; color: #000;}
+    .focus .story-content .ifts .sd-cut5 { background: url('/sec/sustainability/assets/img/pc/focus/mdi/img_ifts03.png') no-repeat center center/cover;}
+    .focus .story-content .ifts .sd-cut5 .text-area::before {display: block; content: ''; width: 64px; height: 64px; margin: 0 auto 24px;}
+    .focus .story-content .ifts .sd-cut5 .title {font-size: 30px; line-height: 36px;}
+    .focus .story-content .ifts .sd-cut5 .text {font-size: 16px; line-height: 22px; margin-top: 40px;}
+    .focus .story-content .ifts .sd-cut5 .sub-text  {margin-top: 32px; font-size: 16px; line-height: 22px;}
+    .focus .story-content .ifts .sd-cut6 {}
+    .focus .story-content .ifts .sd-cut7 {position: relative; width: 100%; height: 100%; aspect-ratio: 360/740;}
+    .focus .story-content .ifts .sd-cut7 > div .text-box {color: #fff;}
+    .focus .story-content .ifts .sd-cut7 > div .title {font-size: 30px; line-height: 36px; letter-spacing: -0.07em;}
+    .focus .story-content .ifts .sd-cut7 > div .text {font-size: 18px; line-height: 24px; margin-top: 40px;}
+    .focus .story-content .ifts .sd-cut7 .cont1 {position: relative; width: 100%; background: url('/sec/sustainability/assets/img/mo/focus/mdi/img_ifts04_1.png') no-repeat left top/contain; aspect-ratio: 360/740;}
+    .focus .story-content .ifts .sd-cut7 .cont2 {position: relative; width: 100%; background: url('/sec/sustainability/assets/img/mo/focus/mdi/img_ifts04_2.png') no-repeat left top/contain; aspect-ratio: 360/740;}
+    .focus .story-content .ifts .sd-cut7 .cont2::before {display: block; content: ''; position: absolute; top: 0; left: 0; width: 100%; height:100%; background:rgba(0, 0, 0, 0.6);}
+    .focus .story-content .ifts .sd-cut7 .cont3 {position: relative; width: 100%;  background: url('/sec/sustainability/assets/img/mo/focus/mdi/img_ifts04_2.png') no-repeat left top/contain; aspect-ratio: 360/740;}
+    .focus .story-content .ifts .sd-cut7 .cont3 > div {position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); width: 100%; text-align: center; opacity: 0;}
+    .focus .story-content .ifts .sd-cut7 .cont3 > div .graphic {display: inline-block;}
+    .focus .story-content .ifts .sd-cut7 .cont3 > div .graphic + .text { margin-top: 60px;}
+    .focus .story-content .ifts .sd-cut7 .cont3 .text1 {opacity: 1;}
+    .focus .story-content .ifts .sd-cut7 .cont3 .text1 .graphic {width:154px; height: 62px;}
+    .focus .story-content .ifts .sd-cut7 .cont3 .text1 .text {color: #000;}
+    .focus .story-content .ifts .sd-cut7 .cont3 .text2 .graphic {width: 161px; height: 62px;}
+    .focus .story-content .ifts .sd-cut7 .cont3 .text3 .graphic {width: 120px; height: 110px;}
+    .focus .story-content .ifts .sd-cut7 .cont3 .text {display: block; font-size: 20px; line-height: 27px; font-weight: 700; color: #fff;}
+    .focus .story-content .ifts .sd-cut8 { background: url('/sec/sustainability/assets/img/mo/focus/mdi/img_ifts05.png') no-repeat center center/cover;}
+    .focus .story-content .ifts .sd-cut8 .text-area::before {width: 64px; height: 64px; margin: 0 auto 24px;}
+    .focus .story-content .ifts .sd-cut8 .text-area .title {letter-spacing:0;}
+    .focus .story-content .ifts .sd-cut8 .text-area .text {font-size: 18px; line-height: 24px; margin-top: 58px;}
+    .focus .story-content .ifts .sd-cut9 { background: url('/sec/sustainability/assets/img/mo/focus/mdi/img_ifts06.png') no-repeat center center/cover;}
+    .focus .story-content .ifts .sd-cut9 .title {font-size: 30px; line-height: 36px;}
+    .focus .story-content .ifts .sd-cut9 .text {font-size: 18px; line-height: 24px; margin-top: 40px;}
+
+    .focus .story-content .scrc > div {height: 100vh;}
+    .focus .story-content .scrc .sd-cut1 {background: url('/sec/sustainability/assets/img/mo/focus/mdi/img_scrc01.png') no-repeat center center/cover;}
+
+    .focus .story-content .scrc .sd-cut1 .title {margin-top: 0; letter-spacing: -0.07em;}
+    .focus .story-content .scrc .sd-cut1 .title span {margin-top: 30px;}
+    .focus .story-content .scrc .sd-cut2 {}
+    .focus .story-content .scrc .sd-cut2 > div {position: absolute; width: 100%; height: 100%; background: url('/sec/sustainability/assets/img/mo/focus/mdi/img_scrc02_1.png') no-repeat center center/cover;}
+    .focus .story-content .scrc .sd-cut2 .cut1 .sup {font-size: 16px; line-height: 22px;}
+    .focus .story-content .scrc .sd-cut2 .cut1 .title {font-size: 30px; line-height: 36px; margin-top: 24px;}
+    .focus .story-content .scrc .sd-cut2 .cut1 .title span {margin-top: 30px;}
+    .focus .story-content .scrc .sd-cut2 .cut2 {background: url('/sec/sustainability/assets/img/mo/focus/mdi/img_scrc02_2.png') no-repeat center center/cover; opacity: 0;}
+    .focus .story-content .scrc .sd-cut2 .cut2 .text {font-size: 18px; line-height: 24px;}
+    .focus .story-content .scrc .sd-cut2 .cut2 .text:nth-child(2) {margin-top: 24px;}
+    .focus .story-content .scrc .sd-cut2 .cut2 .btn {margin-top: 50px;}
+    .focus .story-content .scrc .sd-cut3 {aspect-ratio: 360/740;}
+    .focus .story-content .scrc .sd-cut4 {aspect-ratio: 360/740;}
+    .focus .story-content .scrc .sd-cut5 {background: url('/sec/sustainability/assets/img/mo/focus/mdi/img_scrc03.png') no-repeat center center/cover; aspect-ratio: auto;}
+    .focus .story-content .scrc .sd-cut5 .title {font-size: 22px; line-height: 30px;}
+    .focus .story-content .scrc .sd-cut5 .image-area { margin: 40px auto 0; width: 236px; height: 108px;}
+    .focus .story-content .scrc .sd-cut5 .text {margin-top:40px; font-size: 18px; line-height: 24px;}
+    .focus .story-content .scrc .sd-cut5 .text + .text {margin-top:16px; font-weight: 700;}
+    .focus .story-content .scrc .sd-cut6 {}
+    .focus .story-content .scrc .sd-cut6 > div { width: 100%; height: 100%;}
+    .focus .story-content .scrc .sd-cut6 > div::before {background: url('/sec/sustainability/assets/img/mo/focus/mdi/img_scrc_graphic.png') no-repeat center center/cover; opacity: 0;}
+    .focus .story-content .scrc .sd-cut6  .graphic {position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); width: 266px; height: 263px;}
+    .focus .story-content .scrc .sd-cut6  .graphic i {display: block; position: absolute; top:50%; left: 50%; transform: translate(-50%, -50%); }
+    .focus .story-content .scrc .sd-cut6  .graphic .remote {width: 266px; height: 263px; background: url('/sec/sustainability/assets/img/mo/focus/mdi/img_scrc_graphic01.png') no-repeat center center/contain;}
+    .focus .story-content .scrc .sd-cut6  .graphic .remote.r2 {width: 208px; height: 292px; background: url('/sec/sustainability/assets/img/mo/focus/mdi/img_scrc_graphic02.png') no-repeat center center/contain; opacity: 0;}
+    .focus .story-content .scrc .sd-cut6  .graphic .remote.r3 {width: 68px; height: 294px; background: url('/sec/sustainability/assets/img/mo/focus/mdi/img_scrc_graphic03.png') no-repeat center center/contain; opacity: 0;}
+    .focus .story-content .scrc .sd-cut6  .graphic .icon {top: 130px; left: 99px; width:130px; height: 68px; background: url('/sec/sustainability/assets/img/mo/focus/mdi/img_scrc_graphic_icon1.png') no-repeat center center/contain; opacity:0;}
+    .focus .story-content .scrc .sd-cut6  .graphic .icon.i2 {top: 130px; left: 111px; width:107px; height: 108px; background: url('/sec/sustainability/assets/img/mo/focus/mdi/img_scrc_graphic_icon1.png') no-repeat center center/contain; opacity: 0;}
+    .focus .story-content .scrc .sd-cut6  .graphic .circle1 { width: 252px; height: 30px; background: url('/sec/sustainability/assets/img/mo/focus/mdi/img_scrc_graphic_circle1.png') no-repeat center center/contain;}
+    .focus .story-content .scrc .sd-cut6  .graphic .circle2 { width: 320px; height: 39px; background: url('/sec/sustainability/assets/img/mo/focus/mdi/img_scrc_graphic_circle2.png') no-repeat center center/contain;}
+    .focus .story-content .scrc .sd-cut6  .graphic .shadow {display:none;}
+    .focus .story-content .scrc .sd-cut6  .text-area {position: absolute; top: auto; bottom: 104px; left: 50%; transform: translate(-50%, 0); width: 100%; height: 24px; color: #000; font-size: 18px; line-height: 24px; margin-top: 0; }
+    .focus .story-content .scrc .sd-cut6  .text-area .text {position: absolute; color: #000; font-size: 18px; line-height: 24px;}
+    .focus .story-content .scrc .sd-cut6  .text-area .text:nth-child(2) {opacity: 0;}
+    .focus .story-content .scrc .sd-cut6  .text-area .text:nth-child(3) {color: #fff; text-shadow: 0px 0px 20px rgba(0, 0, 0, 0.7); opacity: 0;}
+    .focus .story-content .scrc .sd-cut7 .box-slide-wrap {position: relative; width: 100%; overflow: hidden; margin: 0 auto; }
+    .focus .story-content .scrc .sd-cut7 .box-slide-wrap ul {width: 100%; aspect-ratio: 360/740; text-align: center; white-space: nowrap;}
+    .focus .story-content .scrc .sd-cut7 .box-slide-wrap li { display: none; position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: #2189ff;}
+    .focus .story-content .scrc .sd-cut7 .box-slide-wrap li.active {display: block;}
+    .focus .story-content .scrc .sd-cut7 .box-slide-wrap .indicator {position: absolute; top: 50%; left: 50%; transform: translate(-50%, calc(-50% + 45px)); width: 100%; height: 8px; text-align: center; z-index: 2; line-height: 0;}
+    .focus .story-content .scrc .sd-cut7 .box-slide-wrap .indicator a, .indicator span {display: inline-block; width: 8px; height: 8px; border-radius: 50%; background: #000 !important; opacity: 0.2 !important; }
+    .focus .story-content .scrc .sd-cut7 .box-slide-wrap .indicator a.active, .indicator span.swiper-pagination-bullet-active {width: 10px; height: 10px; background: #fff !important; opacity: 1 !important; }
+    .focus .story-content .scrc .sd-cut7 .box-slide-wrap .indicator a + a, .indicator span + span {margin-left: 8px;}
+    .focus .story-content .scrc .sd-cut7 .text-area {position: relative; top: 0; left: 0; transform: translate(0, 0); padding: 98px 20px 0;}
+    .focus .story-content .scrc .sd-cut7 .text-area .title {margin-top: 0; font-size: 22px; line-height: 30px;}
+    .focus .story-content .scrc .sd-cut7 .text-area .text {margin-top: 23px; white-space: initial; text-align:center; }
+    .focus .story-content .scrc .sd-cut8 {background: #006a73;}
+    .focus .story-content .scrc .sd-cut8 > div {position: relative; width: 100%; height: 100%; margin: 0 auto; padding-top: 60px;}
+    .focus .story-content .scrc .sd-cut8 > div::before {display: block; content: ''; background:url('/sec/sustainability/assets/img/mo/focus/mdi/img_scrc05.png') no-repeat center center/contain; width: 106px; height: 124px; margin: 0 auto 60px;}
+    .focus .story-content .scrc .sd-cut8 > div::after {display: none;}
+    .focus .story-content .scrc .sd-cut8 .text-area { width: 100%; position: relative; top: 0; left: 0; transform: translate(0, 0);}
+    .focus .story-content .scrc .sd-cut8 .text-area .title {font-size: 22px; line-height: 30px; margin-top: 0;}
+    .focus .story-content .scrc .sd-cut8 .text-area .text {font-size: 16px; line-height: 22px; margin-top: 32px;}
+    .focus .story-content .scrc .sd-cut8 .text-area .text:nth-child(3) {font-weight: 700; margin-top: 24px;}
+    .focus .story-content .scrc .sd-cut8 .text-area .btn-area {margin-top: 32px; text-align: center;}
+    .focus .story-content .scrc .sd-cut8 .text-area .btn-area .btn {letter-spacing: 0;}
+    .focus .story-content .scrc .sd-cut8 .text-area span { text-align: center;}
+    .focus .story-content .scrc .sd-cut9 {background: url('/sec/sustainability/assets/img/pc/focus/mdi/img_scrc06.png') no-repeat center center/cover;}
+    .focus .story-content .scrc .sd-cut9 .text-area .title {font-size: 30px; line-height: 36px;}
+    .focus .story-content .scrc .sd-cut9 .text-area .text {margin-top: 32px;}
+    .focus .story-content .scrc .sd-cut9 .text-area .btn-area {margin-top: 32px;}
+
+    .focus .story-content .patagonia > div {height: 100vh;}
+    .focus .story-content .patagonia .sd-cut1 {background: url('/sec/sustainability/assets/img/mo/focus/mdi/img_patagonia01.png') no-repeat center center/cover;}
+    .focus .story-content .patagonia .sd-cut1 .title {margin-top: 0; font-size: 38px; line-height: 44px;}
+    .focus .story-content .patagonia .sd-cut2 {background: url('/sec/sustainability/assets/img/mo/focus/mdi/img_patagonia02.png') no-repeat center center/cover;}
+    .focus .story-content .patagonia .sd-cut2 .title {margin-top: 0; font-size: 30px; line-height: 36px;}
+    .focus .story-content .patagonia .sd-cut2 .text {margin-top: 0; font-size: 18px; line-height: 24px;}
+    .focus .story-content .patagonia .sd-cut2 .text + .text {margin-top: 32px;}
+    .focus .story-content .patagonia .sd-cut2 .cut2 {}
+    .focus .story-content .patagonia .sd-cut3 {height: 100%; aspect-ratio: 360/740;}
+    .focus .story-content .patagonia .sd-cut3 .lottie-area {aspect-ratio: 360/300; position: absolute; top: 166px; left: 0; width: 100%; height: auto; z-index: 0;}
+    .focus .story-content .patagonia .sd-cut3 .cont-box { position: relative; width: 100%; height: 100%; margin-top: 0; margin-bottom: 0; z-index: 2}
+    .focus .story-content .patagonia .sd-cut3 .cont-box .left {float: none; position: absolute; top: 64px; left: 0; width: 100%; text-align: center;}
+    .focus .story-content .patagonia .sd-cut3 .cont-box .left .title {font-size: 30px; line-height: 36px;}
+    .focus .story-content .patagonia .sd-cut3 .cont-box .right {float: none; position: absolute; bottom: 46px; left: 0;  width: 100%; text-align: center;}
+    .focus .story-content .patagonia .sd-cut4 {background: #006a73; height: 100%; aspect-ratio: 360/740;}
+    .focus .story-content .patagonia .sd-cut4 .text-area {}
+    .focus .story-content .patagonia .sd-cut4 .box-slide-wrap {position: relative; width: 100%; overflow: hidden; margin: 0 auto; }
+    .focus .story-content .patagonia .sd-cut4 .box-slide-wrap ul {width: 100%; aspect-ratio: 360/740; text-align: center; white-space: nowrap;}
+    /* .focus .story-content .patagonia .sd-cut4 .box-slide-wrap li { display: none; position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: #006a73;}
+    .focus .story-content .patagonia .sd-cut4 .box-slide-wrap li.active {display: block;} */
+    .focus .story-content .patagonia .sd-cut4 .box-slide-wrap .indicator {position: absolute; top: 50%; left: 50%; transform: translate(-50%, calc(-50% + 157px)); width: 100%; height: 8px; text-align: center; z-index: 2; line-height: 0;}
+    .focus .story-content .patagonia .sd-cut4 .box-slide-wrap .indicator.white-bullet a, .indicator.white-bullet span {display: inline-block; width: 8px; height: 8px; border-radius: 50%; background: #000; opacity: 0.2;}
+    .focus .story-content .patagonia .sd-cut4 .box-slide-wrap .indicator.white-bullet a.active, .indicator.white-bullet span.swiper-pagination-bullet-active {width: 10px; height: 10px; background: #fff;}
+    .focus .story-content .patagonia .sd-cut4 .box-slide-wrap .indicator a, .indicator span {display: inline-block; width: 8px; height: 8px; border-radius: 50%; background: #757575; opacity: 1; }
+    .focus .story-content .patagonia .sd-cut4 .box-slide-wrap .indicator a.active, .indicator span.swiper-pagination-bullet-active {width: 10px; height: 10px; background: #000; opacity: 1; }
+    .focus .story-content .patagonia .sd-cut4 .box-slide-wrap .indicator a + a, .indicator span + span {margin-left: 8px;}
+    .focus .story-content .patagonia .sd-cut4 .text-area {position: relative; top: 0; left: 0; transform: translate(0, 0); padding: 64px 20px 0;}
+    .focus .story-content .patagonia .sd-cut4 .text-area .title {margin-top: 0; font-size: 22px; line-height: 30px;}
+    .focus .story-content .patagonia .sd-cut4 .text-area .text {margin-top: 76px; white-space: initial; text-align:center; letter-spacing: -0.07em;}
+    .focus .story-content .patagonia .sd-cut5 {background: url('/sec/sustainability/assets/img/pc/focus/mdi/img_patagonia04.png') no-repeat center center/cover;}
+    .focus .story-content .patagonia .sd-cut5 .title {font-size: 30px; line-height: 36px; text-align: center;}
+    .focus .story-content .patagonia .sd-cut5 .text {font-size: 18px; line-height: 24px; margin-top: 64px;}
+    .focus .story-content .patagonia .sd-cut5 .text + .text {margin-top: 16px;}
+    .focus .story-content .patagonia .sd-cut6 {overflow: hidden; width: 100%; overflow:hidden;}
+    .focus .story-content .patagonia .sd-cut6 > div {width: 300%; height: 100%; transform: translate(0,0); }
+    .focus .story-content .patagonia .sd-cut6 > div::after {display: block; content: ''; clear: both;}
+    .focus .story-content .patagonia .sd-cut6 > div .box {float: left; width: 100vw;}
+    .focus .story-content .patagonia .sd-cut6 .box .text-area {position: relative; top: 0; left: 0; transform: translate(0,0); width: 100%; z-index: 2; padding-top: 120px; letter-spacing: -0.07em;}
+    .focus .story-content .patagonia .sd-cut6 .box .text-area > span {text-align: center;}
+    .focus .story-content .patagonia .sd-cut6 .box .text-area .title {margin-top: 0; font-size: 22px; line-height: 30px;}
+    .focus .story-content .patagonia .sd-cut6 .box .text-area .title + .text {margin-top: 59px;}
+    .focus .story-content .patagonia .sd-cut6 .box .text-area .text {font-size: 16px; line-height: 22px;}
+    .focus .story-content .patagonia .sd-cut6 .box .text-area .fw-bold + .text {margin-top: 16px;}
+    /* .focus .story-content .patagonia .sd-cut6 .box::before {display: block; content: ''; position: absolute; top: 0; left: 0; width: 100vw; height: 100%; background: url('/sec/sustainability/assets/img/mo/focus/mdi/img_patagonia05_1.png') no-repeat center center/cover; aspect-ratio: 360/740; z-index: 1;} */
+    .focus .story-content .patagonia .sd-cut6 .cut1 {background: url('/sec/sustainability/assets/img/mo/focus/mdi/img_patagonia05_1.png') no-repeat center center/contain;}
+    .focus .story-content .patagonia .sd-cut6 .cut1 .text-area::after {display: block; content: ''; width: 222px; height: 348px; margin: 66px auto 0; background: url('/sec/sustainability/assets/img/mo/focus/mdi/img_patagonia05_1_1.png') no-repeat center center/contain; filter: drop-shadow(50px 40px 30px rgba(0, 0, 0, 0.2));}
+    .focus .story-content .patagonia .sd-cut6 .cut2 {background: url('/sec/sustainability/assets/img/mo/focus/mdi/img_patagonia05_2.png') no-repeat center center/contain;}
+    /* .focus .story-content .patagonia .sd-cut6 .cut2::before {background: url('/sec/sustainability/assets/img/mo/focus/mdi/img_patagonia05_2.png') no-repeat center center/contain;} */
+    .focus .story-content .patagonia .sd-cut6 .cut2 .text-area .text + .text {margin-top: 21px;}
+    .focus .story-content .patagonia .sd-cut6 .cut3 {height: 100%; background: url('/sec/sustainability/assets/img/mo/focus/mdi/img_patagonia05_3.png') no-repeat center center/contain;}
+    /* .focus .story-content .patagonia .sd-cut6 .cut3::before {background: url('/sec/sustainability/assets/img/mo/focus/mdi/img_patagonia05_3.png') no-repeat center center/contain;} */
+    .focus .story-content .patagonia .sd-cut6 .cut3 .text-area .text + .text {margin-top: 37px;}
+    .focus .story-content .patagonia .sd-cut7 {background: #fff;}
+    .focus .story-content .patagonia .sd-cut7 > div {position: relative; top: 0; left: 0; transform: translate(0, 0); width: 100%; height: 100%; aspect-ratio: 360/740;}
+    .focus .story-content .patagonia .sd-cut7 > div::after { display: block; content: ''; position: absolute; bottom: 56px; right: 40px; width: 155px; height: 260px; background: url('/sec/sustainability/assets/img/pc/focus/mdi/img_patagonia06.png') no-repeat center center/contain;}
+    .focus .story-content .patagonia .sd-cut7 .text-area {position: relative; top: 64px; left: 0; transform: translate(0, 0); width: 100%;}
+    .focus .story-content .patagonia .sd-cut7 .text-area .text {font-size: 30px; line-height: 36px; margin-top: 0;}
+    .focus .story-content .patagonia .sd-cut7 .text-area .text + .text {margin-top: 50px;}
+    .focus .story-content .patagonia .sd-cut7 .text-area .text + .text + .text {margin-top: 24px;}
+    .focus .story-content .patagonia .sd-cut8 {aspect-ratio: 360/740;}
+    .focus .story-content .patagonia .sd-cut9 {aspect-ratio: 360/740;}
+
+    .focus .story-content .collabo {}
+    .focus .story-content .collabo > div {height: 100vh;}
+    .focus .story-content .collabo > div .top-text {margin-top: 90px;}
+    .focus .story-content .collabo > div .top-text .sup {font-size: 16px; line-height: 22px;}
+    .focus .story-content .collabo > div .top-text .sup + .title {margin-top: 20px;}
+    .focus .story-content .collabo > div .top-text .title {font-size: 30px; line-height: 36px;}
+    .focus .story-content .collabo > div .top-text .title + .text {margin-top: 16px; font-size: 16px; line-height: 22px; font-weight: 400;}
+    .focus .story-content .collabo .sd-cut1 {background: url('/sec/sustainability/assets/img/mo/focus/mdi/img_collabo01.png') no-repeat center center/cover;}
+    .focus .story-content .collabo .sd-cut1 .title {}
+    .focus .story-content .collabo .sd-cut2 {background: url('/sec/sustainability/assets/img/mo/focus/mdi/img_collabo02.png') no-repeat center center/cover;}
+    .focus .story-content .collabo .sd-cut3 {background: url('/sec/sustainability/assets/img/mo/focus/mdi/img_collabo03.png') no-repeat center center/cover;}
+    .focus .story-content .collabo .sd-cut4 {background: url('/sec/sustainability/assets/img/mo/focus/mdi/img_collabo04.png') no-repeat center center/cover;}
+    .focus .story-content .collabo .sd-cut5 {height: auto;}
+    .focus .story-content .collabo .sd-cut5 > div {position: relative; width: 100%; height: 100%; aspect-ratio: auto;}
+    .focus .story-content .collabo .sd-cut5 > div::after {position: relative; width: 323px; height: 180px; background-image: url('/sec/sustainability/assets/img/mo/focus/mdi/img_collabo05.png'); background-size: contain; margin: 0 auto;}
+    .focus .story-content .collabo .sd-cut5 > div .box {width: 100%; max-width: none; height: auto;}
+    .focus .story-content .collabo .sd-cut5 > div .text-area {position: relative; top: 0; left: 0; transform: translate(0, 0); width: 100%; padding: 50px 20px 60px;}
+    .focus .story-content .collabo .sd-cut5 > div .text-area .title {font-size: 22px; line-height: 30px;}
+    .focus .story-content .collabo .sd-cut5 > div .text-area .text {font-size: 14px; line-height: 19px; margin-top: 20px;}
+    .focus .story-content .collabo .sd-cut5 > div .text-area .sm-text {margin-top: 20px; font-size: 14px; line-height: 19px; color: #757575;}
+    .focus .story-content .collabo .sd-cut6 {background: url('/sec/sustainability/assets/img/mo/focus/mdi/img_collabo06.png') no-repeat center center/cover;}
+    .focus .story-content .collabo .sd-cut6 p {text-align: center;}
+    .focus .story-content .collabo .sd-cut6 .title {font-size: 30px; line-height: 36px; letter-spacing: -0.07em;}
+    .focus .story-content .collabo .sd-cut6 .text {font-size: 14px; line-height: 19px; margin-top: 20px;}
+    .focus .story-content .collabo .sd-cut6 p span {font-weight: 700;}
+    /*.focus .story-content .collabo .sd-cut7 {height: auto; aspect-ratio: 1920/1080;}*/
+    .focus .story-content .collabo .sd-cut7 .col2 {position: relative; width: 100%; height: 100%;}
+    .focus .story-content .collabo .sd-cut7 .col2 > div {position: absolute; width: 100%; height: 100%; display: none; }
+    .focus .story-content .collabo .sd-cut7 .col2 > div::before {display: none;}
+    .focus .story-content .collabo .sd-cut7 .col2 .box {position: relative; width: 100%; max-width: none; }
+    .focus .story-content .collabo .sd-cut7 .col2 .box .text-area {position: relative; top: 0; left: 0; transform: translate(0, 0); width: 100%; padding: 30px 20px;}
+    .focus .story-content .collabo .sd-cut7 .col2 .box .text-area .sup {text-align: left; font-size: 22px; line-height: 30px;}
+    .focus .story-content .collabo .sd-cut7 .col2 .box .text-area .sup + div { width: 320px; height: 180px; aspect-ratio: 320/180; margin: 16px auto 24px;}
+    .focus .story-content .collabo .sd-cut7 .col2 .box .text-area .title {letter-spacing: 0; font-size: 18px; line-height: 24px; margin-top: 0;}
+    .focus .story-content .collabo .sd-cut7 .col2 .box .text-area .title + .text {margin-top: 12px;}
+    .focus .story-content .collabo .sd-cut7 .col2 .box .text-area .text {font-size: 14px; line-height: 19px;}
+    .focus .story-content .collabo .sd-cut7 .col2 .box .text-area .say {margin-top: 6px; font-size: 10px; line-height: 14px; font-weight: 700;}
+    .focus .story-content .collabo .sd-cut7 .col2 .box .text-area .say::before {display: none;}
+    .focus .story-content .collabo .sd-cut7 .col2 .box .text-area .say + .text {margin-top: 6px;}
+    .focus .story-content .collabo .sd-cut7 .indicator-area {bottom: 28px; width: 100%;}
+    .focus .story-content .collabo .sd-cut7 .indicator {width: 100%; text-align: center;}
+    .focus .story-content .collabo .sd-cut7 .indicator a, .indicator span {display: inline-block; width: 8px; height: 8px; border-radius: 50%; background: #757575;}
+    .focus .story-content .collabo .sd-cut7 .indicator a.active, .indicator span.swiper-pagination-bullet-active {background: #000; opacity: 1;}
+    .focus .story-content .collabo .sd-cut7 .indicator a + a, .indicator span + span {margin-left: 8px;}
+    .focus .story-content .collabo .sd-cut8 {background: url('/sec/sustainability/assets/img/mo/focus/mdi/img_collabo08.png') no-repeat center center/cover;}
+    .focus .story-content .collabo .sd-cut8 .text-area {position: relative; top: 0; left: 0; transform: translate(0, 0); width: 100%; padding: 80px 20px 0;}
+    .focus .story-content .collabo .sd-cut8 .sup {font-size: 16px; line-height: 22px; color: #fff;}
+    .focus .story-content .collabo .sd-cut8 .title {color: #fff; font-size: 22px; line-height: 30px;}
+    .focus .story-content .collabo .sd-cut8 .text {font-size: 14px; line-height: 19px; color: #fff; margin-top: 16px; letter-spacing: -0.07em;}
+    .focus .story-content .collabo .sd-cut8 .list { width: 100%; padding: 0; margin-top: 39px;}
+    .focus .story-content .collabo .sd-cut8 .list li {font-size: 16px; line-height: 22px; color: #fff; padding: 12px 0;}
+    .focus .story-content .collabo .sd-cut8 .list li span {width: 62px;}
+    .focus .story-content .collabo .sd-cut8 .list li p {width: calc(100% - 62px); font-size: 14px; line-height: 19px; font-weight: 400; letter-spacing: -0.05em;}
+    .focus .story-content .collabo .sd-cut9 {background: url('/sec/sustainability/assets/img/mo/focus/mdi/img_collabo09.png') no-repeat center 552px/contain;}
+    .focus .story-content .collabo .sd-cut9 > div {width: 100%; padding: 105px 20px 0; }
+    .focus .story-content .collabo .sd-cut9 > div .title {float: none; width: 100%; font-size: 22px; line-height: 30px;}
+    .focus .story-content .collabo .sd-cut9 > div .text {float: none; width: 100%; font-size: 14px; line-height: 19px; margin-top: 30px; letter-spacing: -0.07em;}
+}

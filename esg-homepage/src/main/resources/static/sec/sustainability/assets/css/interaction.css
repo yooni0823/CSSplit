@@ -1,0 +1,558 @@
+@charset 'utf-8';
+
+/* 썸네일오버시 효과 start */
+.news-section .image-area{overflow: hidden}
+.news-section .swiper-slide img{transition: .4s}
+.news-section .swiper-slide:hover img{transform: scale(1.2);}
+
+.thumnail-list ul li a .ratio-image{overflow: hidden}
+.thumnail-list ul li a .ratio-image img{transition: .4s}
+.thumnail-list ul li a:hover .ratio-image img{transform: scale(1.2);}
+/* 썸네일오버시 효과 end */
+
+/* 아코디언형태 카드배너 관련 start */
+/* pc */
+@media screen and (max-width: 525px) {
+  .banner-swiper-pic .img-box {animation: initial !important;opacity: initial !important;transform: initial !important;  }
+  .scroll-swiper-wrap .card-swiper .swiper-slide{margin: 0 !important;}
+  .scroll-swiper-wrap .indicator span{margin: 0}
+  .scroll-swiper-wrap .txt-swiper .control-area .btn-next{left: 10rem;}
+}
+/* mobile */
+@media screen and (min-width: 525px) {
+  .double-swiper-wrap{display: flex}
+  .scroll-swiper-wrap .tit-group,
+  .scroll-swiper-wrap .control-area{max-width: 38.85714rem;margin:16% auto 0 auto;padding: 0}
+  .scroll-swiper-wrap .control-area.bottomFixed{position: absolute;bottom: 0;left: 0;right: 0}
+  .scroll-swiper-wrap .txt-swiper .control-area .indicator{padding-left: 3rem}
+  .scroll-swiper-wrap .txt-swiper .control-area .btn-next{left: 11rem}
+  .scroll-swiper-wrap .indicator span{margin: 0}
+
+  .scroll-swiper-wrap{display: flex;flex-direction: row-reverse;padding-left: 5rem;margin-left: auto !important;}
+  .scroll-swiper-wrap .card-swiper{margin-right: 0;}
+  .scroll-swiper-wrap .tit-group{margin: 16% auto 0 auto}
+  .scroll-swiper-wrap .txt-swiper{margin: 0}
+
+  .txt-swiper .swiper-wrapper{height: auto}
+  .card-swiper + .txt-swiper .tit-group > *{animation: none !important;transform: initial !important;opacity: initial !important;}
+  .card-swiper .swiper-slide{position: absolute;transition: .3s;transition-delay: .1s}
+  .card-swiper .swiper-slide img{width: 46.3125rem;object-fit: contain}
+  .card-swiper .swiper-slide:nth-child(1){position: relative}
+
+  .card-swiper {min-width: 60rem;max-width: 60rem}
+  .card-swiper.cardNum-2 .swiper-slide:nth-child(2) {left: 13.8rem;clip:rect(0,46.3125rem,62.25rem,0);}
+  .card-swiper.cardNum-2 .swiper-slide-active,
+  .card-swiper.cardNum-2 .swiper-slide-active ~ .swiper-slide{clip: rect(0,46.3125rem,62.25rem,32.5rem);}
+
+  .card-swiper.cardNum-3 .swiper-slide img{width: 46.3125rem;height: 62.25rem;object-fit: contain}
+  .card-swiper.cardNum-3 .swiper-slide:nth-child(1) {position: relative}
+  .card-swiper.cardNum-3 .swiper-slide:nth-child(2) {position: absolute;z-index: 2;left: 7.8125rem;clip:rect(0,46.3125rem,62.25rem,0);}
+  .card-swiper.cardNum-3 .swiper-slide:nth-child(3) {position: absolute;z-index: 3;left: 15.625rem;clip:rect(0,46.3125rem,62.25rem,0);}
+  .card-swiper.cardNum-3 .swiper-slide-active,
+  .card-swiper.cardNum-3 .swiper-slide-active ~ .swiper-slide{clip:rect(0,46.3125rem,62.25rem,37.5rem);}
+}
+/* // 아코디언형태 카드배너 관련 */
+
+.lottie-sequence lottie-player{position: absolute;top:0;visibility: hidden}
+.lottie-sequence lottie-player.active{visibility: visible}
+
+/* 접근성 수정 1차 - 아코디언 포커스 수정 */
+.accordion-section .accordion-area .accordion-title + .accordion-panel { display: none; animation: boxUp 0.3s ease-in both; }
+.accordion-section .accordion-area .accordion-title.open + .accordion-panel { display: block; animation: boxDown 0.3s ease-in both; }
+/* // 접근성 수정 1차 - 아코디언 포커스 수정 */
+.accordion-section .accordion-area .accordion-title > a:after { animation: rotateOff 0.25s ease-in both; }
+.accordion-section .accordion-area .accordion-title.open > a:after { animation: rotateOn 0.25s ease-in both; }
+
+.acc-wrap .acc-list li .tit + .txt { animation: boxUp 0.1s both; }
+.acc-wrap .acc-list li .tit.open + .txt { animation: boxDown 0.3s both; }
+.acc-wrap .acc-list li .tit:after { animation: rotateOff 0.2s linear both; }
+.acc-wrap .acc-list li .tit.open:after { animation: rotateOn 0.2s linear both; }
+
+/* 접근성 수정 1차 - 아코디언 포커스 수정 */
+.accordion-wrap .accordion-title + .accordion-panel { /* display: block; */ display: none; animation: boxUp 0.1s both; }
+.accordion-wrap .accordion-title.open + .accordion-panel { display: block; animation: boxDown 0.3s both; }
+/* // 접근성 수정 1차 - 아코디언 포커스 수정 */
+.accordion-wrap .accordion-title button::after { animation: rotateOff 0.2s linear both; }
+.accordion-wrap .accordion-title.open button::after { animation: rotateOn 0.2s linear both; }
+
+.popup-area .planet .planet-accordion > ul > li dd { display: block; animation: boxUp 0.1s both; height: 0; }
+.popup-area .planet .planet-accordion > ul > li.active dd { animation: boxDown 0.3s both; height: auto; }
+.popup-area .planet .planet-accordion > ul > li .planet-accordion-title::before { animation: rotateOff 0.2s linear both; }
+.popup-area .planet .planet-accordion > ul > li.active .planet-accordion-title::before { animation: rotateOn 0.2s linear both; }
+.popup-area .planet .planet-accordion > ul > li:last-child { border-bottom: 1px solid #ddd; }
+
+.popup-area .people-first .accordion-area.icon-and-txt .content-area { display: block !important; animation: boxUp 0.1s both; height: 0; }
+.popup-area .people-first .accordion-area > li > button.on + .content-area { animation: boxDown 0.3s both; height: auto; }
+.popup-area .people-first .accordion-area > li > button.on:after { animation: rotateOff 0.2s linear both; }
+.popup-area .people-first .accordion-area > li > button:after { animation: rotateOn 0.2s linear both; }
+.popup-area .people-first .accordion-area > li:last-child { border-bottom: 1px solid #ddd; }
+
+.popup-principle .accordion-area .accordion-content { display: block; animation: boxUp 0.1s both; height: 0;  }
+.popup-principle .accordion-area > li > button.btn-accordion.on + .accordion-content { animation: boxDown 0.3s both; height: auto; }
+.popup-principle .accordion-area > li > button.btn-accordion:after { animation: rotateOn 0.2s linear both; }
+.popup-principle .accordion-area > li > button.btn-accordion.on:after { animation: rotateOff 0.2s linear both; }
+
+.popup-focus .accordion-area .accordion-list > li .accordion-content-list { display: block; animation: boxUp 0.1s both; height: 0; }
+.popup-focus .accordion-area .accordion-list > li .accordion-content-list.active { animation: boxDown 0.3s both; height: auto; }
+.popup-focus .btn-accordion:after { animation: rotateOff 0.2s linear both; }
+.popup-focus .btn-accordion.active:after { animation: rotateOn 0.2s linear both; }
+
+@media screen and (max-width: 767px) {
+  header .main-menu-aside .sub-list > div > ul > li > ul { display: none; animation: boxUp 0.1s both; height: 0; } /* 접근성 수정 1차 */
+  header .main-menu-aside .sub-list > div > ul > li > button.open + ul { display: block; animation: boxDown 0.3s both; height: auto; } /* 접근성 수정 1차 */
+  header .main-menu-aside .sub-list > div > ul > li.menu-group > a.special + button:after { animation: rotateOff 0.2s linear both; }
+  header .main-menu-aside .sub-list > div > ul > li.menu-group > a.special + button.open:after { animation: rotateOn 0.2s linear both; }
+
+  footer .links-area .menu-area > ul > li > ul { animation: boxUp 0.1s both; }
+  footer .links-area .menu-area > ul > li.active > ul { animation: boxDown 0.3s both; }
+  footer .links-area .menu-area > ul > li > a:after { animation: rotateOff 0.2s linear both; }
+  footer .links-area .menu-area > ul > li.active > a:after { animation: rotateOn 0.2s linear both; }
+
+  /* 접근성 수정 1차 strong -> button 변경 */
+  /*footer .links-area .quick-area > div:nth-child(2) strong + ul { animation: boxUp 0.1s both; }*/
+  /*footer .links-area .quick-area > div:nth-child(2) strong.on + ul { animation: boxDown 0.3s both; }*/
+  footer .links-area .quick-area > div button + .cs-info { animation: boxUp 0.1s both; }
+  footer .links-area .quick-area > div button.on + .cs-info { animation: boxDown 0.3s both; }
+  /* // 접근성 수정 1차 strong -> button 변경 */
+
+  /* 접근성 수정 1차 strong -> button 변경 */
+  /*footer .links-area .quick-area > div strong:after { animation: rotateOff 0.2s linear both; }*/
+  /*footer .links-area .quick-area > div strong.on:after { animation: rotateOn 0.2s linear both; }*/
+  footer .links-area .quick-area > div button:after { animation: rotateOff 0.2s linear both; }
+  footer .links-area .quick-area > div button.on:after { animation: rotateOn 0.2s linear both; }
+  /* // 접근성 수정 1차 strong -> button 변경 */
+}
+
+@keyframes boxDown {
+  from {
+    opacity: 0;
+    /*height: 0;*/
+  }
+  to {
+    opacity: 1;
+    /*height: auto;*/
+  }
+}
+
+@keyframes boxUp {
+  from {
+    opacity: 1;
+    /*height: auto;*/
+  }
+  to {
+    opacity: 0;
+    /*height: 0;*/
+  }
+}
+
+@keyframes rotateOn  {
+  from {
+    transform: translateY(-50%) rotate(0deg);
+  }
+  to {
+    transform: translateY(-50%) rotate(-180deg);
+  }
+}
+
+@keyframes rotateOff  {
+  from {
+    transform: translateY(-50%) rotate(-180deg);
+  }
+  to {
+    transform: translateY(-50%) rotate(0deg);
+  }
+}
+
+
+/* 모션처리 */
+#contents .key-visual .text-area .sup{display: block}
+#contents .key-visual .text-area .sup.shadow{text-shadow: 5px 5px 20px rgba(0,0,0,.9);}
+#contents .collabo-list > li > ul{min-height: 10rem}
+
+
+#contents .text-area > *{opacity: 0}
+#contents .text-area > *.scroll-reveal-active:nth-child(1){animation: 1s slideUp .2s both}
+#contents .text-area > *.scroll-reveal-active:nth-child(2){animation: 1s slideUp .4s both}
+#contents .text-area > *.scroll-reveal-active:nth-child(3){animation: 1s slideUp .6s both}
+#contents .text-area > *.scroll-reveal-active:nth-child(4){animation: 1s slideUp .8s both}
+#contents .text-area > *.scroll-reveal-active:nth-child(5){animation: 1s slideUp 1s both}
+#contents .text-area > *.scroll-reveal-active:nth-child(6){animation: 1s slideUp 1.2s both}
+#contents .text-area > *.scroll-reveal-active:nth-child(7){animation: 1s slideUp 1.4s both}
+#contents .text-area > *.scroll-reveal-active:nth-child(8){animation: 1s slideUp 1.6s both}
+#contents .text-area > *.scroll-reveal-active:nth-child(9){animation: 1s slideUp 1.8s both}
+
+#contents .top-text > *{opacity: 0}
+#contents .scroll-reveal-active.top-text > *:nth-child(1){animation: 1s slideUp .2s both}
+#contents .scroll-reveal-active.top-text > *:nth-child(2){animation: 1s slideUp .4s both}
+#contents .scroll-reveal-active.top-text > *:nth-child(3){animation: 1s slideUp .6s both}
+#contents .scroll-reveal-active.top-text > *:nth-child(4){animation: 1s slideUp .8s both}
+#contents .scroll-reveal-active.top-text > *:nth-child(5){animation: 1s slideUp 1s both}
+
+#contents .graph-area .left-area > *{opacity: 0}
+#contents .graph-area .left-area > *:nth-child(1).scroll-reveal-active{animation: 1s slideUp .2s both}
+#contents .graph-area .left-area > *:nth-child(2).scroll-reveal-active{animation: 1s slideUp .4s both}
+#contents .graph-area .left-area > *:nth-child(3).scroll-reveal-active{animation: 1s slideUp .6s both}
+#contents .graph-area .left-area > *:nth-child(4).scroll-reveal-active{animation: 1s slideUp .8s both}
+#contents .graph-area .left-area > *:nth-child(5).scroll-reveal-active{animation: 1s slideUp 1s both}
+
+#contents .tit-group > *{opacity: 0}
+#contents .scroll-reveal-active.tit-group > *:nth-child(1){animation: 1s slideUp .2s both}
+#contents .scroll-reveal-active.tit-group > *:nth-child(2){animation: 1s slideUp .4s both}
+#contents .scroll-reveal-active.tit-group > *:nth-child(3){animation: 1s slideUp .6s both}
+#contents .scroll-reveal-active.tit-group > *:nth-child(4){animation: 1s slideUp .8s both}
+#contents .scroll-reveal-active.tit-group > *:nth-child(5){animation: 1s slideUp 1s both}
+
+#contents .text-cont > *{opacity: 0}
+#contents .scroll-reveal-active.text-cont > *:nth-child(1){animation: 1s slideUp .2s both}
+#contents .scroll-reveal-active.text-cont > *:nth-child(2){animation: 1s slideUp .4s both}
+#contents .scroll-reveal-active.text-cont > *:nth-child(3){animation: 1s slideUp .6s both}
+
+#contents .txt-area > *{opacity: 0}
+#contents .scroll-reveal-active.txt-area > *:nth-child(1){animation: 1s slideUp .2s both}
+#contents .scroll-reveal-active.txt-area > *:nth-child(2){animation: 1s slideUp .4s both}
+#contents .scroll-reveal-active.txt-area > *:nth-child(3){animation: 1s slideUp .6s both}
+#contents .scroll-reveal-active.txt-area > *:nth-child(4){animation: 1s slideUp .8s both}
+
+#contents .banner-cont > *{opacity: 0}
+#contents .banner-cont > *.scroll-reveal-active{animation: 1s slideUp .2s both}
+
+#contents .title-area > *{opacity: 0}
+#contents .scroll-reveal-active.title-area > *:nth-child(1){animation: 1s slideUp .2s both}
+#contents .scroll-reveal-active.title-area > *:nth-child(2){animation: 1s slideUp .4s both}
+#contents .scroll-reveal-active.title-area > *:nth-child(3){animation: 1s slideUp .6s both}
+
+#contents .semi-cont2 .title,
+#contents .semi-cont2 .titsm-titlele,
+#contents .semi-cont2 .text-area,
+#contents .semi-cont2 .btn{opacity: 0}
+#contents .semi-cont2 .title.scroll-reveal-active{animation: 1s slideUp .2s both}
+#contents .semi-cont2 .sm-title.scroll-reveal-active{animation: 1s slideUp .4s both}
+#contents .semi-cont2 .text-area.scroll-reveal-active{animation: 1s slideUp .6s both}
+#contents .semi-cont2 .btn.scroll-reveal-active{animation: 1s slideUp .8s both}
+
+#contents .semi-cont3 .title.scroll-reveal-active {animation: 1s slideUp .2s both}
+#contents .semi-cont3 .popup-item:nth-child(1).scroll-reveal-active {animation: 1s slideUp .4s both}
+#contents .semi-cont3 .popup-item:nth-child(2).scroll-reveal-active {animation: 1s slideUp .6s both}
+#contents .semi-cont3 .popup-item:nth-child(3).scroll-reveal-active {animation: 1s slideUp .8s both}
+
+#contents .semi-cont3 .swiper-container.mo-only.scroll-reveal-active {animation: 1s slideUp .8s both}
+#contents .semi-cont3 .swiper-container.mo-only .popup-item:nth-child(1).scroll-reveal-active {animation: slideUp none;}
+#contents .semi-cont3 .swiper-container.mo-only .popup-item:nth-child(2).scroll-reveal-active {animation: slideUp none;}
+#contents .semi-cont3 .swiper-container.mo-only .popup-item:nth-child(3).scroll-reveal-active {animation: slideUp none;}
+
+
+#contents .top-area > *{opacity: 0}
+#contents .scroll-reveal-active.top-area::before{animation: 1s slideUp .2s both}
+#contents .scroll-reveal-active.top-area > *:nth-child(1){animation: 1s slideUp .4s both}
+#contents .scroll-reveal-active.top-area > *:nth-child(2){animation: 1s slideUp .6s both}
+#contents .scroll-reveal-active.top-area > *:nth-child(3){animation: 1s slideUp .8s both}
+
+#contents .environmental-strategy-panel-bg{opacity: 0}
+#contents .environmental-strategy-panel-bg.scroll-reveal-active{animation: 1s slideUp .8s both}
+
+#contents .scroll-reveal-active.card-list > *{opacity: 0}
+#contents .scroll-reveal-active.card-list > *:nth-child(1){animation: 1s slideUp-card .2s both}
+#contents .scroll-reveal-active.card-list > *:nth-child(2){animation: 1s slideUp-card .4s both}
+#contents .scroll-reveal-active.card-list > *:nth-child(3){animation: 1s slideUp-card .6s both}
+#contents .list-cont li{opacity: 0}
+#contents .list-cont li.scroll-reveal-active:nth-child(1){animation: 1s slideUp-card .2s both}
+#contents .list-cont li.scroll-reveal-active:nth-child(2){animation: 1s slideUp-card .4s both}
+#contents .list-cont li.scroll-reveal-active:nth-child(3){animation: 1s slideUp-card .6s both}
+#contents .list-cont li.scroll-reveal-active:nth-child(4){animation: 1s slideUp-card .8s both}
+
+#contents .more-list li{opacity: 0}
+#contents .more-list li.scroll-reveal-active:nth-child(1){animation: 1s slideUp-card .2s both}
+#contents .more-list li.scroll-reveal-active:nth-child(2){animation: 1s slideUp-card .4s both}
+#contents .more-list li.scroll-reveal-active:nth-child(3){animation: 1s slideUp-card .6s both}
+
+#contents .icon-list li{opacity: 0}
+#contents .icon-list.scroll-reveal-active li:nth-child(1){animation: 1s slideUp-card .2s both}
+#contents .icon-list.scroll-reveal-active li:nth-child(2){animation: 1s slideUp-card .4s both}
+#contents .icon-list.scroll-reveal-active li:nth-child(3){animation: 1s slideUp-card .6s both}
+#contents .icon-list.scroll-reveal-active li:nth-child(4){animation: 1s slideUp-card .8s both}
+#contents .icon-list.scroll-reveal-active li:nth-child(5){animation: 1s slideUp-card 1s both}
+#contents .icon-list.scroll-reveal-active li:nth-child(6){animation: 1s slideUp-card 1.2s both}
+
+#contents .sop-prd-list li{opacity: 0}
+#contents .sop-prd-list li.scroll-reveal-active{animation: 1s slideUp-card .2s both}
+
+#contents .more-library h3{opacity: 0}
+#contents .more-library.scroll-reveal-active h3{animation: 1s slideUp .2s both}
+#contents .more-library li{opacity: 0}
+#contents .library-list.scroll-reveal-active li:nth-child(1){animation: 1s slideUp-card .2s both}
+#contents .library-list.scroll-reveal-active li:nth-child(2){animation: 1s slideUp-card .4s both}
+#contents .library-list.scroll-reveal-active li:nth-child(3){animation: 1s slideUp-card .6s both}
+#contents .library-list.scroll-reveal-active li:nth-child(4){animation: 1s slideUp-card .8s both}
+#contents .library-list.scroll-reveal-active li:nth-child(5){animation: 1s slideUp-card .10s both}
+#contents .library-list.scroll-reveal-active li:nth-child(6){animation: 1s slideUp-card .12s both}
+#contents .library-list.scroll-reveal-active li:nth-child(7){animation: 1s slideUp-card .14s both}
+#contents .library-list.scroll-reveal-active li:nth-child(8){animation: 1s slideUp-card .16s both}
+
+
+#contents .card-group-cont ul li{opacity: 0}
+#contents .card-group-cont ul li.scroll-reveal-active:nth-child(1){animation: 1s slideUp-card3 .2s both}
+#contents .card-group-cont ul li.scroll-reveal-active:nth-child(2){animation: 1s slideUp-card3 .4s both}
+#contents .card-group-cont ul li.scroll-reveal-active:nth-child(3){animation: 1s slideUp-card3 .6s both}
+#contents .card-group-cont ul li.scroll-reveal-active:nth-child(4){animation: 1s slideUp-card3 .8s both}
+
+/*#contents .collabo-list > li li{opacity: 0}*/
+/*#contents .collabo-list > li .tit{opacity: 0}*/
+/*#contents .collabo-list > li .tit.scroll-reveal-active{animation: 1s slideUp .2s both}*/
+/*#contents .collabo-list > li li:nth-child(1).scroll-reveal-active{animation: 1s slideUp .4s both}*/
+/*#contents .collabo-list > li li:nth-child(2).scroll-reveal-active{animation: 1s slideUp .6s both}*/
+/*#contents .collabo-list > li li:nth-child(3).scroll-reveal-active{animation: 1s slideUp .8s both}*/
+/*#contents .collabo-list > li li:nth-child(4).scroll-reveal-active{animation: 1s slideUp 1s both}*/
+/*#contents .collabo-list > li li:nth-child(5).scroll-reveal-active{animation: 1s slideUp 1.2s both}*/
+/*#contents .collabo-list > li li:nth-child(6).scroll-reveal-active{animation: 1s slideUp 1.4s both}*/
+
+#contents .txt-box > *{opacity: 0;}
+#contents .txt-box > *:nth-child(1).scroll-reveal-active{animation: 1s slideUp .2s both}
+#contents .txt-box > *:nth-child(2).scroll-reveal-active{animation: 1s slideUp .4s both}
+#contents .txt-box > *:nth-child(3).scroll-reveal-active{animation: 1s slideUp .6s both}
+#contents .txt-box > *:nth-child(4).scroll-reveal-active{animation: 1s slideUp .8s both}
+#contents .txt-box > *:nth-child(5).scroll-reveal-active{animation: 1s slideUp 1s both}
+
+#contents .cont-tit{opacity: 0;}
+#contents .cont-tit.scroll-reveal-active{animation: 1s slideUp .2s both}
+
+#contents .cont-txt{opacity: 0;}
+#contents .cont-txt.scroll-reveal-active{animation: 1s slideUp .2s both}
+
+#contents .cont-tit-list{opacity: 0;}
+#contents .cont-tit-list.scroll-reveal-active{animation: 1s slideUp .2s both}
+
+#contents .cont-sub-tit{opacity: 0;}
+#contents .cont-sub-tit.scroll-reveal-active{animation: 1s slideUp .2s both}
+
+#contents .library-area h3{opacity: 0;}
+#contents .library-area h3.scroll-reveal-active{animation: 1s slideUp .2s both}
+
+#contents .document-list h3{opacity: 0;}
+#contents .document-list h3.scroll-reveal-active{animation: 1s slideUp .2s both}
+
+#contents .document-list h4{opacity: 0;}
+#contents .document-list h4.scroll-reveal-active{animation: 1s slideUp .2s both}
+
+#contents .icon-list .title{opacity: 0;}
+#contents .icon-list .title.scroll-reveal-active{animation: 1s slideUp .2s both}
+
+#contents .vd-content .vd-cont2 .title-area::before{opacity: 0;}
+#contents .vd-content .vd-cont2 .title-area.scroll-reveal-active::before{animation: 1s slideUp .2s both}
+
+
+#contents .logo-img{opacity: 0;}
+#contents .logo-img{animation: 1s slideUp-card .4s both}
+
+#contents .awards-wrap li{opacity: 0;}
+#contents .awards-wrap li.scroll-reveal-active{animation: 1s slideUp-card .4s both}
+
+
+#contents .img-area{opacity: 0;}
+#contents .img-area.scroll-reveal-active{animation: 1s slideUp-card .4s both}
+
+#contents .path-bg-area ul > li{opacity: 0;}
+#contents .path-bg-area ul > li:nth-child(1).scroll-reveal-active{animation: 1s slideUp-card .2s both}
+#contents .path-bg-area ul > li:nth-child(2).scroll-reveal-active{animation: 1s slideUp-card .4s both}
+#contents .path-bg-area ul > li:nth-child(3).scroll-reveal-active{animation: 1s slideUp-card .6s both}
+#contents .path-bg-area ul > li:nth-child(4).scroll-reveal-active{animation: 1s slideUp-card .8s both}
+
+
+#contents .thumnail-list ul li{opacity: 0;}
+#contents .thumnail-list ul li.scroll-reveal-active{animation: 1s slideUp-card .2s both}
+
+#contents .scroll-reveal-active.prd-list > *{opacity: 0;}
+#contents .scroll-reveal-active.prd-list > *:nth-child(1){animation: 1s slideUp-card .2s both}
+#contents .scroll-reveal-active.prd-list > *:nth-child(2){animation: 1s slideUp-card .4s both}
+#contents .scroll-reveal-active.prd-list > *:nth-child(3){animation: 1s slideUp-card .6s both}
+#contents .scroll-reveal-active.prd-list > *:nth-child(4){animation: 1s slideUp-card .8s both}
+#contents .scroll-reveal-active.prd-list > *:nth-child(5){animation: 1s slideUp-card .2s both}
+#contents .scroll-reveal-active.prd-list > *:nth-child(6){animation: 1s slideUp-card .4s both}
+#contents .scroll-reveal-active.prd-list > *:nth-child(7){animation: 1s slideUp-card .4s both}
+#contents .scroll-reveal-active.prd-list > *:nth-child(8){animation: 1s slideUp-card .4s both}
+#contents .scroll-reveal-active.prd-list > *:nth-child(9){animation: 1s slideUp-card .4s both}
+
+#contents .square-bg-area ul li{opacity: 0;}
+#contents .square-bg-area ul li.scroll-reveal-active:nth-child(1){animation: 1s slideUp-card .2s both}
+#contents .square-bg-area ul li.scroll-reveal-active:nth-child(2){animation: 1s slideUp-card .4s both}
+#contents .square-bg-area ul li.scroll-reveal-active:nth-child(3){animation: 1s slideUp-card .6s both}
+#contents .square-bg-area ul li.scroll-reveal-active:nth-child(4){animation: 1s slideUp-card .8s both}
+#contents .square-bg-area ul li.scroll-reveal-active:nth-child(5){animation: 1s slideUp-card 1s both}
+#contents .square-bg-area ul li.scroll-reveal-active:nth-child(6){animation: 1s slideUp-card 1.2s both}
+#contents .square-bg-area ul li.scroll-reveal-active:nth-child(7){animation: 1s slideUp-card 1.2s both}
+
+
+#contents .ceo-area ul li{opacity: 0;}
+#contents .ceo-area ul li.scroll-reveal-active:nth-child(1){animation: 1s slideUp-card .2s both}
+#contents .ceo-area ul li.scroll-reveal-active:nth-child(2){animation: 1s slideUp-card .4s both}
+
+
+
+
+#contents .planet-table-wrap{opacity: 0;}
+#contents .planet-table-wrap.scroll-reveal-active{animation: 1s slideUp-card4 .2s both}
+
+#contents .img-box{opacity: 0;}
+#contents .img-box.scroll-reveal-active{animation: 1s slideUp-card4 .2s both}
+
+#contents .report-area{opacity: 0;}
+#contents .report-area.scroll-reveal-active{animation: 1s slideUp-card4 .2s both}
+
+#contents .principle-content .image-area{opacity: 0;}
+#contents .principle-content .image-area.scroll-reveal-active{animation: 1s slideUp-card4 .2s both}
+
+#contents .acc-list{opacity: 0;}
+#contents .acc-list.scroll-reveal-active{animation: 1s slideUp-card4 .2s both}
+
+#contents .data-box{opacity: 0;}
+#contents .data-box.scroll-reveal-active{animation: 1s slideUp-card4 .2s both}
+
+#contents .accordion-area > .btn-area{opacity: 0;}
+#contents .accordion-area > .btn-area.scroll-reveal-active{animation: 1s slideUp-card4 .2s both}
+
+#contents .accordion-wrap{opacity: 0;}
+#contents .accordion-wrap.scroll-reveal-active{animation: 1s slideUp-card4 .2s both}
+
+
+
+#contents .chart{opacity: 0;}
+#contents .chart.scroll-reveal-active{animation: 1s slideUp-card4 .2s both}
+
+#contents .swiper{opacity: 0;}
+#contents .swiper.scroll-reveal-active{animation: 1s slideUp-card4 .2s both}
+
+#contents .honeycomb-area{opacity: 0;}
+#contents .honeycomb-area.scroll-reveal-active{animation: 1s slideUp-card4 .2s both}
+
+#contents .photo-list-wrap{opacity: 0;}
+#contents .photo-list-wrap.scroll-reveal-active{animation: 1s slideUp-card4 .2s both}
+
+#contents .long-banner-wrap ul li{opacity: 0;}
+#contents .long-banner-wrap ul li.scroll-reveal-active{animation: 1s slideUp-card4 .2s both}
+
+#contents .awards-wrap ul li{opacity: 0;}
+#contents .awards-wrap ul li.scroll-reveal-active{animation: 1s slideUp-card4 .2s both}
+
+#contents .survey-wrap ul li{opacity: 0;}
+#contents .survey-wrap ul li.scroll-reveal-active{animation: 1s slideUp-card4 .2s both}
+
+#contents .video-box{opacity: 0;}
+#contents .video-box.scroll-reveal-active{animation: 1s slideUp-card4 .2s both}
+
+#contents .technology-box .btn-area{opacity: 0;}
+#contents .technology-box .btn-area.scroll-reveal-active{animation: 1s slideUp-card4 .2s both}
+
+#contents .technology-box ul{opacity: 0;}
+#contents .technology-box ul.scroll-reveal-active{animation: 1s slideUp-card4 .2s both}
+
+
+#contents .banner-collabo-wrap > ul > li{opacity: 0;}
+#contents .banner-collabo-wrap > ul > li.scroll-reveal-active{animation: 1s slideUp-card4 .2s both}
+
+#contents .logo-img{opacity: 0;}
+#contents .logo-img.scroll-reveal-active{animation: 1s slideUp-card4 .2s both}
+
+#contents .circle-slide-wrap .swiper-slide .text-area > *{opacity: initial;transform: initial;animation: none}
+
+#contents.focus .mx-content .mx-cont6 .list-area li{opacity: 0;}
+#contents.focus .mx-content .mx-cont6 .list-area li.scroll-reveal-active:nth-child(1){animation: 1s slideUp-card .2s both}
+#contents.focus .mx-content .mx-cont6 .list-area li.scroll-reveal-active:nth-child(2){animation: 1s slideUp-card .4s both}
+#contents.focus .mx-content .mx-cont6 .list-area li.scroll-reveal-active:nth-child(3){animation: 1s slideUp-card .6s both}
+/* //#0004 23.04.21 mobileExperience 어워드 신규내용 추가 */
+#contents.focus .mx-content .mx-cont6 .list-area li.scroll-reveal-active:nth-child(4){animation: 1s slideUp-card .8s both}
+#contents.focus .mx-content .mx-cont6 .list-area li.scroll-reveal-active:nth-child(5){animation: 1s slideUp-card 1s both}
+/* #0004 23.04.21 mobileExperience 어워드 신규내용 추가// */
+
+#contents .list-ico li{opacity: 0;}
+#contents .list-ico.scroll-reveal-active li:nth-child(1){animation: 1s slideUp-card .2s both}
+#contents .list-ico.scroll-reveal-active li:nth-child(2){animation: 1s slideUp-card .4s both}
+#contents .list-ico.scroll-reveal-active li:nth-child(3){animation: 1s slideUp-card .6s both}
+#contents .list-ico.scroll-reveal-active li:nth-child(4){animation: 1s slideUp-card .8s both}
+
+#contents .imgtxt-lr .img{opacity: 0;}
+#contents .imgtxt-lr .txt{opacity: 0;}
+#contents .imgtxt-lr.scroll-reveal-active .img{animation: 1s slideUp-card .2s both}
+#contents .imgtxt-lr.scroll-reveal-active .txt{animation: 1s slideUp-card .4s both}
+
+
+#contents .fulfill-cont-title{opacity: 0;}
+#contents .fulfill-cont-title.scroll-reveal-active{animation: 1s slideUp .2s both}
+#contents .fulfill-cont-list li{opacity: 0;}
+#contents .fulfill-cont-list.scroll-reveal-active li:nth-child(1){animation: 1s slideUp-card .2s both}
+#contents .fulfill-cont-list.scroll-reveal-active li:nth-child(2){animation: 1s slideUp-card .4s both}
+#contents .fulfill-cont-list.scroll-reveal-active li:nth-child(3){animation: 1s slideUp-card .6s both}
+#contents .fulfill-cont-list.scroll-reveal-active li:nth-child(4){animation: 1s slideUp-card .8s both}
+
+
+#contents .cont-tit{opacity: 0}
+#contents .group-txt{opacity: 0}
+#contents .cont-tit.scroll-reveal-active{animation: 1s slideUp .2s both}
+#contents .group-txt.scroll-reveal-active{animation: 1s slideUp .2s both}
+
+
+/* 25년 대규모 업데이트 추가 */
+#contents .icon-card-list-wrap .icon-card-list-item{opacity: 0}
+#contents .icon-card-list-wrap .icon-card-list-item.scroll-reveal-active:nth-child(1){animation: 1s slideUpNew-card .2s both}
+#contents .icon-card-list-wrap .icon-card-list-item.scroll-reveal-active:nth-child(2){animation: 1s slideUpNew-card .4s both}
+#contents .icon-card-list-wrap .icon-card-list-item.scroll-reveal-active:nth-child(3){animation: 1s slideUpNew-card .6s both}
+#contents .icon-card-list-wrap .icon-card-list-item.scroll-reveal-active:nth-child(4){animation: 1s slideUpNew-card .8s both}
+#contents .icon-card-list-wrap .icon-card-list-item.scroll-reveal-active:nth-child(5){animation: 1s slideUpNew-card 1s both}
+
+#contents .image-banner-wrap li{opacity: 0}
+#contents .image-banner-wrap li.scroll-reveal-active:nth-child(1){animation: 1s slideUpNew-card .2s both}
+#contents .image-banner-wrap li.scroll-reveal-active:nth-child(2){animation: 1s slideUpNew-card .4s both}
+#contents .image-banner-wrap li.scroll-reveal-active:nth-child(3){animation: 1s slideUpNew-card .6s both}
+
+@keyframes slideUp {
+  0%{opacity: 0}
+  100%{opacity: 1}
+}
+@keyframes slideUp2 {
+  0%{opacity: 0}
+  100%{opacity: 1}
+}
+
+@keyframes slideUp-card {
+  0%{opacity: 0}
+  100%{opacity: 1}
+}
+@keyframes slideUp-card2 {
+  0%{opacity: 0}
+  100%{opacity: 1}
+}
+@keyframes slideUp-card3 {
+  0%{opacity: 0}
+  100%{opacity: 1}
+}
+@keyframes slideUp-card4 {
+  0%{opacity: 0}
+  100%{opacity: 1}
+}
+
+@keyframes slideUpFadeOut {
+  0%{opacity: 0}
+  30%{opacity: 1}
+  80%{opacity: 1}
+  100%{opacity: 0}
+}
+
+@keyframes keyVisual {
+  0% { opacity: 0;}
+  100% { opacity: 1;}
+}
+
+/* main carousel */
+.main .slide .slide-content .text-area { display: none !important; }
+.main .slide.carousel-item-2 .slide-content .text-area { display: block !important; }
+
+@media screen and ( max-width: 535px ) {
+  .main .slide .slide-content .text-area { display: block !important; }
+}
+
+/*모션 예외처리*/
+#contents .collabo-list .img-box{opacity: initial !important;transform: initial !important;animation: initial !important;}
+#contents .card-swiper{opacity: initial !important;transform: initial !important;animation: initial !important;}
+#contents .card-swiper .img-box{opacity: initial !important;transform: initial !important;animation: initial !important;}
+#contents .text-area.scroll-reveal-active > .download{animation: 1s slideUp .4s ease both }
+
+.digital .accordion-wrap .accordion-title button em { opacity: 0; }
+.digital .accordion-wrap .accordion-title button em.ea { opacity: 1; }

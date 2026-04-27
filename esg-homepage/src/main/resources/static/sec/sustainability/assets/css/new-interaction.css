@@ -1,0 +1,396 @@
+@charset 'utf-8';
+
+/* 모션처리 */
+#contents.new-motion .key-visual .text-area .sup{display: block}
+#contents.new-motion .key-visual .text-area .sup.shadow{text-shadow: 5px 5px 20px rgba(0,0,0,.9);}
+#contents.new-motion .collabo-list > li > ul{min-height: 10rem}
+
+/* 텍스트 기본 모션 */
+#contents.new-motion .text-area > *{opacity: 0}
+#contents.new-motion .text-area > *.scroll-reveal-active:nth-child(1){animation: 0.5s slideUpNew .2s both}
+#contents.new-motion .text-area > *.scroll-reveal-active:nth-child(2){animation: 0.5s slideUpNew .4s both}
+#contents.new-motion .text-area > *.scroll-reveal-active:nth-child(3){animation: 0.5s slideUpNew .6s both}
+#contents.new-motion .text-area > *.scroll-reveal-active:nth-child(4){animation: 0.5s slideUpNew .8s both}
+#contents.new-motion .text-area > *.scroll-reveal-active:nth-child(5){animation: 0.5s slideUpNew 1s both}
+#contents.new-motion .text-area > *.scroll-reveal-active:nth-child(6){animation: 0.5s slideUpNew 1.2s both}
+#contents.new-motion .text-area > *.scroll-reveal-active:nth-child(7){animation: 0.5s slideUpNew 1.4s both}
+#contents.new-motion .text-area > *.scroll-reveal-active:nth-child(8){animation: 0.5s slideUpNew 1.6s both}
+#contents.new-motion .text-area > *.scroll-reveal-active:nth-child(9){animation: 0.5s slideUpNew 1.8s both}
+
+#contents.new-motion .top-text > *{opacity: 0}
+#contents.new-motion .scroll-reveal-active.top-text > *:nth-child(1){animation: 0.5s slideUpNew .2s both}
+#contents.new-motion .scroll-reveal-active.top-text > *:nth-child(2){animation: 0.5s slideUpNew .4s both}
+#contents.new-motion .scroll-reveal-active.top-text > *:nth-child(3){animation: 0.5s slideUpNew .6s both}
+#contents.new-motion .scroll-reveal-active.top-text > *:nth-child(4){animation: 0.5s slideUpNew .8s both}
+#contents.new-motion .scroll-reveal-active.top-text > *:nth-child(5){animation: 0.5s slideUpNew 1s both}
+
+/* 그래프 영역 내 텍스트 모션 */
+#contents.new-motion .graph-area .left-area > *{opacity: 0}
+#contents.new-motion .graph-area .left-area > *:nth-child(1).scroll-reveal-active{animation: 0.5s slideUpNew .2s both}
+#contents.new-motion .graph-area .left-area > *:nth-child(2).scroll-reveal-active{animation: 0.5s slideUpNew .4s both}
+#contents.new-motion .graph-area .left-area > *:nth-child(3).scroll-reveal-active{animation: 0.5s slideUpNew .6s both}
+#contents.new-motion .graph-area .left-area > *:nth-child(4).scroll-reveal-active{animation: 0.5s slideUpNew .8s both}
+#contents.new-motion .graph-area .left-area > *:nth-child(5).scroll-reveal-active{animation: 0.5s slideUpNew 1s both}
+
+/* 페이지 타이틀 텍스트 모션 */
+#contents.new-motion .text-cont > *{opacity: 0}
+#contents.new-motion .scroll-reveal-active.text-cont > *:nth-child(1){animation: 0.5s slideUpNew .2s both}
+#contents.new-motion .scroll-reveal-active.text-cont > *:nth-child(2){animation: 0.5s slideUpNew .4s both}
+#contents.new-motion .scroll-reveal-active.text-cont > *:nth-child(3){animation: 0.5s slideUpNew .6s both}
+
+#contents.new-motion .txt-area > *{opacity: 0}
+#contents.new-motion .scroll-reveal-active.txt-area > *:nth-child(1){animation: 0.5s slideUpNew .2s both}
+#contents.new-motion .scroll-reveal-active.txt-area > *:nth-child(2){animation: 0.5s slideUpNew .4s both}
+#contents.new-motion .scroll-reveal-active.txt-area > *:nth-child(3){animation: 0.5s slideUpNew .6s both}
+#contents.new-motion .scroll-reveal-active.txt-area > *:nth-child(4){animation: 0.5s slideUpNew .8s both}
+
+/* 섹션 별 타이틀 텍스트 모션 */
+#contents.new-motion .tit-group > *{opacity: 0}
+#contents.new-motion .scroll-reveal-active.tit-group > *:nth-child(1){animation: 0.5s slideUpNew .2s both}
+#contents.new-motion .scroll-reveal-active.tit-group > *:nth-child(2){animation: 0.5s slideUpNew .4s both}
+#contents.new-motion .scroll-reveal-active.tit-group > *:nth-child(3){animation: 0.5s slideUpNew .6s both}
+#contents.new-motion .scroll-reveal-active.tit-group > *:nth-child(4){animation: 0.5s slideUpNew .8s both}
+#contents.new-motion .scroll-reveal-active.tit-group > *:nth-child(5){animation: 0.5s slideUpNew 1s both}
+
+/* 섹션 별 타이틀 텍스트 모션 2 */
+#contents.new-motion .title-area > *{opacity: 0}
+#contents.new-motion .scroll-reveal-active.title-area > *:nth-child(1){animation: 0.5s slideUpNew .2s both}
+#contents.new-motion .scroll-reveal-active.title-area > *:nth-child(2){animation: 0.5s slideUpNew .4s both}
+#contents.new-motion .scroll-reveal-active.title-area > *:nth-child(3){animation: 0.5s slideUpNew .6s both}
+
+/* 섹션 별 타이틀 텍스트 모션 3 */
+#contents.new-motion .top-area > *{opacity: 0}
+#contents.new-motion .scroll-reveal-active.top-area::before{animation: 0.5s slideUpNew .2s both}
+#contents.new-motion .scroll-reveal-active.top-area > *:nth-child(1){animation: 0.5s slideUpNew .4s both}
+#contents.new-motion .scroll-reveal-active.top-area > *:nth-child(2){animation: 0.5s slideUpNew .6s both}
+#contents.new-motion .scroll-reveal-active.top-area > *:nth-child(3){animation: 0.5s slideUpNew .8s both}
+
+/* 컨텐츠 영역 내 배너(width100%) 모션 */
+#contents.new-motion .banner-cont > *{opacity: 0}
+#contents.new-motion .banner-cont > *.scroll-reveal-active{animation: 0.5s slideUpNew .2s both}
+
+/* 이미지 배너 텍스트 모션 */
+#contents.new-motion .txt-box > *{opacity: 0;}
+#contents.new-motion .txt-box > *:nth-child(1).scroll-reveal-active{animation: 0.5s slideUpNew .2s both}
+#contents.new-motion .txt-box > *:nth-child(2).scroll-reveal-active{animation: 0.5s slideUpNew .4s both}
+#contents.new-motion .txt-box > *:nth-child(3).scroll-reveal-active{animation: 0.5s slideUpNew .6s both}
+#contents.new-motion .txt-box > *:nth-child(4).scroll-reveal-active{animation: 0.5s slideUpNew .8s both}
+#contents.new-motion .txt-box > *:nth-child(5).scroll-reveal-active{animation: 0.5s slideUpNew 1s both}
+
+/* 이미지 배너 이미지 모션 */
+#contents.new-motion .img-box{opacity: 0;}
+#contents.new-motion .img-box.scroll-reveal-active{animation: 0.5s slideUpNew-card4 .2s both}
+#contents.new-motion .long-banner-wrap ul li{opacity: 0;}
+#contents.new-motion .long-banner-wrap ul li.scroll-reveal-active{animation: 0.5s slideUpNew-card4 .2s both}
+
+
+/* 섹션 별 서브 타이틀 텍스트 모션 */
+#contents.new-motion .cont-tit{opacity: 0;}
+#contents.new-motion .cont-tit.scroll-reveal-active{animation: 0.5s slideUpNew .2s both}
+
+/* digital library 1 */
+#contents.new-motion .library-area h3{opacity: 0;}
+#contents.new-motion .library-area h3.scroll-reveal-active{animation: 0.5s slideUpNew .2s both}
+
+/* digital library 2 */
+#contents.new-motion .accordion-area > .btn-area{opacity: 0;}
+#contents.new-motion .accordion-area > .btn-area.scroll-reveal-active{animation: 0.5s slideUpNew-card4 .2s both}
+#contents.new-motion .accordion-wrap{opacity: 0;}
+#contents.new-motion .accordion-wrap.scroll-reveal-active{animation: 0.5s slideUpNew-card4 .2s both}
+
+/* More from the Digital Library */
+#contents.new-motion .more-library h3{opacity: 0}
+#contents.new-motion .more-library.scroll-reveal-active h3{animation: 0.5s slideUpNew .2s both}
+#contents.new-motion .more-library li{opacity: 0}
+#contents.new-motion .library-list.scroll-reveal-active li:nth-child(1){animation: 0.5s slideUpNew-card .2s both}
+#contents.new-motion .library-list.scroll-reveal-active li:nth-child(2){animation: 0.5s slideUpNew-card .4s both}
+#contents.new-motion .library-list.scroll-reveal-active li:nth-child(3){animation: 0.5s slideUpNew-card .6s both}
+#contents.new-motion .library-list.scroll-reveal-active li:nth-child(4){animation: 0.5s slideUpNew-card .8s both}
+#contents.new-motion .library-list.scroll-reveal-active li:nth-child(5){animation: 0.5s slideUpNew-card .10s both}
+#contents.new-motion .library-list.scroll-reveal-active li:nth-child(6){animation: 0.5s slideUpNew-card .12s both}
+#contents.new-motion .library-list.scroll-reveal-active li:nth-child(7){animation: 0.5s slideUpNew-card .14s both}
+#contents.new-motion .library-list.scroll-reveal-active li:nth-child(8){animation: 0.5s slideUpNew-card .16s both}
+
+/* 썸네일이 있는 게시물 모션 */
+#contents.new-motion .thumnail-list ul li{opacity: 0;}
+#contents.new-motion .thumnail-list ul li.scroll-reveal-active{animation: 0.5s slideUpNew-card .2s both}
+
+/* swiper */
+#contents.new-motion .swiper{opacity: 0;}
+#contents.new-motion .swiper.scroll-reveal-active{animation: 0.5s slideUpNew-card4 .2s both}
+
+
+/* 비디오 박스 */
+#contents.new-motion .video-box{opacity: 0;}
+#contents.new-motion .video-box.scroll-reveal-active{animation: 0.5s slideUpNew-card4 .2s both}
+
+/* 사각 배경 / 분할 컨텐츠 */
+#contents.new-motion .scroll-reveal-active.prd-list > *{opacity: 0;}
+#contents.new-motion .scroll-reveal-active.prd-list > *:nth-child(1){animation: 0.5s slideUpNew-card .2s both}
+#contents.new-motion .scroll-reveal-active.prd-list > *:nth-child(2){animation: 0.5s slideUpNew-card .4s both}
+#contents.new-motion .scroll-reveal-active.prd-list > *:nth-child(3){animation: 0.5s slideUpNew-card .6s both}
+#contents.new-motion .scroll-reveal-active.prd-list > *:nth-child(4){animation: 0.5s slideUpNew-card .8s both}
+#contents.new-motion .scroll-reveal-active.prd-list > *:nth-child(5){animation: 0.5s slideUpNew-card .2s both}
+#contents.new-motion .scroll-reveal-active.prd-list > *:nth-child(6){animation: 0.5s slideUpNew-card .4s both}
+#contents.new-motion .scroll-reveal-active.prd-list > *:nth-child(7){animation: 0.5s slideUpNew-card .4s both}
+#contents.new-motion .scroll-reveal-active.prd-list > *:nth-child(8){animation: 0.5s slideUpNew-card .4s both}
+#contents.new-motion .scroll-reveal-active.prd-list > *:nth-child(9){animation: 0.5s slideUpNew-card .4s both}
+
+#contents.new-motion .square-bg-area ul li{opacity: 0;}
+#contents.new-motion .square-bg-area ul li.scroll-reveal-active:nth-child(1){animation: 0.5s slideUpNew-card .2s both}
+#contents.new-motion .square-bg-area ul li.scroll-reveal-active:nth-child(2){animation: 0.5s slideUpNew-card .4s both}
+#contents.new-motion .square-bg-area ul li.scroll-reveal-active:nth-child(3){animation: 0.5s slideUpNew-card .6s both}
+#contents.new-motion .square-bg-area ul li.scroll-reveal-active:nth-child(4){animation: 0.5s slideUpNew-card .8s both}
+#contents.new-motion .square-bg-area ul li.scroll-reveal-active:nth-child(5){animation: 0.5s slideUpNew-card 1s both}
+#contents.new-motion .square-bg-area ul li.scroll-reveal-active:nth-child(6){animation: 0.5s slideUpNew-card 1.2s both}
+#contents.new-motion .square-bg-area ul li.scroll-reveal-active:nth-child(7){animation: 0.5s slideUpNew-card 1.2s both}
+
+
+
+/* Planet > 환경경영 전략 */
+#contents.new-motion .environmental-strategy-panel-bg{opacity: 0}
+#contents.new-motion .environmental-strategy-panel-bg.scroll-reveal-active{animation: 0.5s slideUpNew .8s both}
+
+#contents.new-motion .scroll-reveal-active.card-list > *{opacity: 0}
+#contents.new-motion .scroll-reveal-active.card-list > *:nth-child(1){animation: 0.5s slideUpNew-card .2s both}
+#contents.new-motion .scroll-reveal-active.card-list > *:nth-child(2){animation: 0.5s slideUpNew-card .4s both}
+#contents.new-motion .scroll-reveal-active.card-list > *:nth-child(3){animation: 0.5s slideUpNew-card .6s both}
+#contents.new-motion .list-cont li{opacity: 0}
+#contents.new-motion .list-cont li.scroll-reveal-active:nth-child(1){animation: 0.5s slideUpNew-card .2s both}
+#contents.new-motion .list-cont li.scroll-reveal-active:nth-child(2){animation: 0.5s slideUpNew-card .4s both}
+#contents.new-motion .list-cont li.scroll-reveal-active:nth-child(3){animation: 0.5s slideUpNew-card .6s both}
+#contents.new-motion .list-cont li.scroll-reveal-active:nth-child(4){animation: 0.5s slideUpNew-card .8s both}
+
+/* Planet > 환경경영 전략 */
+#contents.new-motion .fulfill-cont-title{opacity: 0;}
+#contents.new-motion .fulfill-cont-title.scroll-reveal-active{animation: 0.5s slideUpNew .2s both}
+#contents.new-motion .fulfill-cont-list li{opacity: 0;}
+#contents.new-motion .fulfill-cont-list.scroll-reveal-active li:nth-child(1){animation: 0.5s slideUpNew-card .2s both}
+#contents.new-motion .fulfill-cont-list.scroll-reveal-active li:nth-child(2){animation: 0.5s slideUpNew-card .4s both}
+#contents.new-motion .fulfill-cont-list.scroll-reveal-active li:nth-child(3){animation: 0.5s slideUpNew-card .6s both}
+#contents.new-motion .fulfill-cont-list.scroll-reveal-active li:nth-child(4){animation: 0.5s slideUpNew-card .8s both}
+
+/* Planet > 친환경 기술 생태계 조성 */
+#contents.new-motion .card-group-cont ul li{opacity: 0}
+#contents.new-motion .card-group-cont ul li.scroll-reveal-active:nth-child(1){animation: 0.5s slideUpNew-card3 .2s both}
+#contents.new-motion .card-group-cont ul li.scroll-reveal-active:nth-child(2){animation: 0.5s slideUpNew-card3 .4s both}
+#contents.new-motion .card-group-cont ul li.scroll-reveal-active:nth-child(3){animation: 0.5s slideUpNew-card3 .6s both}
+#contents.new-motion .card-group-cont ul li.scroll-reveal-active:nth-child(4){animation: 0.5s slideUpNew-card3 .8s both}
+
+
+/* Planet > 친환경 기술 생태계 조성 */
+#contents.new-motion .cont-tit-list{opacity: 0;}
+#contents.new-motion .cont-tit-list.scroll-reveal-active{animation: 0.5s slideUpNew .2s both}
+
+#contents.new-motion .cont-sub-tit{opacity: 0;}
+#contents.new-motion .cont-sub-tit.scroll-reveal-active{animation: 0.5s slideUpNew .2s both}
+
+/* Planet > 친환경 기술 생태계 조성 : 테이블 */
+#contents.new-motion .planet-table-wrap{opacity: 0;}
+#contents.new-motion .planet-table-wrap.scroll-reveal-active{animation: 0.5s slideUpNew-card4 .2s both}
+
+/* Planet > 친환경 기술 생태계 조성 */
+#contents.new-motion .list-ico li{opacity: 0;}
+#contents.new-motion .list-ico.scroll-reveal-active li:nth-child(1){animation: 0.5s slideUpNew-card .2s both}
+#contents.new-motion .list-ico.scroll-reveal-active li:nth-child(2){animation: 0.5s slideUpNew-card .4s both}
+#contents.new-motion .list-ico.scroll-reveal-active li:nth-child(3){animation: 0.5s slideUpNew-card .6s both}
+#contents.new-motion .list-ico.scroll-reveal-active li:nth-child(4){animation: 0.5s slideUpNew-card .8s both}
+
+/* Planet > 자원 순환 */
+#contents.new-motion .cont-txt{opacity: 0;}
+#contents.new-motion .cont-txt.scroll-reveal-active{animation: 0.5s slideUpNew .2s both}
+
+
+
+/* People > 다양성, 형평성, 포용성 */
+#contents.new-motion .logo-img{opacity: 0;}
+#contents.new-motion .logo-img{animation: 0.5s slideUpNew-card .4s both}
+
+#contents.new-motion .awards-wrap li{opacity: 0;}
+#contents.new-motion .awards-wrap li.scroll-reveal-active{animation: 0.5s slideUpNew-card .4s both}
+
+/* 이미지 모션 */
+#contents.new-motion .img-area{opacity: 0;}
+#contents.new-motion .img-area.scroll-reveal-active{animation: 0.5s slideUpNew-card .4s both}
+
+/* People > 모두를 위한 기술 */
+#contents.new-motion .path-bg-area ul > li{opacity: 0;}
+#contents.new-motion .path-bg-area ul > li:nth-child(1).scroll-reveal-active{animation: 0.5s slideUpNew-card .2s both}
+#contents.new-motion .path-bg-area ul > li:nth-child(2).scroll-reveal-active{animation: 0.5s slideUpNew-card .4s both}
+#contents.new-motion .path-bg-area ul > li:nth-child(3).scroll-reveal-active{animation: 0.5s slideUpNew-card .6s both}
+#contents.new-motion .path-bg-area ul > li:nth-child(4).scroll-reveal-active{animation: 0.5s slideUpNew-card .8s both}
+
+#contents.new-motion .more-list li{opacity: 0}
+#contents.new-motion .more-list li.scroll-reveal-active:nth-child(1){animation: 0.5s slideUpNew-card .2s both}
+#contents.new-motion .more-list li.scroll-reveal-active:nth-child(2){animation: 0.5s slideUpNew-card .4s both}
+#contents.new-motion .more-list li.scroll-reveal-active:nth-child(3){animation: 0.5s slideUpNew-card .6s both}
+
+#contents.new-motion .technology-box .btn-area{opacity: 0;}
+#contents.new-motion .technology-box .btn-area.scroll-reveal-active{animation: 0.5s slideUpNew-card4 .2s both}
+#contents.new-motion .technology-box ul{opacity: 0;}
+#contents.new-motion .technology-box ul.scroll-reveal-active{animation: 0.5s slideUpNew-card4 .2s both}
+
+/* people > 인권 */
+#contents.new-motion .honeycomb-area{opacity: 0;}
+#contents.new-motion .honeycomb-area.scroll-reveal-active{animation: 0.5s slideUpNew-card4 .2s both}
+
+#contents.new-motion .acc-list{opacity: 0;}
+#contents.new-motion .acc-list.scroll-reveal-active{animation: 0.5s slideUpNew-card4 .2s both}
+
+/* people > 다양성, 형평성, 포용성 */
+#contents.new-motion .photo-list-wrap{opacity: 0;}
+#contents.new-motion .photo-list-wrap.scroll-reveal-active{animation: 0.5s slideUpNew-card4 .2s both}
+#contents.new-motion .awards-wrap ul li{opacity: 0;}
+#contents.new-motion .awards-wrap ul li.scroll-reveal-active{animation: 0.5s slideUpNew-card4 .2s both}
+#contents.new-motion .survey-wrap ul li{opacity: 0;}
+#contents.new-motion .survey-wrap ul li.scroll-reveal-active{animation: 0.5s slideUpNew-card4 .2s both}
+#contents.new-motion .banner-collabo-wrap > ul > li{opacity: 0;}
+#contents.new-motion .banner-collabo-wrap > ul > li.scroll-reveal-active{animation: 0.5s slideUpNew-card4 .2s both}
+#contents.new-motion .logo-img{opacity: 0;}
+#contents.new-motion .logo-img.scroll-reveal-active{animation: 0.5s slideUpNew-card4 .2s both}
+
+
+
+/* principle > 리더십 메시지 */
+#contents.new-motion .ceo-area ul li{opacity: 0;}
+#contents.new-motion .ceo-area ul li.scroll-reveal-active:nth-child(1){animation: 0.5s slideUpNew-card .2s both}
+#contents.new-motion .ceo-area ul li.scroll-reveal-active:nth-child(2){animation: 0.5s slideUpNew-card .4s both}
+
+/* Principle > 이미지 모션 */
+#contents.new-motion .principle-content .image-area{opacity: 0;}
+#contents.new-motion .principle-content .image-area.scroll-reveal-active{animation: 0.5s slideUpNew-card4 .2s both}
+
+
+
+/* 게시물 리스트 모션 */
+#contents.new-motion .report-area{opacity: 0;}
+#contents.new-motion .report-area.scroll-reveal-active{animation: 0.5s slideUpNew-card4 .2s both}
+
+#contents.new-motion .data-box{opacity: 0;}
+#contents.new-motion .data-box.scroll-reveal-active{animation: 0.5s slideUpNew-card4 .2s both}
+
+#contents.new-motion .chart{opacity: 0;}
+#contents.new-motion .chart.scroll-reveal-active{animation: 0.5s slideUpNew-card4 .2s both}
+
+
+
+/* Focus > 지속가능한 제품 */
+#contents.new-motion .icon-list li{opacity: 0}
+#contents.new-motion .icon-list.scroll-reveal-active li:nth-child(1){animation: 0.5s slideUpNew-card .2s both}
+#contents.new-motion .icon-list.scroll-reveal-active li:nth-child(2){animation: 0.5s slideUpNew-card .4s both}
+#contents.new-motion .icon-list.scroll-reveal-active li:nth-child(3){animation: 0.5s slideUpNew-card .6s both}
+#contents.new-motion .icon-list.scroll-reveal-active li:nth-child(4){animation: 0.5s slideUpNew-card .8s both}
+#contents.new-motion .icon-list.scroll-reveal-active li:nth-child(5){animation: 0.5s slideUpNew-card 1s both}
+#contents.new-motion .icon-list.scroll-reveal-active li:nth-child(6){animation: 0.5s slideUpNew-card 1.2s both}
+
+/* Focus > 지속가능한 제품 > 제품 리스트 */
+#contents.new-motion .sop-prd-list li{opacity: 0}
+#contents.new-motion .sop-prd-list li.scroll-reveal-active{animation: 0.5s slideUpNew-card .2s both}
+
+/* Focus > 지속가능한 제품 */
+#contents.new-motion .imgtxt-lr .img{opacity: 0;}
+#contents.new-motion .imgtxt-lr .txt{opacity: 0;}
+#contents.new-motion .imgtxt-lr.scroll-reveal-active .img{animation: 0.5s slideUpNew-card .2s both}
+#contents.new-motion .imgtxt-lr.scroll-reveal-active .txt{animation: 0.5s slideUpNew-card .4s both}
+
+#contents.new-motion .cont-tit{opacity: 0}
+#contents.new-motion .group-txt{opacity: 0}
+#contents.new-motion .cont-tit.scroll-reveal-active{animation: 0.5s slideUpNew .2s both}
+#contents.new-motion .group-txt.scroll-reveal-active{animation: 0.5s slideUpNew .2s both}
+
+/* Focus > 지속가능한 제품 > 모바일 */
+#contents.focus .mx-content .mx-cont6 .list-area li{opacity: 0;}
+#contents.focus .mx-content .mx-cont6 .list-area li.scroll-reveal-active:nth-child(1){animation: 0.5s slideUpNew-card .2s both}
+#contents.focus .mx-content .mx-cont6 .list-area li.scroll-reveal-active:nth-child(2){animation: 0.5s slideUpNew-card .4s both}
+#contents.focus .mx-content .mx-cont6 .list-area li.scroll-reveal-active:nth-child(3){animation: 0.5s slideUpNew-card .6s both}
+/* //#0004 23.04.21 mobileExperience 어워드 신규내용 추가 */
+#contents.focus .mx-content .mx-cont6 .list-area li.scroll-reveal-active:nth-child(4){animation: 0.5s slideUpNew-card .8s both}
+#contents.focus .mx-content .mx-cont6 .list-area li.scroll-reveal-active:nth-child(5){animation: 0.5s slideUpNew-card 1s both}
+#contents.focus .mx-content .mx-cont6 .list-area li.scroll-reveal-active:nth-child(6){animation: 0.5s slideUpNew-card 1s both}
+/* #0004 23.04.21 mobileExperience 어워드 신규내용 추가// */
+
+/* Focus > 지속가능한 제품 > 가전 */
+#contents.new-motion .circle-slide-wrap .swiper-slide .text-area > *{opacity: initial;transform: initial;animation: none}
+
+/* focus > 지속가능한 제품 > 반도체 */
+#contents.new-motion .semi-cont2 .title,
+#contents.new-motion .semi-cont2 .titsm-titlele,
+#contents.new-motion .semi-cont2 .text-area,
+#contents.new-motion .semi-cont2 .btn{opacity: 0}
+#contents.new-motion .semi-cont2 .title.scroll-reveal-active{animation: 0.5s slideUpNew .2s both}
+#contents.new-motion .semi-cont2 .sm-title.scroll-reveal-active{animation: 0.5s slideUpNew .4s both}
+#contents.new-motion .semi-cont2 .text-area.scroll-reveal-active{animation: 0.5s slideUpNew .6s both}
+#contents.new-motion .semi-cont2 .btn.scroll-reveal-active{animation: 0.5s slideUpNew .8s both}
+
+#contents.new-motion .semi-cont3 .title.scroll-reveal-active {animation: 0.5s slideUpNew .2s both}
+#contents.new-motion .semi-cont3 .popup-item:nth-child(1).scroll-reveal-active {animation: 0.5s slideUpNew .4s both}
+#contents.new-motion .semi-cont3 .popup-item:nth-child(2).scroll-reveal-active {animation: 0.5s slideUpNew .6s both}
+#contents.new-motion .semi-cont3 .popup-item:nth-child(3).scroll-reveal-active {animation: 0.5s slideUpNew .8s both}
+
+#contents.new-motion .semi-cont3 .swiper-container.mo-only.scroll-reveal-active {animation: 0.5s slideUpNew .8s both}
+#contents.new-motion .semi-cont3 .swiper-container.mo-only .popup-item:nth-child(1).scroll-reveal-active {animation: slideUpNew none;}
+#contents.new-motion .semi-cont3 .swiper-container.mo-only .popup-item:nth-child(2).scroll-reveal-active {animation: slideUpNew none;}
+#contents.new-motion .semi-cont3 .swiper-container.mo-only .popup-item:nth-child(3).scroll-reveal-active {animation: slideUpNew none;}
+
+
+
+/* Digital Library > 정책&문서 */
+#contents.new-motion .document-list h3{opacity: 0;}
+#contents.new-motion .document-list h3.scroll-reveal-active{animation: 0.5s slideUpNew .2s both}
+
+#contents.new-motion .document-list h4{opacity: 0;}
+#contents.new-motion .document-list h4.scroll-reveal-active{animation: 0.5s slideUpNew .2s both}
+
+#contents.new-motion .icon-list .title{opacity: 0;}
+#contents.new-motion .icon-list .title.scroll-reveal-active{animation: 0.5s slideUpNew .2s both}
+
+#contents.new-motion .vd-content .vd-cont2 .title-area::before{opacity: 0;}
+#contents.new-motion .vd-content .vd-cont2 .title-area.scroll-reveal-active::before{animation: 0.5s slideUpNew .2s both}
+
+
+
+/* keyframe */
+@keyframes slideUpNew {
+  0%{opacity: 0}
+  100%{opacity: 1}
+}
+@keyframes slideUpNew2 {
+  0%{opacity: 0}
+  100%{opacity: 1}
+}
+
+@keyframes slideUpNew-card {
+  0%{opacity: 0}
+  100%{opacity: 1}
+}
+@keyframes slideUpNew-card2 {
+  0%{opacity: 0}
+  100%{opacity: 1}
+}
+@keyframes slideUpNew-card3 {
+  0%{opacity: 0}
+  100%{opacity: 1}
+}
+@keyframes slideUpNew-card4 {
+  0%{opacity: 0}
+  100%{opacity: 1}
+}
+
+@keyframes slideUpNewFadeOut {
+  0%{opacity: 0}
+  30%{opacity: 1}
+  100%{opacity: 0}
+}
+
+
+
+
+/*모션 예외처리*/
+#contents.new-motion .collabo-list .img-box{opacity: initial !important;transform: initial !important;animation: initial !important;}
+#contents.new-motion .card-swiper{opacity: initial !important;transform: initial !important;animation: initial !important;}
+#contents.new-motion .card-swiper .img-box{opacity: initial !important;transform: initial !important;animation: initial !important;}
+#contents.new-motion .text-area.scroll-reveal-active > .download{animation: 0.5s slideUpNew .4s ease both }
+
+.digital .accordion-wrap .accordion-title button em { opacity: 0; }
+.digital .accordion-wrap .accordion-title button em.ea { opacity: 1; }
+
